@@ -1,0 +1,54 @@
+# Terminal-Bench Science 0.1, packaged exactly as the upstream tbsci adapter did.
+# Task ids are nested (<field>/<subfield>/<task>); packages are named after the
+# last component. With env = "cn-mirror" the packages are byte-identical to
+# the 40 packages the original harness generated its TB-Science verifiers from.
+description = "Terminal-Bench Science: closed-book /app/verifier.sh in the task's own environment"
+paradigm = "terminal_state"
+contract = "tbsci"
+# The original harness's TB-Science runs selected the frozen_evh1 prompt directory.
+wording = "frozen_evh1"
+env = "plain"
+package_prefix = "tbsci"
+install_block = "tbsci_install_block.sh"
+task_toml = "tbsci_task.toml.tmpl"
+# Earlier build stages of the scientific images may have no shell.
+from_injection = "final"
+
+[evidence]
+testbed = "final.artifact"
+fs_manifest = "final.manifest"
+
+[timeouts]
+build_sec = 10800.0
+agent_sec = 7200.0
+verifier_sec = 600.0
+
+[intake]
+# Every source task ships tests/ and solution/; packages carry neither.
+# 5 tasks have a compose file; the upstream adapter packaged them with
+# environment/ copied whole.
+strip_tests = true
+allow_compose = true
+allow_mcp_servers = true
+# The upstream adapter packaged every task without a GPU request.
+allow_missing_gpus = true
+
+[anchor]
+# The TB-Science verdict gate: the generated verifier ran in the task's own
+# environment image (no CLI install block), from /app, as the image's user,
+# offline, capped at 3600 s.
+image = "original"
+workdir = "/app"
+network = "no-network"
+timeout_sec = 3600.0
+swap = "none"
+# Images stay after the run: a rebuilt image can resolve other package
+# versions and flip oracle verdicts.
+keep_images = true
+
+[run]
+# The original harness's TB-Science generation ended every agent command after
+# 3900 s (its Docker transport limit); 4 of its 40 trials reached it. The 2
+# tasks that delivered nothing were re-run with a limit above the 7200 s agent
+# budget, which a profile without this table reproduces.
+agent_exec_cap_sec = 3900.0

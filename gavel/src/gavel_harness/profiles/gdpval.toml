@@ -1,0 +1,57 @@
+# GDPval gold tasks (prompt + reference files; deliverables go to /app/output).
+# Without declare mode, and with env = "cn-mirror", the packages are
+# byte-identical to those the upstream harbor_generic adapter built for GDPval.
+description = "GDPval: closed-book /app/verifier.sh over the deliverables in /app/output"
+paradigm = "deliverable"
+contract = "harbor_generic"
+# The wording the upstream harbor_generic adapter composed GDPval with.
+wording = "state_gate"
+env = "plain"
+package_prefix = "harbor"
+install_block = "tb4_install_block.sh"
+task_toml = "harbor_generic_task.toml.tmpl"
+from_injection = "first"
+
+[evidence]
+testbed = "final.artifact"
+fs_manifest = "final.manifest"
+
+[timeouts]
+build_sec = 5400.0
+agent_sec = 7200.0
+verifier_sec = 300.0
+
+[intake]
+# Task directories may have received tests/ from an earlier write-back; the
+# package never carries them and the result row records the strip.
+strip_tests = true
+allow_compose = false
+allow_mcp_servers = false
+allow_missing_gpus = false
+
+[anchor]
+# The GDPval protocol: a fresh container of the task's original environment,
+# verifier phase offline. 2400 s is the cap of the upstream harness's own
+# validation of these tasks.
+image = "original"
+workdir = "/app"
+network = "no-network"
+timeout_sec = 2400.0
+# The GDPval protocol's swap anchor: another task's expert deliverables, chosen
+# by primary file extension. Expert deliverables sit in <solution>/deliverables.
+swap = "same_extension_deliverables"
+deliverables_subdir = "deliverables"
+# The images of all 220 tasks do not fit on one disk.
+keep_images = false
+
+[deliverable]
+dir = "/app/output"
+
+[declare]
+# Above the 330 s of capped steps in the evidence-capture block.
+verifier_timeout_sec = 600.0
+
+[run]
+# The original harness ended every agent command after 3900 s (its Docker
+# transport limit); the GDPval generation ran under it and no trial reached it.
+agent_exec_cap_sec = 3900.0

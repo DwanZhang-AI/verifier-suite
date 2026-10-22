@@ -1,0 +1,16 @@
+You are building an executable JUDGE for a pairwise-preference task.
+
+/app/item.json has: "instruction" (the user's request), "resp1" and "resp2" (two
+candidate responses). Exactly one response better satisfies the instruction.
+
+Write /app/checker.py that defines:
+
+    def pick(item: dict) -> int:
+        # item has keys "instruction", "resp1", "resp2"
+        # return 1 if resp1 is the better response, 2 if resp2 is better.
+        ...
+
+It must be deterministic and self-contained (standard library only; no network).
+Base the decision on how well each response actually follows the instruction —
+correctness, completeness, and faithfulness — not on superficial cues like length
+or formatting. /app/checker.py is your only deliverable.

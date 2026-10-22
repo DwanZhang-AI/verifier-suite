@@ -1,0 +1,10 @@
+# Package-source mirrors for hosts in mainland China, as the upstream adapters
+# inserted them unconditionally: apt sources rewritten to mirrors.aliyun.com
+# after the first FROM (tb4, harbor_generic), or apt, pip and Hugging Face
+# sources rewritten after the final FROM (tbsci). Needed to reproduce the
+# sealed packages byte for byte.
+description = "Package-source mirrors for hosts in mainland China (upstream adapter bytes)"
+
+[mirror]
+first = "tb4_cn_mirror.sh"
+final = "tbsci_mirror.sh"

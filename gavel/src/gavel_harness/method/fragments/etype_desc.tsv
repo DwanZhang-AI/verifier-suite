@@ -1,0 +1,12 @@
+baseline.state	动作前快照——起点锚,一切「发生了什么变化」以它为基准
+process.action	工具调用流——候选实际执行了哪些操作
+process.language	消息文本流——候选说了什么
+process.interaction	交互轮次流——完整对话(含 assistant/user/tool 消息与工具调用)
+process.checkpoint	逐步快照——中间状态
+final.artifact	最终交付物——候选产出的文件/环境
+final.diff	相对基线的变更集——改了什么
+final.manifest	终态指纹——结束时刻的状态清单
+final.container	工作区之外的副作用
+final.deps	依赖变化
+external.network	实际外部访问记录
+derived.metrics	平台派生指标——只作旁证,不作主判据

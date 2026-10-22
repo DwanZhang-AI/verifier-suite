@@ -1,0 +1,1118 @@
+{
+  "version": "paper222-20261007",
+  "tasks": {
+    "vgb-t-0177263f96a941de": {
+      "source_task_id": "django__django-11740",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-03b3bf23bd24692b": {
+      "source_task_id": "astropy__astropy-13453",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-0480046e6a2a021f": {
+      "source_task_id": "data_en/normal_atom_object_deep_38",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-05aaeb7d80edf966": {
+      "source_task_id": "travel/injection_task_2",
+      "benchmark": "AgentDojo injection",
+      "form": "state"
+    },
+    "vgb-t-05c8127ce36fd215": {
+      "source_task_id": "parallel_multiple_195",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-065f08d228c6ea14": {
+      "source_task_id": "retail/20",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-06ebf868b74a4684": {
+      "source_task_id": "workspace/user_task_21",
+      "benchmark": "AgentDojo user",
+      "form": "state"
+    },
+    "vgb-t-08167d1b4c9984dd": {
+      "source_task_id": "29caf6f_1",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-08a24f7f949c8668": {
+      "source_task_id": "retail/17",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-099f64c1f5b7b6d5": {
+      "source_task_id": "parallel_multiple_63",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-0a8ce2cc94b13011": {
+      "source_task_id": "parallel_multiple_136",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-0b005ba515d53b98": {
+      "source_task_id": "parallel_154",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-0b3e042c45353f89": {
+      "source_task_id": "banking/injection_task_7",
+      "benchmark": "AgentDojo injection",
+      "form": "state"
+    },
+    "vgb-t-0b57ac1f5984f794": {
+      "source_task_id": "matplotlib__matplotlib-24026",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-0c35f16ef4fcdbab": {
+      "source_task_id": "banking_knowledge/task_019",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-0c680f9798128e58": {
+      "source_task_id": "parallel_99",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-0c6ca1b19696b09f": {
+      "source_task_id": "banking_knowledge/task_038",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-0ef4cc8135387ea8": {
+      "source_task_id": "django__django-11964",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-0f00e67899116e08": {
+      "source_task_id": "matplotlib__matplotlib-24570",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-0fbc335ea7612a85": {
+      "source_task_id": "django__django-11790",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-103113979d3247a5": {
+      "source_task_id": "parallel_multiple_139",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-114c2988ccedb53c": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_86",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-12aafca53ad113b0": {
+      "source_task_id": "banking_knowledge/task_037",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-12ca5d698728bc6a": {
+      "source_task_id": "workspace/user_task_8",
+      "benchmark": "AgentDojo user",
+      "form": "state"
+    },
+    "vgb-t-14e04d5d49c5f931": {
+      "source_task_id": "parallel_72",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-176e2b2766d0d771": {
+      "source_task_id": "29caf6f_3",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-19a8dc037ab942c6": {
+      "source_task_id": "retail/49",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-19dbc4a428ad60cc": {
+      "source_task_id": "django__django-11555",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-1b672870ddd7e163": {
+      "source_task_id": "astropy__astropy-13579",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-1c3ab5f2e7d38edd": {
+      "source_task_id": "parallel_145",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-1c7bee9ff3634091": {
+      "source_task_id": "data_en/normal_atom_object_short_43",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-1f8fe1d4894e0825": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_78",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-208d4ff17507be3f": {
+      "source_task_id": "retail/42",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-2207dea5623b28b6": {
+      "source_task_id": "retail/27",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-223a9b6c88c5e396": {
+      "source_task_id": "django__django-11087",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-2338c3ec8458857d": {
+      "source_task_id": "parallel_8",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-25932ca825bd7ab6": {
+      "source_task_id": "matplotlib__matplotlib-14623",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-28340581d9dde55f": {
+      "source_task_id": "parallel_multiple_151",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-285b545b6151e2f8": {
+      "source_task_id": "6104387_3",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-2a4eb60a53bfc9ba": {
+      "source_task_id": "banking_knowledge/task_022",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-2b7ae567d49b79ec": {
+      "source_task_id": "data_zh/normal_single_turn_parallel_function_93",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-2c01cbca531c05ac": {
+      "source_task_id": "matplotlib__matplotlib-20676",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-2c4ccd44b6d19e6d": {
+      "source_task_id": "slack/user_task_5",
+      "benchmark": "AgentDojo user",
+      "form": "state"
+    },
+    "vgb-t-2de811fb047dcfa6": {
+      "source_task_id": "banking_knowledge/task_040",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-3193bf4191ecae04": {
+      "source_task_id": "22cc237_1",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-344d5609f122ed1a": {
+      "source_task_id": "parallel_98",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-3582fd923df493bd": {
+      "source_task_id": "3c13f5a_2",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-36bffdce14b3c57b": {
+      "source_task_id": "afc0fce_1",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-36e8a311f52b2bb9": {
+      "source_task_id": "banking_knowledge/task_041",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-384ac58d7e22b84b": {
+      "source_task_id": "parallel_multiple_101",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-38fade10c67641ac": {
+      "source_task_id": "workspace/injection_task_1",
+      "benchmark": "AgentDojo injection",
+      "form": "state"
+    },
+    "vgb-t-3a07037bce70bedb": {
+      "source_task_id": "parallel_81",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-3a6f44083911481d": {
+      "source_task_id": "parallel_64",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-3b3c7341e66c0fc0": {
+      "source_task_id": "34d9492_2",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-3b9646d076c9683e": {
+      "source_task_id": "workspace/user_task_24",
+      "benchmark": "AgentDojo user",
+      "form": "state"
+    },
+    "vgb-t-3c397fd715d05ce4": {
+      "source_task_id": "workspace/injection_task_3",
+      "benchmark": "AgentDojo injection",
+      "form": "state"
+    },
+    "vgb-t-3ca4462c9852c1a6": {
+      "source_task_id": "django__django-12039",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-3d42d0598c5288bb": {
+      "source_task_id": "parallel_multiple_76",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-3d4b51fc948f98ab": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_47",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-3dd1552a041fc2a6": {
+      "source_task_id": "3c13f5a_1",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-3e83e8f191d886d8": {
+      "source_task_id": "astropy__astropy-14365",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-3e98783f7c49b3e3": {
+      "source_task_id": "parallel_162",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-3ed4044f4e66032f": {
+      "source_task_id": "django__django-11265",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-3faf893164a47410": {
+      "source_task_id": "afc0fce_2",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-40f3dffb5d6a37bb": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_74",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-413a5b8ca6a353e9": {
+      "source_task_id": "django__django-11206",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-429fbc4a7731b3bd": {
+      "source_task_id": "parallel_26",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-46a9af6bade2d273": {
+      "source_task_id": "parallel_124",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-48110d63d1c28da9": {
+      "source_task_id": "34d9492_3",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-484dea107ee7a4a6": {
+      "source_task_id": "matplotlib__matplotlib-25122",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-48a2922faa2206c2": {
+      "source_task_id": "data_zh/normal_single_turn_parallel_function_22",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-4931eb7642d0039b": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_36",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-494049615541ce6b": {
+      "source_task_id": "astropy__astropy-14598",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-4a174adfefb7cc62": {
+      "source_task_id": "data_zh/normal_single_turn_parallel_function_44",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-4b6b194b019ffc37": {
+      "source_task_id": "6ea6792_3",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-4c1074a689d50fab": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_52",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-4c1acafaf514343b": {
+      "source_task_id": "matplotlib__matplotlib-21568",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-4cc50e797ed6e006": {
+      "source_task_id": "parallel_multiple_31",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-4f327d224e45a014": {
+      "source_task_id": "37a8675_1",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-4f5eb2696c4cd50e": {
+      "source_task_id": "parallel_22",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-53910a4f0fdba4dd": {
+      "source_task_id": "68ee2c9_2",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-53ca92c6f7ddbb2e": {
+      "source_task_id": "banking_knowledge/task_029",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-568464c54d9d765e": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_85",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-56ddffdbb6dd0c52": {
+      "source_task_id": "django__django-10973",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-580b0c59c8d20ace": {
+      "source_task_id": "parallel_115",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-5881bd61846a490f": {
+      "source_task_id": "travel/user_task_7",
+      "benchmark": "AgentDojo user",
+      "form": "state"
+    },
+    "vgb-t-5a1722e5e6dda56b": {
+      "source_task_id": "matplotlib__matplotlib-24149",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-5e6a63d890f0f4e1": {
+      "source_task_id": "22cc237_3",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-5f0cdb3ae795c760": {
+      "source_task_id": "data_zh/normal_preference_28",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-5f3ebeca44d0d5c8": {
+      "source_task_id": "matplotlib__matplotlib-23299",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-5fdc4dcedc314c8f": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_58",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-60bc490ec645d2af": {
+      "source_task_id": "astropy__astropy-13977",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-63861e36af3f6ddb": {
+      "source_task_id": "workspace/user_task_6",
+      "benchmark": "AgentDojo user",
+      "form": "state"
+    },
+    "vgb-t-65268498fc633bc0": {
+      "source_task_id": "banking_knowledge/task_044",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-653aebe550ebf3ec": {
+      "source_task_id": "data_zh/normal_single_turn_parallel_function_9",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-66ac68e0e6a9c383": {
+      "source_task_id": "parallel_multiple_198",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-6753921c33be2aa3": {
+      "source_task_id": "django__django-11400",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-67b2c363ab980047": {
+      "source_task_id": "data_zh/normal_multi_turn_user_adjust_24_1",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-686a9ba0ca6102ca": {
+      "source_task_id": "retail/51",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-6b9af14be5cca5be": {
+      "source_task_id": "parallel_107",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-6c48cd26f3e6dbd3": {
+      "source_task_id": "django__django-11095",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-6c5e8c8ef185d112": {
+      "source_task_id": "django__django-11099",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-6fd1a12cc1467e3e": {
+      "source_task_id": "matplotlib__matplotlib-25287",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-70daba531152a745": {
+      "source_task_id": "astropy__astropy-13033",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-74ee84a46ff944f1": {
+      "source_task_id": "banking_knowledge/task_026",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-76e5fa36779b7aba": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_35",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-77fe496e06a8a65f": {
+      "source_task_id": "data_en/normal_preference_17",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-79098e1fdd8dcd21": {
+      "source_task_id": "data_en/normal_preference_2",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-7e47544c3498491f": {
+      "source_task_id": "retail/33",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-804f57a4eb19b6a3": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_92",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-80aea4bfe710d370": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_50",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-8476318eb6c27aac": {
+      "source_task_id": "workspace/user_task_9",
+      "benchmark": "AgentDojo user",
+      "form": "state"
+    },
+    "vgb-t-851b737437a60e1f": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_94",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-85a859ec5aab30e3": {
+      "source_task_id": "retail/23",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-85d6586691dc5c3b": {
+      "source_task_id": "banking_knowledge/task_027",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-8634b319e944345c": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_15",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-88479d7d5e4a2d72": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_2",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-8a2a4dc73d4af0a5": {
+      "source_task_id": "django__django-11848",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-8a61d78fc3b13e12": {
+      "source_task_id": "data_zh/normal_preference_42",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-8c0a6b2aec27e80c": {
+      "source_task_id": "retail/41",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-8d73f9b04ae4673f": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_43",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-8e24c6f98a0d5d61": {
+      "source_task_id": "parallel_multiple_179",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-8ebad8ae3e33ff3a": {
+      "source_task_id": "matplotlib__matplotlib-20488",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-8ec05bf2c8e6adfd": {
+      "source_task_id": "parallel_multiple_193",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-917160fcbf6d7018": {
+      "source_task_id": "slack/injection_task_1",
+      "benchmark": "AgentDojo injection",
+      "form": "state"
+    },
+    "vgb-t-9210a64ef021876d": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_99",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-927ba1179cb67195": {
+      "source_task_id": "banking_knowledge/task_039",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-93193f16a888b658": {
+      "source_task_id": "django__django-11820",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-94fe8114ef985c04": {
+      "source_task_id": "banking/user_task_13",
+      "benchmark": "AgentDojo user",
+      "form": "state"
+    },
+    "vgb-t-95b67368dc06f18a": {
+      "source_task_id": "parallel_multiple_110",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-95be0613b5b9a609": {
+      "source_task_id": "data_en/normal_preference_5",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-96412d3af1ac0917": {
+      "source_task_id": "3c13f5a_3",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-97e817ec5adc6e30": {
+      "source_task_id": "matplotlib__matplotlib-24627",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-98138a244f81de5e": {
+      "source_task_id": "django__django-11239",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-987271d36bc58225": {
+      "source_task_id": "parallel_multiple_153",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-98f571c634d872c9": {
+      "source_task_id": "parallel_multiple_183",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-99ee7f3d1005eaa6": {
+      "source_task_id": "7d7fbf6_1",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-9a4e8777490da819": {
+      "source_task_id": "django__django-11603",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-9c9949aa1e829b50": {
+      "source_task_id": "matplotlib__matplotlib-24637",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-9d350dca816c4c35": {
+      "source_task_id": "parallel_multiple_175",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-9da502c8ad0f7828": {
+      "source_task_id": "37a8675_2",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-9fe4cb594e24ce54": {
+      "source_task_id": "37a8675_3",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-a01d2697ad516739": {
+      "source_task_id": "django__django-10999",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-a04a3f63f73c1340": {
+      "source_task_id": "parallel_133",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-a24fb107e8bfee96": {
+      "source_task_id": "banking_knowledge/task_028",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-a65848aa2cf69262": {
+      "source_task_id": "29caf6f_2",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-a6a0073d3700b733": {
+      "source_task_id": "banking_knowledge/task_043",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-a792ecfeff85f1fc": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_51",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-a7f5d224c9fa1c0e": {
+      "source_task_id": "data_zh/normal_single_turn_parallel_function_39",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-a94789f6b45d4fb7": {
+      "source_task_id": "parallel_multiple_189",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-aabbee82a961140d": {
+      "source_task_id": "workspace/injection_task_4",
+      "benchmark": "AgentDojo injection",
+      "form": "state"
+    },
+    "vgb-t-abc7887647b99a90": {
+      "source_task_id": "34d9492_1",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-abfa142d0da12f87": {
+      "source_task_id": "ce359b5_1",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-ac127152b12a746d": {
+      "source_task_id": "parallel_multiple_157",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-ae47c6f49b3bc8e3": {
+      "source_task_id": "parallel_183",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-afca47d3d73e5653": {
+      "source_task_id": "retail/15",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-b2f6b80ba445f365": {
+      "source_task_id": "parallel_multiple_176",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-b65108c143fcc0c8": {
+      "source_task_id": "django__django-11333",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-b67ab505d6413b3d": {
+      "source_task_id": "retail/14",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-b74d033561b91e9b": {
+      "source_task_id": "banking_knowledge/task_020",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-b7ccb9b688f67288": {
+      "source_task_id": "parallel_159",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-b7d3ca733b1cb07e": {
+      "source_task_id": "django__django-12262",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-b7ff7d56fdb7b861": {
+      "source_task_id": "parallel_multiple_61",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-b9500727609cf9db": {
+      "source_task_id": "matplotlib__matplotlib-24870",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-b9a3c153034784c2": {
+      "source_task_id": "slack/injection_task_3",
+      "benchmark": "AgentDojo injection",
+      "form": "state"
+    },
+    "vgb-t-baaaf3a520bc8128": {
+      "source_task_id": "banking_knowledge/task_018",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-bb233d5cc82f9a9a": {
+      "source_task_id": "django__django-11451",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-bbdb0209a5f1c62d": {
+      "source_task_id": "68ee2c9_1",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-bc1518fbbb1ed8be": {
+      "source_task_id": "parallel_multiple_191",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-bd9b3bc791f249f2": {
+      "source_task_id": "parallel_multiple_77",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-be43c9631ca61343": {
+      "source_task_id": "retail/34",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-bec185a4dee97b16": {
+      "source_task_id": "parallel_multiple_145",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-c0750cad00458e8f": {
+      "source_task_id": "7d7fbf6_3",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-c0779bbb75ad048b": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_70",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-c0ecedb8d763f4d7": {
+      "source_task_id": "astropy__astropy-13398",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-c222ec097bcb757f": {
+      "source_task_id": "retail/22",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-c2b3e12589d04bbd": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_14",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-c4b82b5e826f511f": {
+      "source_task_id": "astropy__astropy-14539",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-c5f440eacbcc0d04": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_26",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-c64662318001c9b0": {
+      "source_task_id": "retail/35",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-c655004bbfe2da3e": {
+      "source_task_id": "7d7fbf6_2",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-c6aeb7f1535809a5": {
+      "source_task_id": "parallel_134",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-c6b68cdbf2956ea3": {
+      "source_task_id": "data_en/normal_preference_21",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-c7210177d1c53093": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_63",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-c831e8f66788059f": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_72",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-c83795d2fd5afdad": {
+      "source_task_id": "parallel_43",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-cceba0ccb80335a8": {
+      "source_task_id": "workspace/injection_task_2",
+      "benchmark": "AgentDojo injection",
+      "form": "state"
+    },
+    "vgb-t-d09284946cd0e0d8": {
+      "source_task_id": "data_en/normal_preference_8",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-d095c1dc1cbe0bee": {
+      "source_task_id": "django__django-12155",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-d22e7d784a520afd": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_32",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-d23f18974d1f111c": {
+      "source_task_id": "data_en/normal_atom_object_deep_44",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-d3807b17672a22bc": {
+      "source_task_id": "afc0fce_3",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-d3c43b994aa8b2f3": {
+      "source_task_id": "django__django-11211",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-d78e768308367722": {
+      "source_task_id": "parallel_114",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-d825cfa5747482cd": {
+      "source_task_id": "data_zh/normal_preference_18",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-d8bd9183d1119aa2": {
+      "source_task_id": "django__django-11734",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-d8c6f0a6aaf12e9e": {
+      "source_task_id": "django__django-10554",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-da67f88d634f3de1": {
+      "source_task_id": "workspace/user_task_7",
+      "benchmark": "AgentDojo user",
+      "form": "state"
+    },
+    "vgb-t-daa7dbca61dc1219": {
+      "source_task_id": "data_zh/normal_preference_13",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-e00c863e0a30205a": {
+      "source_task_id": "banking_knowledge/task_045",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-e0cab682bba9e5ce": {
+      "source_task_id": "workspace/injection_task_0",
+      "benchmark": "AgentDojo injection",
+      "form": "state"
+    },
+    "vgb-t-e2897b5946e1bed7": {
+      "source_task_id": "6104387_2",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-e2c4de116d2568fd": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_30",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-e3f19ee5fe1e68ff": {
+      "source_task_id": "retail/48",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-e4e3e449f560ebac": {
+      "source_task_id": "data_en/normal_atom_object_short_37",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-e5d97abcc84b1fe2": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_82",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-e7c9c28088532cf0": {
+      "source_task_id": "django__django-11141",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-e80bf398448c51fc": {
+      "source_task_id": "parallel_105",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-e945b12c4b919544": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_89",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-ea980c2b3fe30c24": {
+      "source_task_id": "6104387_1",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-eb6fe7bc101df3d1": {
+      "source_task_id": "data_zh/normal_single_turn_parallel_function_11",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-eb9dc008dbf1fd61": {
+      "source_task_id": "matplotlib__matplotlib-22719",
+      "benchmark": "SWE-bench Verified",
+      "form": "code"
+    },
+    "vgb-t-ecbe76c371650d9f": {
+      "source_task_id": "data_en/normal_preference_14",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-ecc08ac38cc38d08": {
+      "source_task_id": "68ee2c9_3",
+      "benchmark": "AppWorld",
+      "form": "state"
+    },
+    "vgb-t-ee610f08073840bd": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_44",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-f51e1adb65fbd0a9": {
+      "source_task_id": "parallel_multiple_147",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-fafba0720bca9660": {
+      "source_task_id": "data_en/normal_single_turn_parallel_function_64",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-fde8be5ea947f7ec": {
+      "source_task_id": "data_zh/normal_preference_8",
+      "benchmark": "ACEBench",
+      "form": "ast"
+    },
+    "vgb-t-fe19a2d0be01016b": {
+      "source_task_id": "workspace/user_task_12",
+      "benchmark": "AgentDojo user",
+      "form": "state"
+    },
+    "vgb-t-fe72a940bc72ac06": {
+      "source_task_id": "retail/11",
+      "benchmark": "τ²-bench",
+      "form": "state"
+    },
+    "vgb-t-fe8ca1e717b0946c": {
+      "source_task_id": "parallel_199",
+      "benchmark": "BFCL v4",
+      "form": "ast"
+    },
+    "vgb-t-ff97ec9f3ee76c0d": {
+      "source_task_id": "banking/injection_task_2",
+      "benchmark": "AgentDojo injection",
+      "form": "state"
+    }
+  },
+  "task_count": 222,
+  "candidate_count": 4993,
+  "round_policy": "AST r1 replicated across three overall rounds; state/code r1-r3; stable median overall BA selects the entire row."
+}

@@ -1,0 +1,2 @@
+# Generation Dockerfiles fetch packages from the sources the task image names.
+description = "No package-source rewrite"

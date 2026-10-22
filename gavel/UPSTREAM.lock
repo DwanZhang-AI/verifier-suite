@@ -1,0 +1,1269 @@
+{
+ "schema": "gavel-harness/upstream-lock/1",
+ "generator": "tools/extract_assets.py",
+ "upstream_root": "$GAVEL_UPSTREAM_HARNESS",
+ "managed_dirs": [
+  "src/gavel_harness/method/prompts",
+  "src/gavel_harness/method/fragments",
+  "src/gavel_harness/paradigms/assets",
+  "src/gavel_harness/rubric/library_v1"
+ ],
+ "files": [
+  {
+   "path": "src/gavel_harness/method/evidence/certificate.py",
+   "method": "verbatim-code",
+   "sha256": "99b41ce138ff26de0daf183a15c895b393e91b56a69e4cadd29e328df4b6f060",
+   "bytes": 7508,
+   "upstream": [
+    {
+     "path": "judge/evidence/certificate.py",
+     "sha256": "3f2d41dec85e339f4298b5bdca56597fe0caec94c176c6b0e23cc39a4e7f8c02"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/evidence/model.py",
+   "method": "verbatim-code",
+   "sha256": "d8e4bf86fad2b312d99626940f6094521e5423ef4ffb75c51761930c1bfda031",
+   "bytes": 10554,
+   "upstream": [
+    {
+     "path": "judge/evidence/model.py",
+     "sha256": "de18d310e43ce54b9f182ca37ba3f38910e3faafb98fa288dbe2abff44e8eaaa"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/evidence/trial.py",
+   "method": "verbatim-code",
+   "sha256": "b91e7f1396b507a991f5b889b62cd31e0cc08e6cb2bf61cc65ad9496299af7e5",
+   "bytes": 6782,
+   "upstream": [
+    {
+     "path": "judge/evidence/trial.py",
+     "sha256": "99577b8d86992d49178ec877a4bf8504764cb15b15f36cc6f08bbf71abe60175"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/fragments/declaration_directive.txt",
+   "method": "extracted",
+   "sha256": "240cda02da9ae3ce04d3cb541fce4c20f1b4d22bd34867926025cb57e4d6fdee",
+   "bytes": 916,
+   "upstream": [
+    {
+     "path": "judge/core/prompt_compose.py",
+     "sha256": "2a866760522c1a7fd4fce15dd7ec5225f58127bd3f29f23be15cc69fbbcc2d95",
+     "symbol": "_DECLARATION_DIRECTIVE"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/fragments/etype_desc.tsv",
+   "method": "extracted",
+   "sha256": "46919715d64d3da0ee2cf0d175a141a66d81a37c928059a36cfa750319e8b0e2",
+   "bytes": 732,
+   "upstream": [
+    {
+     "path": "judge/core/prompt_compose.py",
+     "sha256": "2a866760522c1a7fd4fce15dd7ec5225f58127bd3f29f23be15cc69fbbcc2d95",
+     "symbol": "_ETYPE_DESC"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/fragments/feedback_marker.txt",
+   "method": "extracted",
+   "sha256": "ee27d2e37a6c228f2549fd8b42c809bb1f26dfb350de7547b894bd0a4433c5f7",
+   "bytes": 54,
+   "upstream": [
+    {
+     "path": "judge/core/package_inputs.py",
+     "sha256": "ee3488b4da862267cbef4560432c8ea7477c9fe70547737445f7f022b82e7c8e",
+     "symbol": "FEEDBACK_MARKER"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/fragments/rubric_directive.txt",
+   "method": "extracted",
+   "sha256": "bd478d5bbe83d23748b1f3338e4a71cc03e03e729da212b92f05754655d16145",
+   "bytes": 717,
+   "upstream": [
+    {
+     "path": "judge/core/prompt_compose.py",
+     "sha256": "2a866760522c1a7fd4fce15dd7ec5225f58127bd3f29f23be15cc69fbbcc2d95",
+     "symbol": "rubric_directive()"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/fragments/rubric_sep.txt",
+   "method": "extracted",
+   "sha256": "ad1af52e2872615af2fa5e2f98419639145253a3fa6cfd93f4b62bdf1318c160",
+   "bytes": 7,
+   "upstream": [
+    {
+     "path": "judge/core/prompt_compose.py",
+     "sha256": "2a866760522c1a7fd4fce15dd7ec5225f58127bd3f29f23be15cc69fbbcc2d95",
+     "symbol": "compose: separator before the rubric directive"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/fragments/sep.txt",
+   "method": "extracted",
+   "sha256": "8ec24e7af879b230356ef99c84d08c2b8d692a1b32d58ffd017f231e0abaeeb1",
+   "bytes": 51,
+   "upstream": [
+    {
+     "path": "judge/core/prompt_compose.py",
+     "sha256": "2a866760522c1a7fd4fce15dd7ec5225f58127bd3f29f23be15cc69fbbcc2d95",
+     "symbol": "_SEP"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/fragments/task_heading.txt",
+   "method": "extracted",
+   "sha256": "a4780ab2b562d6a623856920cdda9becfaef16b0871cf00c1e0fefa9db2b04ec",
+   "bytes": 46,
+   "upstream": [
+    {
+     "path": "judge/adapters/harbor_generic.py",
+     "sha256": "a99248ccf49cfd5b3235fa936daa23f7e56aa7c5129476c4f6e449a6cd7734ce",
+     "symbol": "package_task: task heading literal"
+    },
+    {
+     "path": "judge/adapters/tb4.py",
+     "sha256": "99c9d5604998799d36b797d3ff6b4eb0fbc341ebcf12d37ae14614ab223dfaad",
+     "symbol": "package_task: task heading literal"
+    },
+    {
+     "path": "judge/adapters/tbsci.py",
+     "sha256": "89aa19977a257bbe63805e87c5c5726bdb0d930f88753724f615c8c098a3db8d",
+     "symbol": "package_task: task heading literal"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/probe_core.py",
+   "method": "verbatim-code",
+   "sha256": "0708ee86d801de2adac4b11c1c5fabe0ef4560148a8b1534a699e89eddcf6d33",
+   "bytes": 7710,
+   "upstream": [
+    {
+     "path": "judge/core/probe_core.py",
+     "sha256": "f8b2d66be134a5b55885678243505235bffff3bcb37eaf30ee1b138efea8629a"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/prompts/contracts/harbor_generic.txt",
+   "method": "verbatim",
+   "sha256": "77502f3a9992a61444256a7797ab0baf5583f6e48b07c72a3fe003ce50449af2",
+   "bytes": 1144,
+   "upstream": [
+    {
+     "path": "judge/prompts/contracts/harbor_generic.txt",
+     "sha256": "77502f3a9992a61444256a7797ab0baf5583f6e48b07c72a3fe003ce50449af2"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/prompts/contracts/metabench_pair.txt",
+   "method": "verbatim",
+   "sha256": "3b617ac87cc94eebb52cc60ccb0d0a6ef8b405b8a17dfb66ab90548769492e39",
+   "bytes": 745,
+   "upstream": [
+    {
+     "path": "judge/prompts/contracts/metabench_pair.txt",
+     "sha256": "3b617ac87cc94eebb52cc60ccb0d0a6ef8b405b8a17dfb66ab90548769492e39"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/prompts/contracts/swe_verified.txt",
+   "method": "verbatim",
+   "sha256": "ed6af6d45f1382865aa7c32aca63266d44281761206ce2dee389409762d4cd29",
+   "bytes": 4080,
+   "upstream": [
+    {
+     "path": "judge/prompts/contracts/swe_verified.txt",
+     "sha256": "ed6af6d45f1382865aa7c32aca63266d44281761206ce2dee389409762d4cd29"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/prompts/contracts/tau2.txt",
+   "method": "verbatim",
+   "sha256": "915031c76e75da07cdea4fecdf2023e12b8991690546143664ce283748db4c10",
+   "bytes": 1287,
+   "upstream": [
+    {
+     "path": "judge/prompts/contracts/tau2.txt",
+     "sha256": "915031c76e75da07cdea4fecdf2023e12b8991690546143664ce283748db4c10"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/prompts/contracts/tb4.txt",
+   "method": "verbatim",
+   "sha256": "77502f3a9992a61444256a7797ab0baf5583f6e48b07c72a3fe003ce50449af2",
+   "bytes": 1144,
+   "upstream": [
+    {
+     "path": "judge/prompts/contracts/tb4.txt",
+     "sha256": "77502f3a9992a61444256a7797ab0baf5583f6e48b07c72a3fe003ce50449af2"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/prompts/contracts/tbsci.txt",
+   "method": "verbatim",
+   "sha256": "d42117a4ff1e36cd214ab5b3fda092e5cec01604af6d41148bef5bdb529a0377",
+   "bytes": 1307,
+   "upstream": [
+    {
+     "path": "judge/prompts/contracts/tbsci.txt",
+     "sha256": "d42117a4ff1e36cd214ab5b3fda092e5cec01604af6d41148bef5bdb529a0377"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/prompts/core_manual.txt",
+   "method": "verbatim",
+   "sha256": "6a0b3cff245a7d7100f049fa5c7fb7f16ea5756b0c2516ab0a2299da1bfb0456",
+   "bytes": 2813,
+   "upstream": [
+    {
+     "path": "judge/prompts/core_manual.txt",
+     "sha256": "6a0b3cff245a7d7100f049fa5c7fb7f16ea5756b0c2516ab0a2299da1bfb0456"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/prompts/evidence_header.txt",
+   "method": "verbatim",
+   "sha256": "8a3cecb8220d9ba34f3dfb5434317f26e2f27091d194131f787aa34d0a4c120f",
+   "bytes": 804,
+   "upstream": [
+    {
+     "path": "judge/prompts/evidence_header.txt",
+     "sha256": "8a3cecb8220d9ba34f3dfb5434317f26e2f27091d194131f787aa34d0a4c120f"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/method/prompts/frozen_evh1/evidence_header.txt",
+   "method": "verbatim",
+   "sha256": "a9450dd8a5db66ef32a5b6bad23e7c00d527180b5f4ce5110e02894de24437ab",
+   "bytes": 646,
+   "upstream": [
+    {
+     "root": "$GAVEL_SEALED",
+     "path": "prompts/frozen_evh1/evidence_header.txt",
+     "sha256": "a9450dd8a5db66ef32a5b6bad23e7c00d527180b5f4ce5110e02894de24437ab"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/cli_extra/claude_code.sh",
+   "method": "extracted",
+   "sha256": "9bd6fb4996c34f937b41e99e473e777034d267c23aeb215f6af9c4d5e0bbe726",
+   "bytes": 83,
+   "upstream": [
+    {
+     "path": "judge/adapters/harbor_generic.py",
+     "sha256": "a99248ccf49cfd5b3235fa936daa23f7e56aa7c5129476c4f6e449a6cd7734ce",
+     "symbol": "package_task: block for VERITAS_TB_CLI_EXTRA=claude"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/cli_extra/gemini.sh",
+   "method": "extracted",
+   "sha256": "bd8266191a6f2eea247ef1706c6ba619140398e7784e6c6e3c0eb3d9934b01f7",
+   "bytes": 75,
+   "upstream": [
+    {
+     "path": "judge/adapters/harbor_generic.py",
+     "sha256": "a99248ccf49cfd5b3235fa936daa23f7e56aa7c5129476c4f6e449a6cd7734ce",
+     "symbol": "package_task: block for VERITAS_TB_CLI_EXTRA=gemini"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/cli_extra/pi.sh",
+   "method": "extracted",
+   "sha256": "82406f3721c74dffa7549c62dfe75f523747a93ce3ff827a6b7a2dbb1a419636",
+   "bytes": 84,
+   "upstream": [
+    {
+     "path": "judge/adapters/harbor_generic.py",
+     "sha256": "a99248ccf49cfd5b3235fa936daa23f7e56aa7c5129476c4f6e449a6cd7734ce",
+     "symbol": "package_task: block for VERITAS_TB_CLI_EXTRA=pi"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/cli_extra/tmux.sh",
+   "method": "extracted",
+   "sha256": "add5544dfe1d56d99bfb6cb693860b8f52807e393a05c99fc9966d60df36b6fd",
+   "bytes": 54,
+   "upstream": [
+    {
+     "path": "judge/adapters/harbor_generic.py",
+     "sha256": "a99248ccf49cfd5b3235fa936daa23f7e56aa7c5129476c4f6e449a6cd7734ce",
+     "symbol": "package_task: block for VERITAS_TB_CLI_EXTRA=tmux"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/evidence_capture.sh",
+   "method": "extracted",
+   "sha256": "d7de2737278ad379d2f420461a512bbb6dbdaa019ba3a15e1c735740f55c8204",
+   "bytes": 2241,
+   "upstream": [
+    {
+     "path": "judge/core/task_transform.py",
+     "sha256": "d9cf6de5b21d796da86005b885582af65666619e7bf734f0b2f31cad0518ce46",
+     "symbol": "EVIDENCE_CAPTURE_SH"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/execution_status.py",
+   "method": "verbatim",
+   "sha256": "8bafefd8e1eed915f0dc289ef7462f297d0ca19e74f309b8581eb3f446d83e34",
+   "bytes": 4924,
+   "upstream": [
+    {
+     "path": "harbor_integration/verifier_execution.py",
+     "sha256": "8bafefd8e1eed915f0dc289ef7462f297d0ca19e74f309b8581eb3f446d83e34"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/harbor_generic_task.toml.tmpl",
+   "method": "extracted",
+   "sha256": "397e4a9c2f662ab3c93ef8318dc8dcdfbf71b5af720a721cce379b920a579b86",
+   "bytes": 236,
+   "upstream": [
+    {
+     "path": "judge/adapters/harbor_generic.py",
+     "sha256": "a99248ccf49cfd5b3235fa936daa23f7e56aa7c5129476c4f6e449a6cd7734ce",
+     "symbol": "_TASK_TOML"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/task_md_block.sh",
+   "method": "extracted",
+   "sha256": "6ce69876aa3f1e1c20c3c411b29fad98f705633d6c1c6f7cfa90630be3914601",
+   "bytes": 58,
+   "upstream": [
+    {
+     "path": "judge/adapters/harbor_generic.py",
+     "sha256": "a99248ccf49cfd5b3235fa936daa23f7e56aa7c5129476c4f6e449a6cd7734ce",
+     "symbol": "package_task: TASK.md Dockerfile block"
+    },
+    {
+     "path": "judge/adapters/tb4.py",
+     "sha256": "99c9d5604998799d36b797d3ff6b4eb0fbc341ebcf12d37ae14614ab223dfaad",
+     "symbol": "package_task: TASK.md Dockerfile block"
+    },
+    {
+     "path": "judge/adapters/tbsci.py",
+     "sha256": "89aa19977a257bbe63805e87c5c5726bdb0d930f88753724f615c8c098a3db8d",
+     "symbol": "package_task: TASK.md Dockerfile block"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/tb4_cn_mirror.sh",
+   "method": "extracted",
+   "sha256": "051cb8b67302bea88bd1fdfd6173fd2808a1b5c9563dd263ee6ac68a5d9e53e7",
+   "bytes": 242,
+   "upstream": [
+    {
+     "path": "judge/adapters/tb4.py",
+     "sha256": "99c9d5604998799d36b797d3ff6b4eb0fbc341ebcf12d37ae14614ab223dfaad",
+     "symbol": "package_task: CN mirror RUN line"
+    },
+    {
+     "path": "judge/adapters/harbor_generic.py",
+     "sha256": "a99248ccf49cfd5b3235fa936daa23f7e56aa7c5129476c4f6e449a6cd7734ce",
+     "symbol": "package_task: CN mirror RUN line"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/tb4_install_block.sh",
+   "method": "extracted",
+   "sha256": "16be55baa78ddce7398bc14d0df0f42c4f38122682405d260f5c31455cceda5d",
+   "bytes": 546,
+   "upstream": [
+    {
+     "path": "judge/adapters/tb4.py",
+     "sha256": "99c9d5604998799d36b797d3ff6b4eb0fbc341ebcf12d37ae14614ab223dfaad",
+     "symbol": "_INSTALL_BLOCK"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/tb4_probe_spec.json",
+   "method": "extracted",
+   "sha256": "615ad706b948ed23e5abeb7e6d7faa70c614637f30b50c930e25dedd9b3f6d21",
+   "bytes": 561,
+   "upstream": [
+    {
+     "path": "judge/adapters/tb4.py",
+     "sha256": "99c9d5604998799d36b797d3ff6b4eb0fbc341ebcf12d37ae14614ab223dfaad",
+     "symbol": "probe_spec()"
+    },
+    {
+     "path": "judge/adapters/tbsci.py",
+     "sha256": "89aa19977a257bbe63805e87c5c5726bdb0d930f88753724f615c8c098a3db8d",
+     "symbol": "probe_spec()"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/tb4_task.toml.tmpl",
+   "method": "extracted",
+   "sha256": "00ac81ffeca8addc7dbc4e18fd893b7b2ec9f9c4cf23648f86b3c125d671d3ac",
+   "bytes": 230,
+   "upstream": [
+    {
+     "path": "judge/adapters/tb4.py",
+     "sha256": "99c9d5604998799d36b797d3ff6b4eb0fbc341ebcf12d37ae14614ab223dfaad",
+     "symbol": "_TASK_TOML"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/tb4_test.sh",
+   "method": "extracted",
+   "sha256": "efc7c1d4da3966b249446bc12f43dc2bac69d5b7b3902a68251f313b6460d4ad",
+   "bytes": 620,
+   "upstream": [
+    {
+     "path": "judge/adapters/tb4.py",
+     "sha256": "99c9d5604998799d36b797d3ff6b4eb0fbc341ebcf12d37ae14614ab223dfaad",
+     "symbol": "_TEST_SH"
+    },
+    {
+     "path": "judge/adapters/tbsci.py",
+     "sha256": "89aa19977a257bbe63805e87c5c5726bdb0d930f88753724f615c8c098a3db8d",
+     "symbol": "_TEST_SH"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/tbsci_final_from.regex",
+   "method": "extracted",
+   "sha256": "3e478fd7bfe76a302293b9ea4945af5c7bd5db8db1a39a6791386175d68979c4",
+   "bytes": 32,
+   "upstream": [
+    {
+     "path": "judge/adapters/tbsci.py",
+     "sha256": "89aa19977a257bbe63805e87c5c5726bdb0d930f88753724f615c8c098a3db8d",
+     "symbol": "_inject_after_final_from: FROM-line pattern (re.I)"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/tbsci_install_block.sh",
+   "method": "extracted",
+   "sha256": "2b65ea4fe2c3d8efcef5a4834ddd14874c55e9afb81d53a49e2dcb6a3086e745",
+   "bytes": 548,
+   "upstream": [
+    {
+     "path": "judge/adapters/tbsci.py",
+     "sha256": "89aa19977a257bbe63805e87c5c5726bdb0d930f88753724f615c8c098a3db8d",
+     "symbol": "_INSTALL_BLOCK"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/tbsci_mirror.sh",
+   "method": "extracted",
+   "sha256": "c4c5a67ce7059aaf3702607431f8125e4837d412d144764704619c8f9f6b573c",
+   "bytes": 542,
+   "upstream": [
+    {
+     "path": "judge/adapters/tbsci.py",
+     "sha256": "89aa19977a257bbe63805e87c5c5726bdb0d930f88753724f615c8c098a3db8d",
+     "symbol": "_MIRROR"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/tbsci_task.toml.tmpl",
+   "method": "extracted",
+   "sha256": "f8bd04f4308a7cff8be4fbee3b84373c8c01e10d79848ab385e5c9f44715d173",
+   "bytes": 240,
+   "upstream": [
+    {
+     "path": "judge/adapters/tbsci.py",
+     "sha256": "89aa19977a257bbe63805e87c5c5726bdb0d930f88753724f615c8c098a3db8d",
+     "symbol": "_TASK_TOML"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/paradigms/assets/usage_harvest.sh",
+   "method": "extracted",
+   "sha256": "c180b4845f48d862cdd81db6d0462d3dc965f3550940aae58208395f43063c78",
+   "bytes": 937,
+   "upstream": [
+    {
+     "path": "judge/core/task_transform.py",
+     "sha256": "d9cf6de5b21d796da86005b885582af65666619e7bf734f0b2f31cad0518ce46",
+     "symbol": "USAGE_HARVEST_SH"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/build.py",
+   "method": "ported",
+   "upstream": [
+    {
+     "path": "judge/rubric/build.py",
+     "sha256": "6f057646d2402d80fc8791a20527a425048d380088c52f392c224aaf896e8786"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/cli.py",
+   "method": "ported",
+   "upstream": [
+    {
+     "path": "judge/rubric/cli.py",
+     "sha256": "9dcf42f08a543baf66939d45ec8eae54b06aff7d2c404550bf63a7d0f17afb3e"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/ingest.py",
+   "method": "verbatim",
+   "sha256": "529e4f36c81bd9d3f671c1d2edf557b92a562ce7f8972c84669ca013084c7fc8",
+   "bytes": 5513,
+   "upstream": [
+    {
+     "path": "judge/rubric/ingest.py",
+     "sha256": "529e4f36c81bd9d3f671c1d2edf557b92a562ce7f8972c84669ca013084c7fc8"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library.py",
+   "method": "verbatim",
+   "sha256": "1d5a79d27cf9ed9fa33323771cea6422a8216425cb68d5f55d3dfe5176ba68a8",
+   "bytes": 14346,
+   "upstream": [
+    {
+     "path": "judge/rubric/library.py",
+     "sha256": "1d5a79d27cf9ed9fa33323771cea6422a8216425cb68d5f55d3dfe5176ba68a8"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/airline_ops/INDEX.tsv",
+   "method": "verbatim",
+   "sha256": "0bfefd576a5e9834359456b479bd49148796a247697200f755a4fb2515faa33e",
+   "bytes": 10721,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/airline_ops/INDEX.tsv",
+     "sha256": "0bfefd576a5e9834359456b479bd49148796a247697200f755a4fb2515faa33e"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/airline_ops/README.md",
+   "method": "verbatim",
+   "sha256": "9a8913a5b800dcc5f286355cb72e9068f9d6f87f5b22410ec660ce4b1cc27479",
+   "bytes": 368,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/airline_ops/README.md",
+     "sha256": "9a8913a5b800dcc5f286355cb72e9068f9d6f87f5b22410ec660ce4b1cc27479"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/airline_ops/service-assertions.md",
+   "method": "verbatim",
+   "sha256": "4a31131bf822330e99ccc06d994700171f2b4d4d1adc0c6110bae519f6d52dd8",
+   "bytes": 11725,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/airline_ops/service-assertions.md",
+     "sha256": "4a31131bf822330e99ccc06d994700171f2b4d4d1adc0c6110bae519f6d52dd8"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/banking_ops/INDEX.tsv",
+   "method": "verbatim",
+   "sha256": "57ba9509fce663cd699d5cf1fdfafd4570c6174d8e41844db54563de06897fa9",
+   "bytes": 115724,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/banking_ops/INDEX.tsv",
+     "sha256": "57ba9509fce663cd699d5cf1fdfafd4570c6174d8e41844db54563de06897fa9"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/banking_ops/README.md",
+   "method": "verbatim",
+   "sha256": "44f38c38e408a0be7413610da0516496dc462984d5354fe36f635f81b8f6db5f",
+   "bytes": 1237,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/banking_ops/README.md",
+     "sha256": "44f38c38e408a0be7413610da0516496dc462984d5354fe36f635f81b8f6db5f"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/banking_ops/bank-accounts.md",
+   "method": "verbatim",
+   "sha256": "54749b019fca02abf228044a64b54cfd2632a14d68e84ca8a4a03fbd225c1a77",
+   "bytes": 122906,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/banking_ops/bank-accounts.md",
+     "sha256": "54749b019fca02abf228044a64b54cfd2632a14d68e84ca8a4a03fbd225c1a77"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/banking_ops/business-checking-accounts.md",
+   "method": "verbatim",
+   "sha256": "4ef2666e588a859a36258de6732121fe1122ed64d27b3eb1be87bde825581b61",
+   "bytes": 120591,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/banking_ops/business-checking-accounts.md",
+     "sha256": "4ef2666e588a859a36258de6732121fe1122ed64d27b3eb1be87bde825581b61"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/banking_ops/business-credit-cards.md",
+   "method": "verbatim",
+   "sha256": "2d5a20885de521617d6d9098ba278441f426e4f44fac68a54484af1380148123",
+   "bytes": 91613,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/banking_ops/business-credit-cards.md",
+     "sha256": "2d5a20885de521617d6d9098ba278441f426e4f44fac68a54484af1380148123"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/banking_ops/business-savings-accounts.md",
+   "method": "verbatim",
+   "sha256": "fff07067b47f59743e2056331ffbd394c3738edddd98a27e9a639c669e3edc63",
+   "bytes": 101454,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/banking_ops/business-savings-accounts.md",
+     "sha256": "fff07067b47f59743e2056331ffbd394c3738edddd98a27e9a639c669e3edc63"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/banking_ops/buy-now.md",
+   "method": "verbatim",
+   "sha256": "094e1ccf40de3808c1a24dbe64c12d0525a58b8fa9d166edd79e2781a6800f23",
+   "bytes": 53994,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/banking_ops/buy-now.md",
+     "sha256": "094e1ccf40de3808c1a24dbe64c12d0525a58b8fa9d166edd79e2781a6800f23"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/banking_ops/checking-accounts.md",
+   "method": "verbatim",
+   "sha256": "3a8d7dd96c190aff2e54c9d3a6468fa3e7b2e9e07c7a4673526d14e889012137",
+   "bytes": 142281,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/banking_ops/checking-accounts.md",
+     "sha256": "3a8d7dd96c190aff2e54c9d3a6468fa3e7b2e9e07c7a4673526d14e889012137"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/banking_ops/credit-cards.md",
+   "method": "verbatim",
+   "sha256": "7e8d3dfb02146c64a2675bb7abcf85a16bd52a7c3079d908af3d0d8c6e2250a7",
+   "bytes": 171827,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/banking_ops/credit-cards.md",
+     "sha256": "7e8d3dfb02146c64a2675bb7abcf85a16bd52a7c3079d908af3d0d8c6e2250a7"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/banking_ops/customer-support.md",
+   "method": "verbatim",
+   "sha256": "9789ce7c8c2155f73ed9ad3e0a57666387ea56b20ad2c595188e2f58a7067d42",
+   "bytes": 2834,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/banking_ops/customer-support.md",
+     "sha256": "9789ce7c8c2155f73ed9ad3e0a57666387ea56b20ad2c595188e2f58a7067d42"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/banking_ops/everyone-pay.md",
+   "method": "verbatim",
+   "sha256": "6002676240eb5e3ab164a324b83b7783da80fee542a3485e61522d13d8c2a7b8",
+   "bytes": 51965,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/banking_ops/everyone-pay.md",
+     "sha256": "6002676240eb5e3ab164a324b83b7783da80fee542a3485e61522d13d8c2a7b8"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/banking_ops/personal-subscriptions.md",
+   "method": "verbatim",
+   "sha256": "c7d13d483bee9e0b2c37a8137cb96835c7418c832b9ab2b06d2142dae4e8a6ec",
+   "bytes": 3880,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/banking_ops/personal-subscriptions.md",
+     "sha256": "c7d13d483bee9e0b2c37a8137cb96835c7418c832b9ab2b06d2142dae4e8a6ec"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/banking_ops/savings-accounts.md",
+   "method": "verbatim",
+   "sha256": "4f06c218e0b32d08022110c37f6884ce55b45aac44f57c8dda1c3f1a65f26db4",
+   "bytes": 81448,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/banking_ops/savings-accounts.md",
+     "sha256": "4f06c218e0b32d08022110c37f6884ce55b45aac44f57c8dda1c3f1a65f26db4"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/build_audit.json",
+   "method": "verbatim",
+   "sha256": "70efc5581226d53dae831a8bc20fc9d95dec030aa033e08877ade198d0af680e",
+   "bytes": 1022,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/build_audit.json",
+     "sha256": "70efc5581226d53dae831a8bc20fc9d95dec030aa033e08877ade198d0af680e"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance/INDEX.tsv",
+   "method": "verbatim",
+   "sha256": "8bb950ca3b90a50185488a2b61d39f49f079b2c41d46792feb866c3210236cbd",
+   "bytes": 1259931,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance/INDEX.tsv",
+     "sha256": "8bb950ca3b90a50185488a2b61d39f49f079b2c41d46792feb866c3210236cbd"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance/README.md",
+   "method": "verbatim",
+   "sha256": "7bda079419abdcdc6b43c00b0b36e4a87af5e7836c7da8aea6e7401dfd6afa9e",
+   "bytes": 996,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance/README.md",
+     "sha256": "7bda079419abdcdc6b43c00b0b36e4a87af5e7836c7da8aea6e7401dfd6afa9e"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance/financial-accuracy.md",
+   "method": "verbatim",
+   "sha256": "25cda552398805858038c9d1ff599b595019af2fb11aed4c2ea62683541fcb82",
+   "bytes": 459090,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance/financial-accuracy.md",
+     "sha256": "25cda552398805858038c9d1ff599b595019af2fb11aed4c2ea62683541fcb82"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance/handling-uncertainty.md",
+   "method": "verbatim",
+   "sha256": "7994db99bac1d4a8a3d6ce5012d0571b63c6683cd1bc0d806297b9082d8dc8bb",
+   "bytes": 125602,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance/handling-uncertainty.md",
+     "sha256": "7994db99bac1d4a8a3d6ce5012d0571b63c6683cd1bc0d806297b9082d8dc8bb"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance/instruction-following.md",
+   "method": "verbatim",
+   "sha256": "46c5d9dcb0b6c935c2fe49b3d20aebcad30b17a33a19f90329e570b7f4987a6a",
+   "bytes": 89726,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance/instruction-following.md",
+     "sha256": "46c5d9dcb0b6c935c2fe49b3d20aebcad30b17a33a19f90329e570b7f4987a6a"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance/practical-utility.md",
+   "method": "verbatim",
+   "sha256": "e137b64e45c9e75d50b53323d228f1e2bcd17186e7e378f489c81399b2d07d82",
+   "bytes": 435632,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance/practical-utility.md",
+     "sha256": "e137b64e45c9e75d50b53323d228f1e2bcd17186e7e378f489c81399b2d07d82"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance/process-transparency-auditability.md",
+   "method": "verbatim",
+   "sha256": "82679238200a0b8c70b6e89ea53e0b93a2bf4e5ad733e8328452c82636ec39b3",
+   "bytes": 129889,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance/process-transparency-auditability.md",
+     "sha256": "82679238200a0b8c70b6e89ea53e0b93a2bf4e5ad733e8328452c82636ec39b3"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance/risk-regulatory-disclosure.md",
+   "method": "verbatim",
+   "sha256": "a2c82203c934a9e3bb32ff3ccc30d62b8fa41770f7b0f56ad3828418af9ec666",
+   "bytes": 415892,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance/risk-regulatory-disclosure.md",
+     "sha256": "a2c82203c934a9e3bb32ff3ccc30d62b8fa41770f7b0f56ad3828418af9ec666"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance/supplemental-insight.md",
+   "method": "verbatim",
+   "sha256": "2eab8a4771e2dd144543065ad809d7053bef67d23d50e76f4b7a90e822fb86c9",
+   "bytes": 57226,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance/supplemental-insight.md",
+     "sha256": "2eab8a4771e2dd144543065ad809d7053bef67d23d50e76f4b7a90e822fb86c9"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance_hard/INDEX.tsv",
+   "method": "verbatim",
+   "sha256": "341c22eb6061b2f9e0d7f3f6920b7eb2b6db08cd40d2bd5bb3cb2dcae8c059e8",
+   "bytes": 1339372,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance_hard/INDEX.tsv",
+     "sha256": "341c22eb6061b2f9e0d7f3f6920b7eb2b6db08cd40d2bd5bb3cb2dcae8c059e8"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance_hard/README.md",
+   "method": "verbatim",
+   "sha256": "1310447ed0de15b989547be6ef3fe8c6ae82a4f7afd3b5389aa05c6197514b74",
+   "bytes": 1002,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance_hard/README.md",
+     "sha256": "1310447ed0de15b989547be6ef3fe8c6ae82a4f7afd3b5389aa05c6197514b74"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance_hard/financial-accuracy.md",
+   "method": "verbatim",
+   "sha256": "6409b3fe3a056f4c87ce4d94797e104048389ac98991af39369ca5417db15706",
+   "bytes": 492975,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance_hard/financial-accuracy.md",
+     "sha256": "6409b3fe3a056f4c87ce4d94797e104048389ac98991af39369ca5417db15706"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance_hard/handling-uncertainty.md",
+   "method": "verbatim",
+   "sha256": "48e44eb4a723c32d48427666c0582d190e47f543dba6bf7023c73966105fac72",
+   "bytes": 129117,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance_hard/handling-uncertainty.md",
+     "sha256": "48e44eb4a723c32d48427666c0582d190e47f543dba6bf7023c73966105fac72"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance_hard/instruction-following.md",
+   "method": "verbatim",
+   "sha256": "4b86a04e877817224a877af58cd0b68fb25cdfe1cc4b9ce2caf4798c53c088bf",
+   "bytes": 100563,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance_hard/instruction-following.md",
+     "sha256": "4b86a04e877817224a877af58cd0b68fb25cdfe1cc4b9ce2caf4798c53c088bf"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance_hard/practical-utility.md",
+   "method": "verbatim",
+   "sha256": "54a1de00a3ac793ebdb1534343fedf8b9a18a65f60136ee9f158bf775bd37508",
+   "bytes": 437680,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance_hard/practical-utility.md",
+     "sha256": "54a1de00a3ac793ebdb1534343fedf8b9a18a65f60136ee9f158bf775bd37508"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance_hard/process-transparency-auditability.md",
+   "method": "verbatim",
+   "sha256": "40be4ac6d0be194be69f3b859622101bb2b7fe7c133f0d52eac5713c887b38e9",
+   "bytes": 175643,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance_hard/process-transparency-auditability.md",
+     "sha256": "40be4ac6d0be194be69f3b859622101bb2b7fe7c133f0d52eac5713c887b38e9"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance_hard/risk-regulatory-disclosure.md",
+   "method": "verbatim",
+   "sha256": "988fd408e473d78a8db1138964ae0fd35f2b8f1e8dd5f54f7455a269c7ec3c10",
+   "bytes": 405556,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance_hard/risk-regulatory-disclosure.md",
+     "sha256": "988fd408e473d78a8db1138964ae0fd35f2b8f1e8dd5f54f7455a269c7ec3c10"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/finance_hard/supplemental-insight.md",
+   "method": "verbatim",
+   "sha256": "8d6a7838361d84c6bc20e26bb0074edf6f15f34a2ea0a81cf9100e066243adaf",
+   "bytes": 61479,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/finance_hard/supplemental-insight.md",
+     "sha256": "8d6a7838361d84c6bc20e26bb0074edf6f15f34a2ea0a81cf9100e066243adaf"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal/INDEX.tsv",
+   "method": "verbatim",
+   "sha256": "0dbc031425692c15c2e9ee8124907d20d521204393e1d3a80e62002e702e2b60",
+   "bytes": 1045060,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal/INDEX.tsv",
+     "sha256": "0dbc031425692c15c2e9ee8124907d20d521204393e1d3a80e62002e702e2b60"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal/README.md",
+   "method": "verbatim",
+   "sha256": "78a84ff30467e1376155d5deb692ff9c7abbc582e4033ad75d65ca9d44eb7cf5",
+   "bytes": 1069,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal/README.md",
+     "sha256": "78a84ff30467e1376155d5deb692ff9c7abbc582e4033ad75d65ca9d44eb7cf5"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal/application-of-law-to-the-facts.md",
+   "method": "verbatim",
+   "sha256": "edf696b810fb240e21828cc06b0ce357c0f8bcb666c8e702b6e952db02870476",
+   "bytes": 174108,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal/application-of-law-to-the-facts.md",
+     "sha256": "edf696b810fb240e21828cc06b0ce357c0f8bcb666c8e702b6e952db02870476"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal/handling-uncertainty.md",
+   "method": "verbatim",
+   "sha256": "6999e6a3e8b7abfb5e311d0e3c13624729c3ed027fa4b596e9d8b48b56062fb7",
+   "bytes": 30902,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal/handling-uncertainty.md",
+     "sha256": "6999e6a3e8b7abfb5e311d0e3c13624729c3ed027fa4b596e9d8b48b56062fb7"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal/instruction-following.md",
+   "method": "verbatim",
+   "sha256": "d0fb0a484f158b5e8f4789e6277d27d2e225e56c6419199e6f6948e78b90d113",
+   "bytes": 44006,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal/instruction-following.md",
+     "sha256": "d0fb0a484f158b5e8f4789e6277d27d2e225e56c6419199e6f6948e78b90d113"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal/legal-accuracy.md",
+   "method": "verbatim",
+   "sha256": "82891a35c1153e753879a4b363dd9928048ea6912a1e31d83673b2241658a983",
+   "bytes": 711149,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal/legal-accuracy.md",
+     "sha256": "82891a35c1153e753879a4b363dd9928048ea6912a1e31d83673b2241658a983"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal/practical-utility.md",
+   "method": "verbatim",
+   "sha256": "ba1867631f9756e014717df7422388e3f7d71cc57a20fb600bb2943504896a93",
+   "bytes": 254124,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal/practical-utility.md",
+     "sha256": "ba1867631f9756e014717df7422388e3f7d71cc57a20fb600bb2943504896a93"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal/procedural-correctness.md",
+   "method": "verbatim",
+   "sha256": "30184504712b38f40160967835584e638f668e1b5b612ada5840d8c1f7a8893d",
+   "bytes": 84707,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal/procedural-correctness.md",
+     "sha256": "30184504712b38f40160967835584e638f668e1b5b612ada5840d8c1f7a8893d"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal/risk-ethical-disclosure.md",
+   "method": "verbatim",
+   "sha256": "b81439d004e3802e78bc7e27874cf261b9b63a5bba6303b1a5cce7717ec2b761",
+   "bytes": 57599,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal/risk-ethical-disclosure.md",
+     "sha256": "b81439d004e3802e78bc7e27874cf261b9b63a5bba6303b1a5cce7717ec2b761"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal/supplemental-insight.md",
+   "method": "verbatim",
+   "sha256": "3782fbf1311ab3c3e66ad62e9af057038755081efe669045202d997016a5c960",
+   "bytes": 123424,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal/supplemental-insight.md",
+     "sha256": "3782fbf1311ab3c3e66ad62e9af057038755081efe669045202d997016a5c960"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal_hard/INDEX.tsv",
+   "method": "verbatim",
+   "sha256": "1a439b5955036f1107f2fb6e19142ee8596e0d96ac3d0812d1579ab5260dcdc3",
+   "bytes": 1076725,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal_hard/INDEX.tsv",
+     "sha256": "1a439b5955036f1107f2fb6e19142ee8596e0d96ac3d0812d1579ab5260dcdc3"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal_hard/README.md",
+   "method": "verbatim",
+   "sha256": "dcbd86537cbad3a89f239f99a7bffe5c8880b5352a9d2de3fffb639885f125ea",
+   "bytes": 1075,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal_hard/README.md",
+     "sha256": "dcbd86537cbad3a89f239f99a7bffe5c8880b5352a9d2de3fffb639885f125ea"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal_hard/application-of-law-to-the-facts.md",
+   "method": "verbatim",
+   "sha256": "b9a32e1874d252384917f462179ea41b26e8166e53b0927841ef7ea2cdc350a3",
+   "bytes": 169878,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal_hard/application-of-law-to-the-facts.md",
+     "sha256": "b9a32e1874d252384917f462179ea41b26e8166e53b0927841ef7ea2cdc350a3"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal_hard/handling-uncertainty.md",
+   "method": "verbatim",
+   "sha256": "2522475c39effeb3a892b272c0be0bf328b1faa0a8fa88f5850ef72de2aa7cb0",
+   "bytes": 36311,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal_hard/handling-uncertainty.md",
+     "sha256": "2522475c39effeb3a892b272c0be0bf328b1faa0a8fa88f5850ef72de2aa7cb0"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal_hard/instruction-following.md",
+   "method": "verbatim",
+   "sha256": "debbfe662322714370c1de8b3aca09366353ff20fc5854367115b6fae6c474ec",
+   "bytes": 46650,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal_hard/instruction-following.md",
+     "sha256": "debbfe662322714370c1de8b3aca09366353ff20fc5854367115b6fae6c474ec"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal_hard/legal-accuracy.md",
+   "method": "verbatim",
+   "sha256": "c9c43a88844d1337c8740b11b2489590e10db3dde07d08a0eb0c9d08135d35cf",
+   "bytes": 759342,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal_hard/legal-accuracy.md",
+     "sha256": "c9c43a88844d1337c8740b11b2489590e10db3dde07d08a0eb0c9d08135d35cf"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal_hard/practical-utility.md",
+   "method": "verbatim",
+   "sha256": "33b23dfc665c78934294750e6d12d2cbc3933b562ad5cfaf04476deebe9871a8",
+   "bytes": 235247,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal_hard/practical-utility.md",
+     "sha256": "33b23dfc665c78934294750e6d12d2cbc3933b562ad5cfaf04476deebe9871a8"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal_hard/procedural-correctness.md",
+   "method": "verbatim",
+   "sha256": "989d3f3f61da5bdc46a636e087c4f74e75bb71c235b1e6d9f696343501db6d65",
+   "bytes": 98171,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal_hard/procedural-correctness.md",
+     "sha256": "989d3f3f61da5bdc46a636e087c4f74e75bb71c235b1e6d9f696343501db6d65"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal_hard/risk-ethical-disclosure.md",
+   "method": "verbatim",
+   "sha256": "2afc0b0b47cc37421cbc9f8ee862c20945d26b8bdd2c7544ce2fead8a8fa1f45",
+   "bytes": 53544,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal_hard/risk-ethical-disclosure.md",
+     "sha256": "2afc0b0b47cc37421cbc9f8ee862c20945d26b8bdd2c7544ce2fead8a8fa1f45"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/rubric/library_v1/legal_hard/supplemental-insight.md",
+   "method": "verbatim",
+   "sha256": "89edac759e6230510aeeb9957ecca8181d56b6f3d0ed97157d579ff6f88a0221",
+   "bytes": 114678,
+   "upstream": [
+    {
+     "path": "judge/rubric/library_v1/legal_hard/supplemental-insight.md",
+     "sha256": "89edac759e6230510aeeb9957ecca8181d56b6f3d0ed97157d579ff6f88a0221"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/run/executors/judge_codex.py",
+   "method": "verbatim-code",
+   "sha256": "cd4c19b50c3e21822defa262176adc2ceaa490c9e12fe58bba78130d7d13dda9",
+   "bytes": 2503,
+   "upstream": [
+    {
+     "path": "harbor_integration/judge_codex.py",
+     "sha256": "2dffac55e2f4c51612b2604c4b6daa221c57dd0d9d7768317fa93ec3c1d0a3a1"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/run/executors/judge_opencode.py",
+   "method": "verbatim-code",
+   "sha256": "1582e844ac7ed73391d8e5fb8c1f5b9595c5c90e30f2e91c1d45355dc8d960c2",
+   "bytes": 5014,
+   "upstream": [
+    {
+     "path": "harbor_integration/judge_opencode.py",
+     "sha256": "fd3143e1f920e50a9ea4290b658229018d308d09671aef4724a230ce76ef5fa3"
+    }
+   ]
+  },
+  {
+   "path": "src/gavel_harness/run/executors/judge_pi.py",
+   "method": "verbatim-code",
+   "sha256": "c92029b2899ae269ff8169adc0080417df8340321c2075adebbf23e9231c4eb1",
+   "bytes": 3918,
+   "upstream": [
+    {
+     "path": "harbor_integration/judge_pi.py",
+     "sha256": "eef501d05349791b8cd5c1974c280c38a85fcd764bbcc693adb4909d069dea5e"
+    }
+   ]
+  }
+ ]
+}

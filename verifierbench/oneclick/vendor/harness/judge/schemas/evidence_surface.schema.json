@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Judge-time evidence vocabulary surface",
+  "description": "Available input names and their evidence types; not criterion-to-check bindings. Adapters retain the legacy evidence_manifest.json filename. veritas/evidence-manifest/1 is accepted only as the historical surface identifier.",
+  "type": "object",
+  "required": ["schema", "judge_evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"enum": ["veritas/evidence-surface/1", "veritas/evidence-manifest/1"]},
+    "judge_evidence": {
+      "type": "object",
+      "additionalProperties": {
+        "enum": ["baseline.state", "process.action", "process.language", "process.interaction", "process.checkpoint", "final.artifact", "final.diff", "final.manifest", "final.container", "final.deps", "external.network", "derived.metrics"]
+      }
+    }
+  }
+}

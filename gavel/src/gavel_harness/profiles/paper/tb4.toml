@@ -1,0 +1,53 @@
+# Terminal-Bench 4.0, packaged exactly as the upstream tb4 adapter did.
+# With env = "cn-mirror" the packages are byte-identical to the 66 packages the
+# original harness generated its TB4 verifiers from.
+description = "Terminal-Bench 4.0: closed-book /app/verifier.sh in the task's own environment"
+paradigm = "terminal_state"
+contract = "tb4"
+# The original harness generated its TB4 verifiers with the earlier evidence-header
+# wording (inline in the upstream code at the time; byte-equal to frozen_evh1).
+wording = "frozen_evh1"
+env = "plain"
+package_prefix = "tb4"
+install_block = "tb4_install_block.sh"
+task_toml = "tb4_task.toml.tmpl"
+from_injection = "first"
+
+[evidence]
+testbed = "final.artifact"
+fs_manifest = "final.manifest"
+
+[timeouts]
+build_sec = 5400.0
+agent_sec = 7200.0
+verifier_sec = 300.0
+
+[intake]
+# Every source task ships tests/ and solution/; packages carry neither.
+# 11 tasks have a compose file (sidecar services) and one declares an MCP
+# server: the upstream adapter packaged them with environment/ copied whole
+# and its fixed task.toml, which carries no MCP server.
+strip_tests = true
+allow_compose = true
+allow_mcp_servers = true
+# 3 tasks request a GPU; the upstream adapter packaged them without one.
+allow_missing_gpus = true
+
+[anchor]
+# The TB4 verdict gate: the generated verifier ran in the packaged environment
+# image (CLI install block, USER root, WORKDIR /app), from /app, capped at 1800 s.
+image = "packaged"
+user = "root"
+workdir = "/app"
+network = "public"
+network_reason = "the TB4 verdict gate ran every generated verifier on docker's default bridge network; anchors stay comparable with its verdicts"
+timeout_sec = 1800.0
+swap = "none"
+# Images stay after the run: a rebuilt image can resolve other package
+# versions and flip oracle verdicts.
+keep_images = true
+
+[run]
+# The original harness's TB4 generation ended every agent command after 3900 s
+# (its Docker transport limit); 19 of its 66 trials reached it.
+agent_exec_cap_sec = 3900.0

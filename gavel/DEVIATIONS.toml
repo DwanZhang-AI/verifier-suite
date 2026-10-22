@@ -1,0 +1,720 @@
+# Behaviour differences between gavel-harness and the original harness it was
+# ported from. Paths under "upstream" are relative to the original harness root;
+# UPSTREAM.lock records which of its files this repository carries.
+#
+# Each [[deviation]] has:
+#   id, title
+#   category   infra-only             changes how a run is hosted or recorded; the
+#                                     prompt, the probe verdict and the anchor
+#                                     verdicts stay the same
+#              affects-generation     can change what the generating agent sees
+#                                     or produces
+#              affects-anchor-labels  can change a null, oracle or swap verdict
+#              affects-intake         changes which tasks or runs are accepted;
+#                                     accepted tasks are packaged as upstream
+#   upstream   what the original harness did, with its source
+#   shipped    what this repository does
+#   reason     why
+#   profile_keys   (optional) profile values that differ from the upstream setting
+#   package_files  (optional) files of a package built with one prompt switch
+#                  flipped that differ from the package built with the default
+#                  switches beyond the prompt, with its sha256
+
+schema = "gavel-harness/deviations/1"
+
+[[deviation]]
+id = "D01"
+title = "Package-source mirror rewrite off by default"
+category = "infra-only"
+upstream = """judge/adapters/tb4.py, judge/adapters/harbor_generic.py and \
+judge/adapters/tbsci.py inserted a block that points apt (and, for tbsci, pip \
+and Hugging Face) at mainland-China mirrors into every generation Dockerfile: \
+after the first FROM (tb4, harbor_generic) or after the final FROM (tbsci)."""
+shipped = """Every benchmark profile sets env = "plain", which inserts nothing. The \
+upstream blocks ship byte for byte in the cn-mirror environment profile; \
+`--env cn-mirror` reproduces the upstream packages."""
+reason = """The mirrors serve hosts in mainland China and slow down or break image \
+builds elsewhere. The rewrite changes where the generation image fetches \
+packages, not which packages the task's Dockerfile installs. Its effect on \
+anchor images is D02 and D03."""
+profile_keys = [
+    { profile = "gdpval", key = "env", upstream = "cn-mirror", shipped = "plain" },
+    { profile = "paper/generic", key = "env", upstream = "cn-mirror", shipped = "plain" },
+    { profile = "paper/tb4", key = "env", upstream = "cn-mirror", shipped = "plain" },
+    { profile = "paper/tbsci", key = "env", upstream = "cn-mirror", shipped = "plain" },
+]
+
+[[deviation]]
+id = "D02"
+title = "TB4 anchor image is built with the run's environment profile"
+category = "affects-anchor-labels"
+upstream = """The original harness's TB4 verdict gate built the judge image from the \
+environment of the packaged task, whose Dockerfile carries the mirror rewrite after \
+the first FROM, and ran the verifier in it with the network on."""
+shipped = """paper/tb4 [anchor] image = "packaged": the environment of the run's own \
+generation package, built with the run's environment profile (default plain, \
+no rewrite). With `--env cn-mirror` the environment equals the gate's."""
+reason = """Follows from D01. A rebuilt image can resolve different package \
+versions, and a verifier that installs packages while judging (network on) \
+reaches different package sources."""
+profile_keys = [
+    { profile = "paper/tb4", key = "env", upstream = "cn-mirror", shipped = "plain" },
+]
+
+[[deviation]]
+id = "D03"
+title = "TB-Science anchor image is the task's environment without the gate's mirror"
+category = "affects-anchor-labels"
+upstream = """The original harness's TB-Science verdict gate built the judge image \
+from the task's own environment with its mirror block inserted after the final FROM."""
+shipped = """paper/tbsci [anchor] image = "original": the input task's own \
+environment, which no environment profile rewrites."""
+reason = """An anchor judges the environment the task defines. The gate ran \
+offline, so the rewrite only changed where the image build fetched packages; \
+a rebuilt image can still resolve different versions."""
+
+[[deviation]]
+id = "D04"
+title = "GDPval anchors run offline"
+category = "affects-anchor-labels"
+upstream = """The original harness's validation step, which validated the GDPval \
+verifiers, started each container with `docker run` and no --network flag (docker's \
+default bridge, network on) and capped each verifier run at --timeout 2400."""
+shipped = """gdpval [anchor] network = "no-network" (Harbor's verifier \
+network_mode); image, user, working directory and the 2400 s cap are unchanged."""
+reason = """Owner decision: the verification phase runs offline, so a verdict \
+cannot depend on remote state. Harbor's per-phase network policy was checked to \
+give the agent phase network and the verifier phase none. A verifier that \
+fetches anything while judging gets a different verdict, so the validation \
+step's anchor labels are not comparable with these."""
+profile_keys = [
+    { profile = "gdpval", key = "anchor.network", upstream = "public", shipped = "no-network" },
+]
+
+[[deviation]]
+id = "D05"
+title = "Generic-profile anchors run offline with an 1800 s cap"
+category = "affects-anchor-labels"
+upstream = """The original harness's validation step for harbor_generic packages: \
+network on, --timeout 2400."""
+shipped = """paper/generic [anchor] network = "no-network", timeout_sec = 1800."""
+reason = """Offline: the owner decision of D04. 1800 s is the TB4 verdict gate's \
+cap, taken because the profile packages tasks as the TB4 adapter did; no \
+measurement chose it over the validation step's 2400 s."""
+profile_keys = [
+    { profile = "paper/generic", key = "anchor.network", upstream = "public", shipped = "no-network" },
+    { profile = "paper/generic", key = "anchor.timeout_sec", upstream = 2400.0, shipped = 1800.0 },
+]
+
+[[deviation]]
+id = "D06"
+title = "Declare mode captures the declaration in tests/test.sh"
+category = "infra-only"
+upstream = """With VERITAS_DECLARE=1 the tb4 and harbor_generic adapters changed only \
+the prompt; tests/test.sh stayed the probe, so no declaration came back through \
+the verifier channel. The upstream capture helper, add_evidence_capture() in \
+judge/core/task_transform.py, inserts the block after `mkdir -p "$V"` or else \
+appends it. For this probe (V=/app/verifier.sh, no such line) it would land \
+after the probe's early `exit 0` and write to /app/verifier.sh/evidence."""
+shipped = """The deliverable paradigm's declare mode runs the upstream block \
+(EVIDENCE_CAPTURE_SH, extracted byte for byte into \
+paradigms/assets/evidence_capture.sh) in a subshell with V=/logs/verifier, \
+right after the probe's `mkdir -p "$REWARD_DIR"`. gen_declaration.json and \
+material_TASK.md reach /logs/verifier/evidence on every probe path."""
+reason = """The certificate needs the declaration and the task material. The block only writes files; the probe's output and reward are \
+unchanged."""
+package_files = [
+    { paradigm = "deliverable", switch = "declare", path = "tests/test.sh", sha256 = "c77daeafb8fe7e2aa1dc50c38a9da11de4073e30c3ef910c87dc33b3d5a8a762" },
+]
+
+[[deviation]]
+id = "D07"
+title = "Declare mode: 600 s probe budget and the declaration as an artifact"
+category = "infra-only"
+upstream = """A declare-mode package kept the task.toml template unchanged: \
+[verifier] timeout_sec = 300.0 and artifacts = ["/app/verifier.sh"]."""
+shipped = """Profiles with a [declare] table (gdpval, paper/generic) set the \
+declare-mode probe budget to 600 s, and the deliverable paradigm adds \
+/app/declaration.json to artifacts."""
+reason = """The capture block of D06 has 330 s of capped steps, more than 300 s; \
+the probe verdict itself is a bash syntax check. The trial downloads the \
+declaration next to the verifier it describes, independent of the capture."""
+profile_keys = [
+    { profile = "gdpval", key = "declare.verifier_timeout_sec", upstream = 300.0, shipped = 600.0 },
+    { profile = "paper/generic", key = "declare.verifier_timeout_sec", upstream = 300.0, shipped = 600.0 },
+]
+package_files = [
+    { paradigm = "deliverable", switch = "declare", path = "task.toml", sha256 = "74a9a663297c95cb1eabcdc8602001299efbf3118601b893fe3f9a54b99dd38f" },
+]
+
+[[deviation]]
+id = "D08"
+title = "Declare mode only where the declaration comes back"
+category = "affects-intake"
+upstream = """VERITAS_DECLARE=1 appended the declaration directive for every adapter, \
+including tb4 and tbsci, without bringing the declaration back (see D06)."""
+shipped = """The package builder refuses declare mode in the terminal_state paradigm and for \
+profiles without a [declare] table (paper/tb4, paper/tbsci). `gavel-harness gen` and `gavel-harness matrix` \
+refuse --declare altogether in this build, before anything is written: the declaration and its \
+certificate are not collected yet."""
+reason = """A declare-mode run whose declaration can never reach the certificate is \
+refused instead of run: it would change the prompt and drop what the prompt asks for."""
+profile_keys = [
+    { profile = "paper/tb4", key = "declare.verifier_timeout_sec", upstream = 300.0 },
+    { profile = "paper/tbsci", key = "declare.verifier_timeout_sec", upstream = 600.0 },
+]
+
+[[deviation]]
+id = "D09"
+title = "Intake refuses tasks the generic adapter packaged with settings dropped"
+category = "affects-intake"
+upstream = """judge/adapters/harbor_generic.py packaged any single-container task: it \
+never copied tests/ or solution/, and its fixed task.toml dropped MCP servers \
+and GPU requests."""
+shipped = """paper/generic refuses a task that ships tests/ unless the run replaces \
+them (strip_tests = false). paper/generic and gdpval refuse tasks that declare \
+MCP servers or request GPUs the host lacks (allow_mcp_servers = false, \
+allow_missing_gpus = false). paper/tb4 and paper/tbsci accept them as upstream \
+did and list each dropped setting."""
+reason = """No silent degradation: a task is not generated without the MCP server \
+or GPU it asks for, and a write-back does not replace a task's own tests unless \
+asked."""
+profile_keys = [
+    { profile = "gdpval", key = "intake.allow_mcp_servers", upstream = true, shipped = false },
+    { profile = "gdpval", key = "intake.allow_missing_gpus", upstream = true, shipped = false },
+    { profile = "paper/generic", key = "intake.allow_mcp_servers", upstream = true, shipped = false },
+    { profile = "paper/generic", key = "intake.allow_missing_gpus", upstream = true, shipped = false },
+    { profile = "paper/generic", key = "intake.strip_tests", upstream = true, shipped = false },
+]
+
+[[deviation]]
+id = "D10"
+title = "Package identity v2"
+category = "infra-only"
+upstream = """judge/core/package_inputs.py sealed each package with .judge_build.json \
+(schema veritas/package-build/1): source fingerprints together with their \
+absolute paths; the prompt wording inside prompt_compose.py was not compared. \
+The evidence header a package was composed with entered as the path and sha256 \
+of the header file read (prompts_evidence_header, from VERITAS_PROMPTS_DIR or \
+judge/prompts); the original TB4 packages, built before the header became a \
+file, recorded it only through the sha256 of prompt_compose.py."""
+shipped = """method/identity.py seals .veritas_build.json (schema \
+gavel-harness/package-build/2): content only, no paths, the whole method \
+kernel compared, both evidence header texts included. The profile's wording is \
+part of the recorded build configuration, so the same task composed in the two \
+wordings gets two identities. Its files list keeps the upstream format."""
+reason = """Identities must agree across hosts, and every prompt word is a file \
+under method/. The record sits beside the package files and is not one of \
+them."""
+
+[[deviation]]
+id = "D11"
+title = "Generation runs on Harbor's own docker environment"
+category = "infra-only"
+upstream = """judge/core/session.py _env_import_path() ran every generation trial on the \
+original harness's own environment provider, harbor_integration/local_docker_provider.py \
+LocalDockerEnvironment (VERITAS_ENV_LOCAL=1) or a remote-host variant of it: per-host queues, \
+one docker build retry inside the trial, `docker build` of the package's environment/ and \
+`docker run -d --entrypoint sleep <image> infinity` of that image alone (the image's ENTRYPOINT \
+and CMD never ran; _validate_definition() required environment/Dockerfile and a package's \
+environment/docker-compose.yaml was never read), and Harbor's EnvironmentConfig defaults \
+(delete=true, cpu and memory enforcement auto). Job names carried the dataset, a run tag \
+and a 12-hex suffix, with -a/-b per attempt."""
+shipped = """run/job.py job_config(): environment type docker, delete=false, cpu and memory \
+enforcement "ignore", and the compose overlay of write_generation_overlay(): the project's whole \
+services mapping replaced (compose `!override`) by one main service, Harbor's build service for \
+environment/Dockerfile labelled veritas.run=<run_id> and started with entrypoint ["sleep"] and \
+command ["infinity"], the upstream start. A package's own compose file starts no service and sets \
+nothing for main; the package bytes are unchanged. Harbor's environment and mount overlays, \
+merged after it, still apply. The overlay needs Docker Compose 2.24.4 or later: earlier versions \
+ignore `!override` without an error or warning and merge the package's compose file (its sidecars \
+start, its settings for main apply), so the host check compose_override (D26) resolves a probe \
+package with a sidecar under the overlay with `docker compose config` and refuses gen, matrix and \
+doctor unless main alone comes out. The anchors use write_compose_overlay() instead (D21, \
+D27). Job names are gen-<run_id>-<hex12>-a/-b, reruns -a-r<n>. Harbor 0.21.0 tags each \
+trial's image <trial name>__env-main; whether a run removes those tags by exact name when it \
+ends is the profile's [anchor] keep_images (D28)."""
+reason = """Owner decision: execution on Harbor's docker environment and Job. The original runs \
+already used two providers. The provider decides where the container runs, not the package, \
+the executor configuration or the command line; every job field except the environment block \
+equals the original job's. Harbor 0.21.0 has no option to leave a task's compose file out; the \
+overlay does it with compose's own merge rules. Without it Harbor's start merges the compose \
+file of 11 of the original TB4 packages and 1 TB-Science package (1 to 6 sidecar services \
+each; image name, network_mode, environment, depends_on or healthcheck for main), which the \
+original generating agent never saw, and 3 of the 5 original TB4 packages with an ENTRYPOINT \
+start services there (kv-live-surgery, payments-pipeline-fix, live-database-cutover)."""
+
+[[deviation]]
+id = "D12"
+title = "Per-trial metering URL; the API key stays on the host"
+category = "infra-only"
+upstream = """Harbor loaded judge_opencode:JudgeOpenCode from harbor_integration on sys.path. \
+The original harness's run driver pointed the provider block's baseURL at its metering proxy \
+under one tag per run (/t/<dataset>-<tag>/<upstream path>); apiKey was an {env:...} reference \
+to the key variable, which the provider's pass_env passed into the container \
+(judge/core/session.py _job_config; _agent_spec set OPENAI_API_KEY for codex and pi), and the \
+proxy forwarded the client's Authorization header unchanged."""
+shipped = """The executor is gavel_harness.run.executors.tagged:TaggedJudgeOpenCode, a \
+JudgeOpenCode subclass that only sets the provider's options.baseURL, per trial, to \
+/t/<run_id>/<trial>/<upstream path> on the proxy. A metered run writes the placeholder apiKey \
+"metered" and refuses {env:...} references in the provider block; gavel_harness.meter.proxy \
+reads the key once from the variable named by --api-key-env, replaces the client's \
+Authorization header with "Bearer <key>", refuses to start when the variable is unset, empty \
+or not printable ASCII without whitespace, and never writes the key to the ledger, a log \
+record, an error answer or an exception message. An unmetered run (--no-meter) passes each \
+{env:NAME} reference to the agent as NAME=${NAME}, resolved by Harbor from the host \
+environment."""
+reason = """Token and 429 accounting per trial, and no key in containers, config.json or \
+process arguments of metered runs: the generation container runs the agent with unrestricted \
+shell access, so a key inside it can be read. Every request still reaches the same endpoint \
+with the same key, and the opencode command lines are byte-equal to the original runs' up to \
+the URL and key values."""
+
+[[deviation]]
+id = "D13"
+title = "Metering proxy: any upstream, per-trial tags, unbuffered relay, complete ledger"
+category = "infra-only"
+upstream = """The original harness's metering proxy forwarded to one fixed HTTPS host over \
+http.client, took one /t/<tag> path segment and forwarded untagged requests as \
+"untagged", relayed the body with resp.read(8192) (which waits for 8 KiB or the \
+end of the stream before passing anything on), passed only the Content-Type \
+and X-Request-Id answer headers, read request bodies by Content-Length only, \
+answered its own errors with send_error HTML, wrote no row when the upstream broke off \
+mid-answer, and logged {ts, tag, path, model, status, usage, req_bytes, resp_bytes, ms} per \
+request. It listened on every interface."""
+shipped = """gavel_harness.meter.proxy forwards to any http(s)://host[:port]/base \
+upstream; requests carry /t/<run_id>/<trial> before the upstream's own path, \
+and an untagged request or one outside the upstream base path is answered 404 \
+without forwarding. The body is relayed with resp.read1() as bytes arrive; \
+Retry-After is passed with the other two headers; chunked request bodies are \
+read whole; the proxy's own errors are OpenAI-style JSON. Every request yields one ledger \
+row {ts, run_id, trial, method, path (without query), model, status, usage, absorbed_429, \
+passed_429, req_bytes, resp_bytes, ms, error}, including upstream failures; a failed ledger \
+write stops all forwarding (503) and MeterProxy.check() raises \
+InfraError(meter_unavailable), which the run layer calls while and after every generation \
+job (D18). A trial's ledger totals (TrialUsage) also count the requests the upstream did not \
+answer (upstream_errors: proxy 502 or a broken stream), the 4xx answers about the request \
+itself other than 401, 403 and 429 (client_errors), and the requests whose client went away \
+during a 429 wait (abandoned_429). Ports 8877 and 8899 are refused. `gavel-harness gen` binds the \
+proxy to the Docker bridge gateway address (--meter-bind to change) and checks from a \
+container that its health route answers. Usage parsing (last "usage" object of the 64 KiB \
+response tail) is unchanged."""
+reason = """Runs use other endpoints than the one upstream host; per-trial usage \
+and 429 counts need trial attribution; SSE events must reach the agent when \
+the upstream sends them; token accounting must never be silently partial; a trial's \
+failure counts decide whether it is a capability outcome (D15, D18); and a proxy that \
+injects the key must not be reachable beyond the Docker host."""
+
+[[deviation]]
+id = "D14"
+title = "The metering proxy absorbs upstream 429 answers"
+category = "affects-generation"
+upstream = """The original harness's metering proxy returned every upstream answer, \
+429 included, to the agent at once; the agent's own client retried."""
+shipped = """gavel_harness.meter.proxy re-sends a request that got 429 after the \
+wait Retry-After asks for (delay-seconds or HTTP-date; 15 s doubling per retry \
+when absent; capped at 300 s; times a uniform jitter in [0.75, 1.25]), at most \
+12 times per request. The agent sees a slower answer instead of the 429. When the budget is \
+spent the last 429 reaches the agent and the ledger counts it in passed_429; the run layer \
+then reruns the trial (D15)."""
+reason = """Rate limiting is capacity contention, not a capability outcome. \
+Absorbing it host-side keeps rate limits out of the agent's transcript; a trial \
+in which a 429 still reaches the agent is rerun instead of being scored. The waits are \
+not free: they run on the agent's wall-clock budget (about 43 minutes for one request whose \
+12 retries wait without Retry-After, 60 minutes when the upstream asks for 300 s or more, both \
+before jitter), and a request can outlast its client's own timeout. A trial whose agent ran out of budget after absorbed \
+waits, or whose client abandoned a request during one, is therefore rerun too (D15); in the \
+other trials the agent sees the absorption only as slower answers."""
+
+[[deviation]]
+id = "D15"
+title = "Rate-limited trials are discarded and rerun"
+category = "affects-generation"
+upstream = """judge/core/session.py counted every trial as its task's outcome, including \
+trials whose agent received 429 answers; reruns of rate-limited rows were made by hand."""
+shipped = """In a metered run, a trial that rate limiting reached is written to \
+<package>.discarded.json (reason rate_limited) and its attempt rerun from the same frozen input \
+in a fresh job after 300 s, at most 3 times; the next such trial raises \
+InfraError(rate_limited). Rate limiting reached a trial when the proxy passed a 429 to its \
+agent (ledger passed_429 > 0), when its client abandoned a request the proxy was waiting out \
+(abandoned_429 > 0), or when its agent hit its time budget (AgentTimeoutError) or the exec cap \
+(ExecCapError, D29) after the proxy had absorbed 429 answers for it (absorbed_429 > 0). A trial \
+with absorbed 429 answers whose agent finished within its budget and cap stands. \
+GenerationResult.contaminated_429 and the result row's contaminated_429 mark tasks that were \
+rerun. Unmetered runs do not observe 429 (contaminated_429 is null)."""
+reason = """A rate-limited trial measures the endpoint's quota, not the method (rule: every 429 \
+is rerun); an agent that lost time or requests to rate limiting is such a trial. Only \
+contaminated trials change."""
+
+[[deviation]]
+id = "D16"
+title = "The CLI's own log stays with the trial"
+category = "infra-only"
+upstream = """judge/core/session.py SessionConfig.exclude_agent_logs = ["opencode.txt", \
+"opencode/**"]: the raw opencode stream was not downloaded, so result.json agent_result carried \
+no token counts."""
+shipped = """No exclude_logs. On Harbor's docker environment the agent log directory is a bind \
+mount; opencode.txt stays and Harbor parses token counts from it into agent_result, which the \
+result row sums over attempts A and B (or records as unavailable with the reason)."""
+reason = """Token usage per task (A+B) comes from agent_result; the log is the evidence of what \
+the agent did."""
+
+[[deviation]]
+id = "D17"
+title = "Environment failures are rerun once, then reported as infrastructure errors"
+category = "affects-generation"
+upstream = """The original harness's environment provider retried `docker build` once inside \
+the trial. A trial whose environment or agent setup still failed was recorded as attempt A with \
+probe outcome skip and nothing shipped, with no retry (e.g. the TB4 task retro-console-soc), \
+and counted as undelivered."""
+shipped = """A trial that fails before its agent runs (environment start or agent setup) while \
+the Docker daemon answers is rerun once in a fresh job. When the second failure is the \
+task's shipped attempt, it is GenerationResult.env_error and the task's result row is \
+infra_error with category env_build_failed: re-run, never counted, exit 3; the run goes on \
+with the other tasks. A retry B whose environment failed after a capability-failing attempt A \
+leaves A's outcome (undelivered, counted). A setup failure while the daemon does not answer \
+raises InfraError(docker_unavailable). The anchors classify an environment that cannot be \
+built or started the same way (D23), and so does validate --from-run for upstream attempts \
+(D24)."""
+reason = """An environment that did not start says nothing about the method; the GDPval \
+protocol counts an environment build failure as infra_error (re-run, never counted). One \
+rule for generation, anchors and re-validation keeps a host-wide build failure (disk, pull \
+limit, DNS) from reading as a finished run."""
+
+[[deviation]]
+id = "D18"
+title = "Stall watchdog scoped to its own job; infrastructure failures stop the run"
+category = "infra-only"
+upstream = """judge/core/session.py _run_harbor(): progress was a new result.json in the job or \
+any docker build/exec process, buildkit worker or provider-managed container on the host; \
+after VERITAS_HARNESS_STALL seconds (default 1200) without it the job was cancelled. The \
+original runs set τ² 1800, SWE-Verified 2400, TB-Science 2400 (7200 for the re-run of 2 \
+tasks), LLMBar/JB 1800; the TB4 run predates the watchdog and ran without one. On \
+LocalDockerEnvironment every running agent command was a `docker exec` process, so the \
+watchdog never ended a running agent; no job log of the original runs records a stall \
+cancellation. Like any exception Harbor raised, the \
+cancellation became an ordinary failed job whose tasks were recorded as uncollected attempts. \
+Requests the metering proxy could not forward were answered 502 and the trial was counted."""
+shipped = """run/watchdog.py: progress is a newer mtime under the job's own trial directories or \
+a live docker child process of this process (every agent command is one, so a running agent \
+is never a stall). The window is --watchdog-sec (default 1200, recorded in run.json \
+config.watchdog_sec); no profile sets it. A stall raises InfraError(stalled); the watchdog also \
+cancels the job when the Docker daemon fails 3 probes in a row, when the metering proxy fails its \
+health check (MeterProxy.check: its ledger stopped being writable; also called after every job), \
+and when a metered trial's agent ran with no request reaching the proxy (meter_unavailable) or \
+without one answer from the model (endpoint_unavailable: no 2xx, no 4xx about the request \
+itself, no rate limiting). A trial whose requests the endpoint answered only with 400-class \
+errors about the request (e.g. a context too long) stands as the task's outcome, as upstream. \
+A trial with a request the upstream did not answer (the proxy got no answer, or the answer \
+broke off mid-stream) is discarded and rerun after 300 s, at most 3 times, then \
+InfraError(endpoint_unavailable). Harbor exceptions outside trials, missing trials, and these \
+checks raise InfraError; no result is recorded for the affected call. `gavel-harness gen` then writes \
+every generated task as an infra_error row and exits 3."""
+reason = """Experiments sharing the host can neither mask nor cause a stall, and an \
+infrastructure failure is never recorded as a capability outcome (infra errors stop the run). \
+A deterministic 4xx about one task's request is that task's outcome and would recur on every \
+re-run, so it must not stop the run. The window does not bound what an agent can do, here or \
+in the original runs, so it is a run option rather than a profile value."""
+
+[[deviation]]
+id = "D19"
+title = "Rubric library mounted read-only for process.* evidence surfaces"
+category = "affects-generation"
+upstream = """The rubric tree reached the container only when baked into the runner image. \
+The image the original τ² run generated in had judge/rubric/library_v1 at /rubric_lib (an \
+archived rubric_lib.tgz, added at / and moved there); that image is lost, and the runner image \
+rebuilt later carries no library. No record shows whether the image the original LLMBar and \
+JudgeBench run generated in had /rubric_lib (a later runner image for them carries it)."""
+shipped = """run/job.py mounts the shipped rubric/library_v1 read-only at /rubric_lib for jobs \
+whose packages' evidence_manifest.json has a process.* type, the surfaces whose prompt carries the \
+rubric directive. No v1 paradigm (terminal_state, deliverable) has one. The archive of the τ² \
+image unpacks to exactly the shipped library, and the image moved it to the same path. \
+Affected benchmarks: τ² (same library at the same path as its original generation); LLMBar and \
+JudgeBench (whether their generation image had the library is not recorded)."""
+reason = """The prompt tells the agent to consult /rubric_lib exactly for process.* surfaces; the \
+library must then be there, independent of the image."""
+
+[[deviation]]
+id = "D20"
+title = "GDPval swap anchor"
+category = "affects-anchor-labels"
+upstream = """The original harness's validation step ran a null and an oracle anchor only; no \
+verifier was judged on another task's deliverables, and a reference solution \
+without deliverable files still counted as an oracle."""
+shipped = """gdpval [anchor] swap = "same_extension_deliverables", \
+deliverables_subdir = "deliverables": the swap anchor of the GDPval protocol. All tasks of the \
+run (every accepted task in gen, every tasks.txt task in validate --from-run, delivered or \
+not) are taken in order of id, cyclically; a task's swap stages the expert deliverables of the \
+next task whose largest deliverable has the same lower-cased extension, else of the next task \
+with any deliverable (cross_type). A task's donor therefore does not depend on which other \
+tasks delivered a verifier. A reference solution with no file under deliverables/ is no \
+oracle (label no_oracle; null and swap still run)."""
+reason = """The protocol's success category, validated_strict, needs the swap \
+anchor: a verifier that accepts another task's well-formed deliverable is \
+validated_2way, which is reported and not counted as a success. Drawing donors from every \
+task keeps swap anchors comparable across runs and models."""
+profile_keys = [
+    { profile = "gdpval", key = "anchor.swap", upstream = "none", shipped = "same_extension_deliverables" },
+]
+
+[[deviation]]
+id = "D21"
+title = "Anchors are Harbor trials: oracle mechanism, /solution removed, bridge in the same container"
+category = "affects-anchor-labels"
+upstream = """The original harness's validation step: `docker run -d` of the task image with its own \
+ENTRYPOINT and CMD (`--entrypoint sleep <image> infinity` only when that container did not stay \
+up; the GDPval images define no ENTRYPOINT and CMD sleep infinity), `docker cp` of the solution \
+to /solution, `bash -lc "cd /app 2>/dev/null; bash \
+/solution/<solve.sh|solution.sh|run.sh>"`, then /app/verifier.sh run with \
+`bash -lc "cd /app; bash /app/verifier.sh"` in the same container, /solution \
+left in place. Its TB4 and TB-Science verdict gates started every container with \
+`--entrypoint sleep`, ran the solution episode, removed /solution, committed the container \
+and judged in a fresh container with `docker exec -w /app <c> bash /app/verifier.sh`."""
+shipped = """Each anchor is one Harbor trial on the written-back task (docker \
+environment, shared verifier mode, the task's Dockerfile built even when \
+task.toml names a docker_image, and the anchors' compose overlay, run/job.py \
+write_compose_overlay(): the task container labelled veritas.run=<run_id> and started with \
+entrypoint sleep, command infinity; a task's own compose services start too, D27). The oracle \
+and swap anchors stage the solution with Harbor's oracle agent (upload to /solution, run its \
+solve script), then remove /solution as root; the bridge tests/test.sh (veritas-bridge/1) \
+clears preset rewards and verdicts, copies the verifier to /app/verifier.sh and runs \
+`bash /app/verifier.sh` (no login shell, stdin from /dev/null) from the anchor workdir in the \
+container the solution ran in, clears rewards the verifier wrote, records the raw exit status \
+in /logs/verifier/veritas_verdict.json and writes reward 1 only for exit 0. A solution entry \
+point other than solve.sh is not run."""
+reason = """Harbor's execution layer replaces hand-written docker calls (owner \
+decision); removing /solution keeps the verifier from seeing the solution, as \
+in both gates; every staging failure becomes NO_VERDICT instead of an unchecked \
+copy; a preset or self-written reward cannot decide a verdict; the task container starts as the \
+generating agent's did, so services an image ENTRYPOINT would start are absent in both, as in \
+the gates."""
+
+[[deviation]]
+id = "D22"
+title = "Three-state anchor verdicts"
+category = "affects-anchor-labels"
+upstream = """The original harness's validation step counted every non-zero verifier exit as a \
+rejection (null_failed / oracle_rejected), including 127 (command not found), \
+and did not check the return codes of its docker cp and exec staging calls."""
+shipped = """verify/verdict.py: exit 0 is PASS; 126, 127, 137, a timeout, a staging \
+failure, a missing or unreadable reward or verdict file are NO_VERDICT; any \
+other exit is FAIL. Task labels follow the precedence in that module \
+(infra_error, undelivered, unvalidated, null_accepted, oracle_rejected, anchor_inconclusive, \
+no_oracle, validated_2way, validated_strict, validated)."""
+reason = """Owner decision: the validation step's labels are invalid because they \
+count failures to run the verifier as verdicts. NO_VERDICT keeps those apart."""
+
+[[deviation]]
+id = "D23"
+title = "Anchor images pinned by their layers; environment failures are infra_error"
+category = "affects-anchor-labels"
+upstream = """The original harness's validation step built each task's environment image once \
+(`docker build -t`) and \
+ran null and oracle in containers of it; a failed build gave the validation label \
+env_build_failed. The TB4 and TB-Science gates also built once per task."""
+shipped = """Each anchor builds its own trial image (Harbor 0.21.0 names it \
+<compose project>-main and labels it with the project, so image IDs differ between anchors even \
+on a full cache hit). The anchors of a task are pinned on the digest of the image's filesystem \
+layer list: a difference makes every record of the task NO_VERDICT with reason image_drift and \
+raw infra env_image_drift; an unreadable image gives image_unknown. An environment that cannot be \
+built or started makes the record NO_VERDICT with raw infra env_build_failed. Both label the \
+task infra_error: re-run, never counted (generation uses the same rule, D17). Unless the \
+profile keeps images (D28), each anchor's image is removed by exact name once all anchors of \
+its task finished; a docker failure during removal is recorded with the anchor, never raised."""
+reason = """Rebuilt images can resolve different package versions (the TB4 gate saw 14 oracle \
+verdicts flip after a rebuild); equal layer lists prove the same image content, and a verdict \
+on drifted content is not a verdict on the task."""
+
+[[deviation]]
+id = "D24"
+title = "validate --from-run re-runs the anchors of an upstream run"
+category = "affects-anchor-labels"
+upstream = """The original harness's validation step replayed null and oracle once, right after \
+generation, \
+and wrote its labels (validated, oracle_rejected, null_failed, no_oracle, \
+oracle_inconclusive, env_build_failed) to results.jsonl. A task whose manifest named a \
+verifier_path counted as delivered even when the file was empty; an empty script exits 0, so its \
+null anchor passed. A task without a verifier counted as undelivered whatever stopped its \
+attempts (no trial collected, a cancelled job, rate limiting, an environment that never \
+started)."""
+shipped = """`gavel-harness validate --from-run <run dir> --profile <p>` reads manifest.json, \
+tasks.txt, refused.json and the tasks/ links (never results.jsonl), writes each delivered \
+verifier back onto its original task (reference solution from --oracle-root/<id>/solution, \
+else <task>/solution, as the validation step looked it up), plans swaps by the profile and runs the three \
+anchors of D20 to D23 into a separate output directory; the run directory is only read. An \
+empty delivered verifier.sh is undelivered, as in generation. A delivered verifier whose bytes \
+differ from the sha256 the shipped attempt's artifact_files recorded is refused. An undelivered \
+task whose deciding (shipped) attempt failed on infrastructure is an infra_error row (exit 3): \
+no trial collected, a job that did not complete or a cancelled trial (harbor_internal), a \
+rate-limit exception (rate_limited), an endpoint exception (endpoint_unavailable), or another \
+exception before the agent started (env_build_failed); the attempt's structured fields and \
+exception type decide, never its message. A task with a rate-limit exception in any attempt \
+has contaminated_429 = true."""
+reason = """Owner decision: re-anchor the existing verifiers without regenerating them, with \
+three-state verdicts. An empty file is no verifier, a changed file is not the generated one, \
+and an infrastructure failure is not a capability outcome."""
+
+[[deviation]]
+id = "D25"
+title = "Result rows, summary and exit code"
+category = "infra-only"
+upstream = """The original harness's run driver returned 0 after any finished run and 2 only \
+when no task was in its paradigm; its results.jsonl held one label per task, without \
+denominators or a summary. The run manifests kept each attempt's Harbor usage (often null), and \
+nothing summed them."""
+shipped = """export/report.py writes results.jsonl (one row per generated task with the three \
+anchor records, label, swap donor, tokens A+B or {"unavailable": reason}, metering ledger \
+totals, 429 counts, dropped task.toml settings), summary.md (label counts with the \
+denominator: rows minus infra_error rows; failures, infrastructure errors, undelivered and \
+refused tasks listed) and one VERIFIER_REPORT.md per written task. Token counts that are \
+missing, or 0 for all three (what Harbor records when the agent log has none), are \
+unavailable, never 0. The exit code is 3 for any infra_error, else 2 for a refusal or no row, \
+else 1 when a task is not validated_strict or validated, else 0; an unexpected exception \
+exits 4 with its traceback. `gavel-harness gen` without --validate labels delivered tasks \
+unvalidated. An error that stops a run after it started is recorded in run.json (outcome: exit \
+code, step, error)."""
+reason = """Results must say what was measured and what was not; a missing count is never \
+read as 0, and a run with infrastructure failures, or one that crashed, cannot exit as if \
+complete."""
+
+[[deviation]]
+id = "D26"
+title = "Host checks and write-back checks before a run starts"
+category = "affects-intake"
+upstream = """The original harness's run drivers started a run without checking the \
+checkout, the Harbor build, the endpoint or the verifier-phase network; ablation switches \
+were read from the process environment (VERITAS_NO_*, VERITAS_*_BARE, VERITAS_PROMPTS_DIR)."""
+shipped = """`gavel-harness gen`, `validate` and `matrix` check that the given task list and oracle \
+root exist, then run the doctor checks and exit 2 when one fails: uncommitted harness changes \
+(unless --allow-dirty, which is recorded), a Harbor install that is not 0.21.0 at commit \
+2fe1615 by content, no Docker daemon or compose plugin, for gen and matrix a Docker Compose \
+that merges a package's compose file into the generation overlay (before 2.24.4 it ignores the \
+overlay's `!override` tag, D11), no egress control for an offline \
+verifier phase, a set ablation switch or VERITAS_PROMPTS_DIR (the prompt wording is the \
+profile's wording key, D31), the rubric library missing where the surface \
+needs it, an endpoint that does not answer one minimal request, and a metering proxy a \
+container cannot reach. Before generation every accepted task must be writable back: its id \
+a relative path of plain names, its task.toml mergeable, its reference solution holding a \
+solve script; a task that is not is refused (not_writable) and not generated, while the other \
+tasks go on. Every check result is recorded in run.json."""
+reason = """A run that cannot produce a complete, attributable result is refused before it \
+spends generation trials; a task that could never be written back is refused alone, without \
+spending its generation trials or ending the run of the others; this harness reads no method \
+switch from the environment."""
+
+[[deviation]]
+id = "D27"
+title = "A task's own compose services run under the anchors"
+category = "affects-anchor-labels"
+upstream = """The original harness's TB4 and TB-Science verdict gates ran the task image alone \
+(`docker run --entrypoint sleep`), and its validation step ran `docker run -d` of the task \
+image; none read a task's environment/docker-compose.yaml, so its sidecar services did not run \
+and its settings for the main service (network_mode, image, environment, depends_on, \
+healthcheck) did not apply. Generation did not read it either \
+(the environment provider's _validate_definition() required environment/Dockerfile and \
+_start_sync() built and ran that image alone); this release's generation does the same (D11)."""
+shipped = """The anchors run on Harbor's docker environment with write_compose_overlay(), which \
+names only main (label, entrypoint, command): Harbor merges the written task's \
+environment/docker-compose.yaml, its services start next to the task container and its settings \
+for main apply. Among the original packages 11 TB4 and 1 TB-Science package carry one \
+(1 to 6 sidecar services each); paper/generic and gdpval refuse compose tasks at intake."""
+reason = """Execution on Harbor's docker environment (owner decision) runs a compose task as the \
+task defines it. The verifier can reach services the TB4 and TB-Science gates' verifiers could \
+not, so null, oracle and swap verdicts of these tasks can differ from the gates'."""
+
+[[deviation]]
+id = "D28"
+title = "Images are removed after a run where the profile does not keep them"
+category = "infra-only"
+upstream = """The original harness's validation step built one image per task and kept it; \
+its TB4 and TB-Science verdict gates built each task's environment image once, reused it \
+across runs and removed only the images they committed."""
+shipped = """Each profile's [anchor] keep_images says whether the images Harbor built for a \
+run's generation and anchor trials stay when the run ends: true for paper/tb4 and paper/tbsci \
+(a rebuilt image can flip their oracle verdicts), false for gdpval (220 task images do \
+not fit on one disk) and paper/generic. --keep-images and --no-keep-images override it; run.json \
+records the effective value in anchor.keep_images and outcome.keep_images. Removal is by exact \
+name and only of images built for the run's own trials; a docker failure is recorded, never \
+raised."""
+reason = """Disk space on hosts that generate many tasks, while the TB4 and TB-Science images \
+stay so that later verdicts run on the same image. Removal happens after the run's anchors finished, so it never changes the run's \
+own verdicts; a later re-validation rebuilds the images, with the drift risk D23 describes."""
+profile_keys = [
+    { profile = "gdpval", key = "anchor.keep_images", upstream = true, shipped = false },
+    { profile = "paper/generic", key = "anchor.keep_images", upstream = true, shipped = false },
+]
+
+[[deviation]]
+id = "D29"
+title = "The 3900 s transport cap is an exec cap of the executor"
+category = "affects-generation"
+upstream = """The original harness's environment provider set _DEFAULT_EXEC_TIMEOUT = \
+int(os.environ.get("VERITAS_EXEC_TIMEOUT", "3900")), which limited every environment.exec \
+without a timeout, the opencode run command among them; local_docker_provider.py _run() then killed its \
+bash wrapper and raised RuntimeError("local transport hb-exec timed out after 3900s"). \
+JudgeOpenCode's salvage looked for /app/checker.py (absent) and re-raised; Harbor recorded the \
+exception, skipped the verifier stage and collected the artifacts; the probe output was empty, \
+so the attempt was skip and not retried, and /app/verifier.sh as written by then shipped when \
+non-empty, unprobed. The CLI kept running in the container until the trial removed it. Every \
+original generation run left the variable unset (3900 s), except the re-run of 2 TB-Science \
+tasks (VERITAS_EXEC_TIMEOUT=10800, above the 7200 s budget). Trials cut: TB4 19 of 66 (16 \
+shipped a verifier unprobed; formal-crypto, hof-topology-interpenetration and \
+vpp-loss-divergence shipped none), 9 among the 33 scored TB4 tasks, of which 8 shipped \
+unprobed; TB-Science 4 of 40 (neo-orbit-determination and spin-glass-groundstate shipped \
+unprobed and are scored; frustrated-heisenberg-nqs and traffic-flux-inversion shipped none and \
+were regenerated in the re-run, where frustrated-heisenberg-nqs ended by AgentTimeoutError at \
+7200 s, was probed and delivered). \
+τ², SWE-Verified, LLMBar/JB and GDPval: none (longest agent runs 1353, 2940, 865 and 3622 s)."""
+shipped = """run/executors/tagged.py TaggedJudgeOpenCode(exec_cap_sec=...) bounds every agent \
+command that sets no time limit (exec_as_agent) and raises ExecCapError, a RuntimeError, when \
+the cap runs out; the rest is the upstream path (salvage, no verifier stage, artifacts \
+collected, skip, no retry, verifier shipped when non-empty; the command keeps running until the \
+trial stops the environment). The profile's [run] agent_exec_cap_sec sets it (3900 in every \
+shipped profile; a profile without the table runs uncapped), run.generate(exec_cap_sec=...) \
+passes it on, run.json records it in generation.agent_exec_cap_sec and each attempt in \
+budget.exec_cap_sec. The trial records ExecCapError where upstream recorded RuntimeError. A \
+capped trial whose requests the metering proxy held back for 429 answers is rerun (D15). \
+paper/tbsci caps all 40 tasks; the 2 tasks regenerated in the re-run need a run with a copy of \
+the profile without its [run] table."""
+reason = """The cap changed what the agent could do in 23 of the original trials, so \
+reproducing those runs needs it. Harbor's docker environment has no default exec limit; bounding the agent's \
+commands in the executor and raising a RuntimeError (not Harbor's AgentTimeoutError or \
+NonZeroAgentExitCodeError, after which Harbor runs the verifier stage) ends the trial the way \
+the transport cap did. The distinct exception name keeps capped trials identifiable."""
+
+[[deviation]]
+id = "D30"
+title = "Generation is metered by default; the original TB4 run was unmetered"
+category = "affects-generation"
+upstream = """The original harness's run driver began metering by default partway through: the \
+τ², SWE-Verified, TB-Science and LLMBar/JB runs sent every request through its metering proxy \
+under a per-run tag. The TB4 run came before that change: all 66 trials (and the 1 retry) \
+reached the model endpoint directly (the job config held the endpoint's base URL and the key \
+came through pass_env), every 429 reached the agent's own client, and neither rate limiting nor \
+token usage was recorded."""
+shipped = """`gavel-harness gen` meters every run unless --no-meter is given. --no-meter reproduces \
+the TB4 condition (direct endpoint, key from the host environment); then 429 answers reach the agent (no D14 absorption) \
+and no trial is discarded for rate limiting (D15). No profile selects the metering mode."""
+reason = """Metering keeps the key on the host and separates rate limiting from capability \
+outcomes (D12 to D15). Whether a run is metered is a property of the run, not of the benchmark, \
+so it stays a command-line choice; reproducing the TB4 run needs --no-meter."""
+
+[[deviation]]
+id = "D31"
+title = "The prompt wording is a profile key"
+category = "infra-only"
+upstream = """judge/core/prompt_compose.py read every prompt file from VERITAS_PROMPTS_DIR when \
+it was set, else from judge/prompts. The original TB-Science and LLMBar/JudgeBench runs \
+pointed it at the frozen_evh1 directory; the code of the TB4 run had the same evidence header \
+inline; the τ², SWE-bench Verified and GDPval runs used judge/prompts (state gate)."""
+shipped = """The profile key `wording` selects one of the two shipped evidence header texts: \
+state_gate (judge/prompts/evidence_header.txt) or frozen_evh1 (the header of the sealed \
+frozen_evh1 directory). compose() takes it as an argument, the package identity records it and \
+run.json records it in generation.wording. Contracts and core manual are shared: the \
+frozen_evh1 directory differs from judge/prompts only in its header, which \
+tools/extract_assets.py checks. paper/tb4 and paper/tbsci use frozen_evh1; paper/generic and \
+gdpval use state_gate. No other prompt directory can be selected, and VERITAS_PROMPTS_DIR is \
+refused (D26)."""
+reason = """The wording is part of the method a profile reproduces, so it belongs in the \
+profile and the package identity, not in the process environment. Every instruction of the \
+original runs is reproduced byte for byte."""

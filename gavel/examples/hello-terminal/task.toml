@@ -1,0 +1,8 @@
+schema_version = "1.0"
+
+[task]
+name = "gavel-examples/hello-terminal"
+description = "Write one line into a file (terminal_state example)."
+
+[environment]
+build_timeout_sec = 900.0

@@ -1,0 +1,1 @@
+RUN (sed -i 's|archive.ubuntu.com|mirrors.aliyun.com|g;s|security.ubuntu.com|mirrors.aliyun.com|g;s|deb.debian.org|mirrors.aliyun.com|g' /etc/apt/sources.list /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources 2>/dev/null; true)

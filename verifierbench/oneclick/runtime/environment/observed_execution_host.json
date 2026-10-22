@@ -1,0 +1,336 @@
+{
+  "observation_date": "2026-10-20",
+  "historical_environment_lock": false,
+  "repositories": {},
+  "swe_images": {
+    "django__django-11740": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11740:latest",
+      "image_id": "sha256:6a057a8a78fefed32c70c306c4843a12a9a83147a75e20a523d2fa7bdca392f4",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11740@sha256:6a057a8a78fefed32c70c306c4843a12a9a83147a75e20a523d2fa7bdca392f4"
+      ]
+    },
+    "astropy__astropy-13453": {
+      "tag": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13453:latest",
+      "image_id": "sha256:466329fbdcabb164b2fd24ae50a32f456366e53d29bee24899a604d0cab272d3",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.astropy_1776_astropy-13453@sha256:466329fbdcabb164b2fd24ae50a32f456366e53d29bee24899a604d0cab272d3"
+      ]
+    },
+    "matplotlib__matplotlib-24026": {
+      "tag": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24026:latest",
+      "image_id": "sha256:17553d6f09cbc0b9e5b3d7a8c527f609caced536a09056d72d97917eb5f877eb",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24026@sha256:17553d6f09cbc0b9e5b3d7a8c527f609caced536a09056d72d97917eb5f877eb"
+      ]
+    },
+    "django__django-11964": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11964:latest",
+      "image_id": "sha256:098474801410af7303f0814d0d8557791ca2f55e455e5db766c3b3d0a9826df2",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11964@sha256:098474801410af7303f0814d0d8557791ca2f55e455e5db766c3b3d0a9826df2"
+      ]
+    },
+    "matplotlib__matplotlib-24570": {
+      "tag": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24570:latest",
+      "image_id": "sha256:b223a05746c5783ce2865a57b8fabf45b6404ef3451707a25669a99e21223182",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24570@sha256:b223a05746c5783ce2865a57b8fabf45b6404ef3451707a25669a99e21223182"
+      ]
+    },
+    "django__django-11790": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11790:latest",
+      "image_id": "sha256:061b5e37b0dfc15512b9604c843618b47aece8e603d08d0926c3990e0e9b3ac4",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11790@sha256:061b5e37b0dfc15512b9604c843618b47aece8e603d08d0926c3990e0e9b3ac4"
+      ]
+    },
+    "django__django-11555": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11555:latest",
+      "image_id": "sha256:e2c6d6293c8ad66c921754ee2bc13206b0f30166465ad71be92703c11ffaa3cb",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11555@sha256:e2c6d6293c8ad66c921754ee2bc13206b0f30166465ad71be92703c11ffaa3cb"
+      ]
+    },
+    "astropy__astropy-13579": {
+      "tag": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13579:latest",
+      "image_id": "sha256:f3dc11a37649430d6a7a3aac4858477db8f19d9a941f056f875e8e566066ffe3",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.astropy_1776_astropy-13579@sha256:f3dc11a37649430d6a7a3aac4858477db8f19d9a941f056f875e8e566066ffe3"
+      ]
+    },
+    "django__django-11087": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11087:latest",
+      "image_id": "sha256:978680ec9fef5526ee919404380e983928cbeaa4079731ff133e1a53daf5f6b5",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11087@sha256:978680ec9fef5526ee919404380e983928cbeaa4079731ff133e1a53daf5f6b5"
+      ]
+    },
+    "matplotlib__matplotlib-14623": {
+      "tag": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-14623:latest",
+      "image_id": "sha256:5f6acd976c3bc2b2f293704f88b1188307d116baa87b87e5fa82a67976f157a9",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-14623@sha256:5f6acd976c3bc2b2f293704f88b1188307d116baa87b87e5fa82a67976f157a9"
+      ]
+    },
+    "matplotlib__matplotlib-20676": {
+      "tag": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-20676:latest",
+      "image_id": "sha256:5ad9564d55446ff8e6a8302cc6f55a14f5f767815298154837c986305e88353f",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-20676@sha256:5ad9564d55446ff8e6a8302cc6f55a14f5f767815298154837c986305e88353f"
+      ]
+    },
+    "django__django-12039": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-12039:latest",
+      "image_id": "sha256:bd4dc8875144f8f3e0b8866575f9ab564b51774a71fa954cb8e4a9d34484a90c",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-12039@sha256:bd4dc8875144f8f3e0b8866575f9ab564b51774a71fa954cb8e4a9d34484a90c"
+      ]
+    },
+    "astropy__astropy-14365": {
+      "tag": "swebench/sweb.eval.x86_64.astropy_1776_astropy-14365:latest",
+      "image_id": "sha256:70da5c0d4fcbbc2cbc46bbccf8d9ac2dfd4453cf7a19f9fa150b30bb7346f2f4",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.astropy_1776_astropy-14365@sha256:70da5c0d4fcbbc2cbc46bbccf8d9ac2dfd4453cf7a19f9fa150b30bb7346f2f4"
+      ]
+    },
+    "django__django-11265": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11265:latest",
+      "image_id": "sha256:70a39003fb3ce8f01ee82dfeb16b09bc3714ab669d3743fb3e1e5689f18ea1ef",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11265@sha256:70a39003fb3ce8f01ee82dfeb16b09bc3714ab669d3743fb3e1e5689f18ea1ef"
+      ]
+    },
+    "django__django-11206": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11206:latest",
+      "image_id": "sha256:1478ff091b2e702e3eeda873e40054431d9f2b592f8e0f61d9dc6b7ec18455b7",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11206@sha256:1478ff091b2e702e3eeda873e40054431d9f2b592f8e0f61d9dc6b7ec18455b7"
+      ]
+    },
+    "matplotlib__matplotlib-25122": {
+      "tag": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25122:latest",
+      "image_id": "sha256:0fa06f48ba2c929c68f74e8bf02673e9f8cb007059d4455289feb18805aaca38",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25122@sha256:0fa06f48ba2c929c68f74e8bf02673e9f8cb007059d4455289feb18805aaca38"
+      ]
+    },
+    "astropy__astropy-14598": {
+      "tag": "swebench/sweb.eval.x86_64.astropy_1776_astropy-14598:latest",
+      "image_id": "sha256:e6a7291cea12126cd739997769070d60e4ebac363af4065261073750cb617bf3",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.astropy_1776_astropy-14598@sha256:e6a7291cea12126cd739997769070d60e4ebac363af4065261073750cb617bf3"
+      ]
+    },
+    "matplotlib__matplotlib-21568": {
+      "tag": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-21568:latest",
+      "image_id": "sha256:406c7217f36ff5e27539fe1bb6f3bebd44473ca4deced319216896a63a6c2476",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-21568@sha256:406c7217f36ff5e27539fe1bb6f3bebd44473ca4deced319216896a63a6c2476"
+      ]
+    },
+    "django__django-10973": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-10973:latest",
+      "image_id": "sha256:ed086eeedcb33feb3d298d97764c0413e078d1e6144f0a145c5defa34bb077c8",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-10973@sha256:ed086eeedcb33feb3d298d97764c0413e078d1e6144f0a145c5defa34bb077c8"
+      ]
+    },
+    "matplotlib__matplotlib-24149": {
+      "tag": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24149:latest",
+      "image_id": "sha256:e80913d242481321c20b8ed0b5bd1513e89fcaff6eb84b5f6d39e748128b7c19",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24149@sha256:e80913d242481321c20b8ed0b5bd1513e89fcaff6eb84b5f6d39e748128b7c19"
+      ]
+    },
+    "matplotlib__matplotlib-23299": {
+      "tag": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-23299:latest",
+      "image_id": "sha256:1f27ebe052c091ba64a9ac0dcafe15ff402a1e5eddf3b41d429b284385e7028f",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-23299@sha256:1f27ebe052c091ba64a9ac0dcafe15ff402a1e5eddf3b41d429b284385e7028f"
+      ]
+    },
+    "astropy__astropy-13977": {
+      "tag": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13977:latest",
+      "image_id": "sha256:ec43fcbcea2c26b6f74796a177fbbaceb754a1152b0ce47ecbe4fab2e04caca7",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.astropy_1776_astropy-13977@sha256:ec43fcbcea2c26b6f74796a177fbbaceb754a1152b0ce47ecbe4fab2e04caca7"
+      ]
+    },
+    "django__django-11400": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11400:latest",
+      "image_id": "sha256:513ed50493a651e0fa171b199872b57c81fedba92bf1a1a8fdad8976dc47dd33",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11400@sha256:513ed50493a651e0fa171b199872b57c81fedba92bf1a1a8fdad8976dc47dd33"
+      ]
+    },
+    "django__django-11095": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11095:latest",
+      "image_id": "sha256:0d2973f2ef6308ebe0309814503143869edce1f057e7ca565d4305ffbfbceb76",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11095@sha256:0d2973f2ef6308ebe0309814503143869edce1f057e7ca565d4305ffbfbceb76"
+      ]
+    },
+    "django__django-11099": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11099:latest",
+      "image_id": "sha256:cca302934edd881cc4f1e4647a389a25cdaa3c02bfa33667a4204934a09c4fb1",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11099@sha256:cca302934edd881cc4f1e4647a389a25cdaa3c02bfa33667a4204934a09c4fb1"
+      ]
+    },
+    "matplotlib__matplotlib-25287": {
+      "tag": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25287:latest",
+      "image_id": "sha256:9dfad1567bf207c9c9c90397b40c947499f3f1aa23f0dbdf0f4f6239ad405862",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25287@sha256:9dfad1567bf207c9c9c90397b40c947499f3f1aa23f0dbdf0f4f6239ad405862"
+      ]
+    },
+    "astropy__astropy-13033": {
+      "tag": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13033:latest",
+      "image_id": "sha256:22f4f193fbf69d61c59e285494be18041934f8b528190dfe8c6c0d8051d8d6de",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.astropy_1776_astropy-13033@sha256:22f4f193fbf69d61c59e285494be18041934f8b528190dfe8c6c0d8051d8d6de"
+      ]
+    },
+    "django__django-11848": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11848:latest",
+      "image_id": "sha256:08eac9219e5d4b15b445fde26c587157a0ad8a2d9209e4b1e266259edf51bb4b",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11848@sha256:08eac9219e5d4b15b445fde26c587157a0ad8a2d9209e4b1e266259edf51bb4b"
+      ]
+    },
+    "matplotlib__matplotlib-20488": {
+      "tag": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-20488:latest",
+      "image_id": "sha256:be05d6f5074be17d15bec1c6436945b2f77c39e4fbebd89a334f65750f5934ff",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-20488@sha256:be05d6f5074be17d15bec1c6436945b2f77c39e4fbebd89a334f65750f5934ff"
+      ]
+    },
+    "django__django-11820": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11820:latest",
+      "image_id": "sha256:26d34e7bfd4225521b60124c4c71c7be9e00ee81255b93662edd2c31b4a68c06",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11820@sha256:26d34e7bfd4225521b60124c4c71c7be9e00ee81255b93662edd2c31b4a68c06"
+      ]
+    },
+    "matplotlib__matplotlib-24627": {
+      "tag": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24627:latest",
+      "image_id": "sha256:476e2188798df71e5e904360d15fe2c6fe23c7f215eb3dafd3001688cbc40adc",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24627@sha256:476e2188798df71e5e904360d15fe2c6fe23c7f215eb3dafd3001688cbc40adc"
+      ]
+    },
+    "django__django-11239": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11239:latest",
+      "image_id": "sha256:e260b7489ea9fe2c6d99f0a727badf69ff1d0fc44b4f45163f1bd7a997db2587",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11239@sha256:e260b7489ea9fe2c6d99f0a727badf69ff1d0fc44b4f45163f1bd7a997db2587"
+      ]
+    },
+    "django__django-11603": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11603:latest",
+      "image_id": "sha256:6b53eb34c74acff36eb2709ba2f239e213ecb386948e14a3101b9fa16be8b74d",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11603@sha256:6b53eb34c74acff36eb2709ba2f239e213ecb386948e14a3101b9fa16be8b74d"
+      ]
+    },
+    "matplotlib__matplotlib-24637": {
+      "tag": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24637:latest",
+      "image_id": "sha256:bb2ad4cfe0a3f605f875a0f65c4f110cefecde547dd9a1edb3d1c992f4ac8698",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24637@sha256:bb2ad4cfe0a3f605f875a0f65c4f110cefecde547dd9a1edb3d1c992f4ac8698"
+      ]
+    },
+    "django__django-10999": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-10999:latest",
+      "image_id": "sha256:22a35ae325dc5abdd397b1d474d66aad62da6d23c4e9c8763478e82bcf63af7b",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-10999@sha256:22a35ae325dc5abdd397b1d474d66aad62da6d23c4e9c8763478e82bcf63af7b"
+      ]
+    },
+    "django__django-11333": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11333:latest",
+      "image_id": "sha256:ac29b993b4361ddb0d77756862f5738f64a1d3332591f09e5a1d222e5dda78c9",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11333@sha256:ac29b993b4361ddb0d77756862f5738f64a1d3332591f09e5a1d222e5dda78c9"
+      ]
+    },
+    "django__django-12262": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-12262:latest",
+      "image_id": "sha256:23c0777e08a37bd0643f7638eaca9c57d1ee16fca79b6312b8d6de7fd1b5e7da",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-12262@sha256:23c0777e08a37bd0643f7638eaca9c57d1ee16fca79b6312b8d6de7fd1b5e7da"
+      ]
+    },
+    "matplotlib__matplotlib-24870": {
+      "tag": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24870:latest",
+      "image_id": "sha256:e7387d51d146c5aa492184a1ba8b4be444964ba3f653b3304e8d5d9a27ea3c33",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24870@sha256:e7387d51d146c5aa492184a1ba8b4be444964ba3f653b3304e8d5d9a27ea3c33"
+      ]
+    },
+    "django__django-11451": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11451:latest",
+      "image_id": "sha256:573a31e77453fc4fbdaa85582c4d611ebbaf52f47e3630e02cc32c2f5826f82e",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11451@sha256:573a31e77453fc4fbdaa85582c4d611ebbaf52f47e3630e02cc32c2f5826f82e"
+      ]
+    },
+    "astropy__astropy-13398": {
+      "tag": "swebench/sweb.eval.x86_64.astropy_1776_astropy-13398:latest",
+      "image_id": "sha256:49cfb8e47c492fac9570ee66f8d5e4a7aa2a2516e18cf5663aa73e5b352b670a",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.astropy_1776_astropy-13398@sha256:49cfb8e47c492fac9570ee66f8d5e4a7aa2a2516e18cf5663aa73e5b352b670a"
+      ]
+    },
+    "astropy__astropy-14539": {
+      "tag": "swebench/sweb.eval.x86_64.astropy_1776_astropy-14539:latest",
+      "image_id": "sha256:ed6b8fa262a734159bb7171934ad5d03dff520de439555bf3b6f41470a09bc4c",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.astropy_1776_astropy-14539@sha256:ed6b8fa262a734159bb7171934ad5d03dff520de439555bf3b6f41470a09bc4c"
+      ]
+    },
+    "django__django-12155": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-12155:latest",
+      "image_id": "sha256:e039b37f460b99a0cf541ea6759ac5a31e94ce9959d3755d99775792421e44dc",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-12155@sha256:e039b37f460b99a0cf541ea6759ac5a31e94ce9959d3755d99775792421e44dc"
+      ]
+    },
+    "django__django-11211": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11211:latest",
+      "image_id": "sha256:22312ea6c7a536440aa0bae32e97a213d617b58dcbba962d7630c1b6ea635e0c",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11211@sha256:22312ea6c7a536440aa0bae32e97a213d617b58dcbba962d7630c1b6ea635e0c"
+      ]
+    },
+    "django__django-11734": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11734:latest",
+      "image_id": "sha256:774206c89be84e276b5e609071934e11c41b02a3e7e804558f50759914fdcf38",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11734@sha256:774206c89be84e276b5e609071934e11c41b02a3e7e804558f50759914fdcf38"
+      ]
+    },
+    "django__django-10554": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-10554:latest",
+      "image_id": "sha256:3e799bbbf2aa8ad8201cf7fa1302d3a8c2d0885bcd8141dbfcf67ae9d68ab2d1",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-10554@sha256:3e799bbbf2aa8ad8201cf7fa1302d3a8c2d0885bcd8141dbfcf67ae9d68ab2d1"
+      ]
+    },
+    "django__django-11141": {
+      "tag": "swebench/sweb.eval.x86_64.django_1776_django-11141:latest",
+      "image_id": "sha256:f2decac6250608a5fa4edd0d388d34983a612c7d9951e6246591a7d3a61a8d66",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.django_1776_django-11141@sha256:f2decac6250608a5fa4edd0d388d34983a612c7d9951e6246591a7d3a61a8d66"
+      ]
+    },
+    "matplotlib__matplotlib-22719": {
+      "tag": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-22719:latest",
+      "image_id": "sha256:c717250d0f6b4a9c65cd719057124119671e995e35b1a5b48a613288c31b85e8",
+      "repo_digests": [
+        "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-22719@sha256:c717250d0f6b4a9c65cd719057124119671e995e35b1a5b48a613288c31b85e8"
+      ]
+    }
+  }
+}

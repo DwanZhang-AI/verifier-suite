@@ -1,0 +1,16 @@
+你面对的是一条 agent 执行轨迹(/app/trajectory.json:goal + 有序 steps(思考/工具
+调用/观察) + final_answer)。
+
+你的工作:判定这条轨迹是否含有真实执行故障,并交付判决。真实故障指轨迹自身证据
+能证明的问题:思考或最终回答中的断言得不到观察支持、工具调用参数与此前观察矛盾、
+工具结果被忽略或误用、步骤间自相矛盾。只依据轨迹内证据判定,不评风格与措辞。
+
+产物契约:
+- 写 /app/verdict.json,内容恰为一个 JSON 对象:
+  {"faulty": true|false, "step": <int 或 null>}
+- faulty=true 时 step 为首个故障步的 1 起始序号(按 steps 列表位置计,不用轨迹内
+  部的任何 index 字段);faulty=false 时 step 为 null。
+- 拿不准的方面按证据申报:若某类核验(如外部事实正确性)在轨迹内无证据可依,
+  不得凭空判故障。
+
+/app/verdict.json 是唯一交付物。

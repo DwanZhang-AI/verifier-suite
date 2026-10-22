@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "python": "3.12.14",
+  "uv": {
+    "filename": "uv-0.13.4-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "05e4332791b4d55b6dde8695b7fa6079b26991519f44760887c5dfbd5ca4fe53",
+    "url": "https://files.pythonhosted.org/packages/4b/a1/de02c0913726728eca56ee258875cbba9c7b0572c63f494fd9f55c7852e3/uv-0.13.4-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "version": "0.13.4"
+  },
+  "scoring_packages": {
+    "pip": "25.0.1",
+    "pyarrow": "21.0.0"
+  },
+  "harbor_version": "0.21.0"
+}

@@ -1,0 +1,3047 @@
+{
+  "schema": "verifierbench-oneclick-source-v1",
+  "dataset_repo": "Catherine1213/VerifierBench",
+  "dataset_revision": "8e5d72dfc112aaffca75934a0caaa22067ba8df1",
+  "files": [
+    {
+      "path": "NOTICE.md",
+      "size": 4529,
+      "sha256": "771050be577859bdf4d6dc749d1b88a20907f74ec99a75c55fc8ca80ca9263b7"
+    },
+    {
+      "path": "README.md",
+      "size": 14359,
+      "sha256": "122902e1a4fc3cc742179a7f0197c4fcf96e9327f4021f4302517c21f64bebed"
+    },
+    {
+      "path": "bootstrap.py",
+      "size": 19775,
+      "sha256": "3897c06b866fc71a525f689fc9617e5814c90ada9c626552ceda64297c2807d9"
+    },
+    {
+      "path": "dataset-lock.json",
+      "size": 11373,
+      "sha256": "14416e3ae2e2a874c2d26e2bf343509e7b2e347d036d505a582954de7af545a5"
+    },
+    {
+      "path": "environment_image.py",
+      "size": 18414,
+      "sha256": "ae38d8c2cac4b6a1d85b6f202edfd0376ac5764311cf4ec15aaaa37e691e7f36"
+    },
+    {
+      "path": "hf_assets.py",
+      "size": 11758,
+      "sha256": "ed6b2e6e26858433c23d3ef9668da99b7ed3e3e7904754800b5ae88c0148ec32"
+    },
+    {
+      "path": "make_release.py",
+      "size": 2861,
+      "sha256": "dfaabc5ebd26eebd41c5634ddcead5da1eda6aa3f1896f0ff1a1e0af055b69a0"
+    },
+    {
+      "path": "native_setup.py",
+      "size": 25981,
+      "sha256": "6bf2f4a7694a37c61c181f8856e12d14fbf8661e0623bb73b919edeaa60cc970"
+    },
+    {
+      "path": "requirements-generation.txt",
+      "size": 1644,
+      "sha256": "92a0706f5acc4c24e600a9da93db7b7797df751020e6be9edefdfb9ab76c9996"
+    },
+    {
+      "path": "run.sh",
+      "size": 146,
+      "sha256": "609399376684f43fb1e18db89179421d9dbd594b3e74a7c53293a83b2b4d8a36"
+    },
+    {
+      "path": "runner/README.md",
+      "size": 3589,
+      "sha256": "d081b6a5c93e0de38b4178c811ad98a962ce16120749e5892c5f214dc91d3282"
+    },
+    {
+      "path": "runner/adapter_contract.py",
+      "size": 26693,
+      "sha256": "46450f1999b975f363a13d344dc0fb65630c9f7f9a927ed985711a77f44f7528"
+    },
+    {
+      "path": "runner/config.py",
+      "size": 3175,
+      "sha256": "9d66f35c660ac85650070e57320940de759f6b256221d12e4005fcd10906d741"
+    },
+    {
+      "path": "runner/denial_receipt.py",
+      "size": 3410,
+      "sha256": "feb9e21168506eed60752c6777d0feb8ba73f3e1c70f05aad1ea9c717b2fae3e"
+    },
+    {
+      "path": "runner/dispatch.py",
+      "size": 14396,
+      "sha256": "cbbf036b581882424ef79771adf1074993e7f3dc874eb842e2d47490077100c3"
+    },
+    {
+      "path": "runner/metrics.py",
+      "size": 13605,
+      "sha256": "5de6b1d3da336bd5a88778509f1019bfa35d1c14e29fd7472845dfa20a24fc2f"
+    },
+    {
+      "path": "runner/network.py",
+      "size": 4200,
+      "sha256": "5ed4e2b851045f39af2323b32c81fe0377584f201430a04022f07456a4a0a7a8"
+    },
+    {
+      "path": "runner/prepare.py",
+      "size": 6477,
+      "sha256": "18db40c998dbf2efdb5aa3278f72ce2e7dddc7edbc9f88b4f433d5cf4349b6c0"
+    },
+    {
+      "path": "runner/provider.py",
+      "size": 1792,
+      "sha256": "fb4f19d40345da0c3aabe99a8fd2ffe9970248736f89901ec9064a3ea3a6adf9"
+    },
+    {
+      "path": "runner/proxy.py",
+      "size": 10962,
+      "sha256": "71b5a301d35c2d361bca6976a07791ffc2f2af12ea2a0f5d5ac06deef0521496"
+    },
+    {
+      "path": "runner/runtime.py",
+      "size": 2019,
+      "sha256": "ac474941288fd3808d3bf743c7e46acd7abfbac8b3a7d3e8b1b4154629a11857"
+    },
+    {
+      "path": "runner/start.py",
+      "size": 7741,
+      "sha256": "2c1867c5f3a8846e61d576e0f3132ca44c9272b1b467ef59e72945b7f612a3e0"
+    },
+    {
+      "path": "runner/task_worker.py",
+      "size": 13922,
+      "sha256": "664868f9f1825d2931372e8d9021a2ed71a35f741155b0516ce7ad4f112faa71"
+    },
+    {
+      "path": "runtime/ALIGNMENT_CONTRACT.md",
+      "size": 1855,
+      "sha256": "ef5ef319161c76e36ccc8e70f2420771ab453c515e96ef0e7cd58b230e94da00"
+    },
+    {
+      "path": "runtime/EXECUTION_CONTRACT.md",
+      "size": 4846,
+      "sha256": "7bdd70b1bb406f45c0f4561125d999393b5711461e4731cba54ca06fb8b2764e"
+    },
+    {
+      "path": "runtime/MANIFEST.json",
+      "size": 19283,
+      "sha256": "157f7fda12abf0d2b59ed39e7fd425857471459724264d28e65271fdeabf7e67"
+    },
+    {
+      "path": "runtime/README.md",
+      "size": 1281,
+      "sha256": "5c38d554010e9d6f7c1c58f97690b4a3f76a81846381b87d145697f103f93e26"
+    },
+    {
+      "path": "runtime/environment/_venv_ad.requirements.txt",
+      "size": 1395,
+      "sha256": "e69275576f0ab7019ccd4169cbc300427fa0339d537a8cf7e0aa7940d123b0b1"
+    },
+    {
+      "path": "runtime/environment/_venv_aw.requirements.txt",
+      "size": 1488,
+      "sha256": "461126d193d7b3c6d55b41cf36802ae31e7d77cef8e9af19957086e8744e1744"
+    },
+    {
+      "path": "runtime/environment/_venv_swe.requirements.txt",
+      "size": 748,
+      "sha256": "01bb97a948d1df2851bc281ef632c7fa89f2b35f54f3a0ef19bf87270719d870"
+    },
+    {
+      "path": "runtime/environment/_venv_tau2.requirements.txt",
+      "size": 1819,
+      "sha256": "808705fc2502909a5464ada36ef376fdb1cc5c4da9cb68b9e06a24aeea1b8d3b"
+    },
+    {
+      "path": "runtime/environment/observed_execution_host.json",
+      "size": 17850,
+      "sha256": "41c6929a5101c983c9361c266517793c2d4569b9e341810630fa96694c39a72b"
+    },
+    {
+      "path": "runtime/licenses/DATASET-LICENSE.md",
+      "size": 1198,
+      "sha256": "b5cac339f50c4e440b492f62591b00beb81d8633841d6be3c3f36be49257669a"
+    },
+    {
+      "path": "runtime/licenses/dataset/ACEBench.txt",
+      "size": 1140,
+      "sha256": "d9a1b1e30d633d5732ea18e3cba9538d293ebc53e1a9e4e96ab739e0c5c4f1cb"
+    },
+    {
+      "path": "runtime/licenses/dataset/AgentDojo.txt",
+      "size": 1161,
+      "sha256": "4285a071f2d382338e52b4fb0a186d952984a34d43a33d8872e1a1d8cb43401e"
+    },
+    {
+      "path": "runtime/licenses/dataset/Apache-2.0.txt",
+      "size": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "runtime/licenses/dataset/AppWorld-redistribution.txt",
+      "size": 358,
+      "sha256": "07a8965d361da3aea3429fdd3f5ab4a62d8837bcaae6ad7d874bf14889c434ae"
+    },
+    {
+      "path": "runtime/licenses/dataset/AppWorld.txt",
+      "size": 276,
+      "sha256": "3786bdb398d95201c067c3b59a3943659a36783579f70ad0fab99f915b499609"
+    },
+    {
+      "path": "runtime/licenses/dataset/BFCL.txt",
+      "size": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "runtime/licenses/dataset/SWE-bench.txt",
+      "size": 1159,
+      "sha256": "2bd2e08df7147f67a69b42c10efae09bd4bf119df397371036187d5dd1b02f57"
+    },
+    {
+      "path": "runtime/licenses/dataset/astropy-astropy-0df94ff70979.txt",
+      "size": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "runtime/licenses/dataset/astropy-astropy-19cc80471739.txt",
+      "size": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "runtime/licenses/dataset/astropy-astropy-298ccb478e6b.txt",
+      "size": 1496,
+      "sha256": "c24e11182f188ebb0ff7d92132b7d3394411816dd4eb6ecccf8e91f3dc168d8e"
+    },
+    {
+      "path": "runtime/licenses/dataset/astropy-astropy-5250b2442501.txt",
+      "size": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "runtime/licenses/dataset/astropy-astropy-6500928dc0e5.txt",
+      "size": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "runtime/licenses/dataset/astropy-astropy-7269fa3e33e8.txt",
+      "size": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "runtime/licenses/dataset/astropy-astropy-80c3854a5f4f.txt",
+      "size": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "runtime/licenses/dataset/astropy-astropy-c0a24c1dc957.txt",
+      "size": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-003bb34b218a.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-14d026cccb14.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-1f8382d34d54.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-21aa2a5e785e.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-36300ef336e3.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-55b68de643b5.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-571ab44e8a89.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-58c1acb1d605.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-5d9cf79baf07.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-69331bb851c3.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-7d49ad76562e.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-8180ffba21bf.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-8dd5877f58f8.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-999891bd80b3.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-b1d6b35e146a.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-ba726067604c.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-c2678e49759e.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-d26b2424437d.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-d87bd29c4f8d.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-ddb293685235.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-e065b293878b.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-e8fcdaad5c42.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-f0adf3b9b7a1.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-f618e033acd3.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/django-django-fc2b1cc926e3.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "runtime/licenses/dataset/manifest.json",
+      "size": 15986,
+      "sha256": "87c599b37a28e60a85553a45f372761001b4535017758be1a229869f98bd9033"
+    },
+    {
+      "path": "runtime/licenses/dataset/matplotlib-matplotlib-14c96b510ebe.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "runtime/licenses/dataset/matplotlib-matplotlib-3eadeacc06c9.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "runtime/licenses/dataset/matplotlib-matplotlib-5ec2bd279729.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "runtime/licenses/dataset/matplotlib-matplotlib-6091437be977.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "runtime/licenses/dataset/matplotlib-matplotlib-6786f437df54.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "runtime/licenses/dataset/matplotlib-matplotlib-8f0003ae9029.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "runtime/licenses/dataset/matplotlib-matplotlib-9d22ab09d52d.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "runtime/licenses/dataset/matplotlib-matplotlib-a2a1b0a11b99.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "runtime/licenses/dataset/matplotlib-matplotlib-a9ba9d5d3fe9.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "runtime/licenses/dataset/matplotlib-matplotlib-af39f1edffcd.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "runtime/licenses/dataset/matplotlib-matplotlib-b7ce415c15eb.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "runtime/licenses/dataset/matplotlib-matplotlib-d65c9ca20ddf.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "runtime/licenses/dataset/matplotlib-matplotlib-f0632c0fc733.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "runtime/licenses/dataset/matplotlib-matplotlib-f8ffce6d4412.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "runtime/licenses/dataset/tau2.txt",
+      "size": 1072,
+      "sha256": "e67c5aa0074dfcaefd3c3a1aedb94cb539234aecd15d5a972574e3200e6252fe"
+    },
+    {
+      "path": "runtime/paper/freeze.json",
+      "size": 32441,
+      "sha256": "adb462a87694bdb7acf673252a65fcc418bef15c1930565cb678b7a8fae66746"
+    },
+    {
+      "path": "runtime/paper/input_hashes.json",
+      "size": 747470,
+      "sha256": "64f3623b3618746de76c5763cb5f7f0d24f0459ac84b9b186ffca54ba0e8a253"
+    },
+    {
+      "path": "runtime/pipeline/budgets.py",
+      "size": 6775,
+      "sha256": "1921a47c89504ea304f32ab7e6b885f49c41aa7f22ed8bd6179e4a08baf5cefb"
+    },
+    {
+      "path": "runtime/pipeline/capabilities/appworld_execution.py",
+      "size": 2007,
+      "sha256": "54d25711e74cf97830539c97d88e29f8a7fcfb8ce93849ad0b476959447294b7"
+    },
+    {
+      "path": "runtime/pipeline/capabilities/appworld_state.py",
+      "size": 556,
+      "sha256": "5f9f7dd6ee3483d26de8cc904b2e6ea5d130ef608a1347afa1af2d712b0607fb"
+    },
+    {
+      "path": "runtime/pipeline/capabilities/broker.py",
+      "size": 14347,
+      "sha256": "fa00a6dded777e888517b2e8414dd1dd85c894859db6faf18dd29ea50b902f52"
+    },
+    {
+      "path": "runtime/pipeline/capabilities/cap_agentdojo.py",
+      "size": 7578,
+      "sha256": "a14468585d297fa74aeb8034b6c91f93845189e4b86f7ea9f991b256f39dc7b1"
+    },
+    {
+      "path": "runtime/pipeline/capabilities/cap_appworld.py",
+      "size": 5551,
+      "sha256": "4317d01406088b77dbcfee262e0ee72eee6cf73c51af9b6d5a959a1cfb3067a8"
+    },
+    {
+      "path": "runtime/pipeline/capabilities/cap_exploitbench.py",
+      "size": 10223,
+      "sha256": "2b57bea93c618caae364eba7fe2e80cf9062c75129864ae2614014ebc781b72e"
+    },
+    {
+      "path": "runtime/pipeline/capabilities/cap_swe.py",
+      "size": 10253,
+      "sha256": "4de29a1a7a0eda96bbc7b33ef0c5d87f443a18b767f220632fc04c31f1c78879"
+    },
+    {
+      "path": "runtime/pipeline/capabilities/cap_tau2.py",
+      "size": 9075,
+      "sha256": "f77be3128c435e84bb48744bbd57a6d89678816cf4f53cd697fbb4eea8ea92d7"
+    },
+    {
+      "path": "runtime/pipeline/capabilities/cap_tb.py",
+      "size": 8569,
+      "sha256": "bfff5edc4b7c16aa6106eb2694ab3b5bf95fc4e44b9f1aa53ef59aefd0608796"
+    },
+    {
+      "path": "runtime/pipeline/capabilities/public_observation.py",
+      "size": 4281,
+      "sha256": "40407cfdfee5e240c10cfcddf367c21d3a6723054f5a9af64e7a062f30184a4b"
+    },
+    {
+      "path": "runtime/pipeline/capabilities/registry.py",
+      "size": 5754,
+      "sha256": "0a917c984afdc5c1eacc4be824e3511706d9c8328c5aa0debbfdc6908cd83265"
+    },
+    {
+      "path": "runtime/pipeline/capabilities/vgb_env.py",
+      "size": 11536,
+      "sha256": "5a6436e3efe77bca1ff86eebf022e70058f18e9b17aadffa8436537648cf74df"
+    },
+    {
+      "path": "runtime/pipeline/capabilities/vgb_env_client.py",
+      "size": 3944,
+      "sha256": "9a41ae9a13efb434205a8420890be14b76022f31676279e5deb3cb76361687d5"
+    },
+    {
+      "path": "runtime/pipeline/data/agentdojo/ad_gates.py",
+      "size": 4884,
+      "sha256": "99de70a2b3a5516595cf0ff09b95fd8dfd046b86d9c365e71258c168c086d47f"
+    },
+    {
+      "path": "runtime/pipeline/data/tau2_full/tau2_all.py",
+      "size": 12816,
+      "sha256": "045b546c99ecc863665449dfa883bd9f889e5c8825d7bbcaeff417d3f94ed295"
+    },
+    {
+      "path": "runtime/pipeline/data/tau2_full/tau2_stub_embedder.py",
+      "size": 3258,
+      "sha256": "ec36707a55191bdedc5672fc6f9bf0206866f30f29ad53ad59ed377aff4ba46f"
+    },
+    {
+      "path": "runtime/pipeline/decision_audit.py",
+      "size": 1048,
+      "sha256": "3bd04924da68f2b3c19be54294bd480354e7a42e7cf0722c744932cb290fa0e4"
+    },
+    {
+      "path": "runtime/pipeline/execution_policy.json",
+      "size": 675,
+      "sha256": "3ff9359618c2283290df2c798dadc61135eca6f0f0fcd21e81e724309d69423e"
+    },
+    {
+      "path": "runtime/pipeline/generation_input_freeze.json",
+      "size": 69037,
+      "sha256": "7059712543e04622b238246454267d7a7e57665424c1ef4880797f8aa848022f"
+    },
+    {
+      "path": "runtime/pipeline/generation_provenance.py",
+      "size": 4326,
+      "sha256": "83199390545f4d7d4fe2228282bb45484e3840e973e0b82e8b17f371856d7c4c"
+    },
+    {
+      "path": "runtime/pipeline/input_revisions.json",
+      "size": 73782,
+      "sha256": "380815d6a06fc1d84b5350005f8d29e84dca644cec39b8eb98ece449bbd07e10"
+    },
+    {
+      "path": "runtime/pipeline/pool_policy.py",
+      "size": 1286,
+      "sha256": "4a7b3ea41abbfb0ff541aa63102e918b57c6485d2a9cd7295109c401718ae6c8"
+    },
+    {
+      "path": "runtime/pipeline/repair_profile.py",
+      "size": 7986,
+      "sha256": "b2211a30657a54e0f6d7505ed5315b68d6e95363d4ccb70d8ffda3731efd86f1"
+    },
+    {
+      "path": "runtime/pipeline/runner.py",
+      "size": 35712,
+      "sha256": "921da7110ab2b48f6eae560bc303414f12d115e504559a0f671ef20f95c73921"
+    },
+    {
+      "path": "runtime/pipeline/runner_spec.py",
+      "size": 10266,
+      "sha256": "102d130e90de4c81bc9c9a86df9a3474bfca6095d4fcf47861e14e8f6c2a3202"
+    },
+    {
+      "path": "runtime/pipeline/runtime_contract_check.py",
+      "size": 734,
+      "sha256": "432f6a74f1c436c050f4580b8da24d4a05b7b94ea900cc4e67c6460f2261b054"
+    },
+    {
+      "path": "runtime/pipeline/spike_bundle/runner_spec.py",
+      "size": 10266,
+      "sha256": "102d130e90de4c81bc9c9a86df9a3474bfca6095d4fcf47861e14e8f6c2a3202"
+    },
+    {
+      "path": "runtime/pipeline/spike_bundle/vgb_env_cli.py",
+      "size": 4184,
+      "sha256": "b4df734cd69f025ddceacb1a2a88c77db3be8bfdff0af066828eebc066d56a96"
+    },
+    {
+      "path": "runtime/pipeline/spike_bundle/vgb_env_mcp.py",
+      "size": 7324,
+      "sha256": "c7b908edaa1e20dfb704425d4719a480376c01468ceb92a3df3be3842f23b216"
+    },
+    {
+      "path": "runtime/pipeline/spike_bundle/vgb_env_pi.ts",
+      "size": 5330,
+      "sha256": "182a840d81eb639d62138cc2fa063f43608bc46073d7d4ba3689a9a353572439"
+    },
+    {
+      "path": "runtime/pipeline/tasks_all.json",
+      "size": 28260,
+      "sha256": "787664a73b9a657ec03b6153c335beeee51133c0b5959043854eb615d6aab923"
+    },
+    {
+      "path": "runtime/pipeline/tau_replay_contract.py",
+      "size": 1643,
+      "sha256": "dc2c6d0def10c6d4f2fd2eabc89d43093071339029b988dd387465c7f2a29f12"
+    },
+    {
+      "path": "runtime/pipeline/upstream_defects.json",
+      "size": 19063,
+      "sha256": "332fd1036b9200ab472e424cbe15de3a602c0e5120bb400b1e53e8ade2f87100"
+    },
+    {
+      "path": "runtime/pipeline/vgb_env_cli.py",
+      "size": 4184,
+      "sha256": "b4df734cd69f025ddceacb1a2a88c77db3be8bfdff0af066828eebc066d56a96"
+    },
+    {
+      "path": "runtime/pipeline/vgb_env_mcp.py",
+      "size": 7324,
+      "sha256": "c7b908edaa1e20dfb704425d4719a480376c01468ceb92a3df3be3842f23b216"
+    },
+    {
+      "path": "runtime/pipeline/vgb_env_pi.ts",
+      "size": 5330,
+      "sha256": "182a840d81eb639d62138cc2fa063f43608bc46073d7d4ba3689a9a353572439"
+    },
+    {
+      "path": "runtime/provenance/source-bindings.json",
+      "size": 34611,
+      "sha256": "b4717371fd9122cb35e881a02e123695781edd563cceeee5e62c160ad5a95c08"
+    },
+    {
+      "path": "runtime/scripts/check_delivery.py",
+      "size": 1839,
+      "sha256": "623e546e11249cc29fe7d86140886dc436b91b6a6d6a5cc8a7792c9028b94c75"
+    },
+    {
+      "path": "runtime/scripts/paper_score.py",
+      "size": 4647,
+      "sha256": "1dcc09166e0ddefa87559070e8510074b628829b0339bd026d7da2142bb94d9a"
+    },
+    {
+      "path": "runtime/scripts/prepare_views.py",
+      "size": 4319,
+      "sha256": "66847adbbdb5e683f8d77faa48058b5d90004146476c2261e997e55b056e328c"
+    },
+    {
+      "path": "runtime/scripts/replay.py",
+      "size": 8864,
+      "sha256": "fdb318fac7b7fff6273d984093e035ab786674df9f9fc7bbe33903aabfce60d5"
+    },
+    {
+      "path": "runtime/scripts/score_verdicts.py",
+      "size": 4754,
+      "sha256": "c71cfc10c8381b98e3d85bd5918376f9b6d4c9d3377594db6942efb1f15e556b"
+    },
+    {
+      "path": "toolchain-lock.json",
+      "size": 545,
+      "sha256": "cdff942ca782964fe87e9b5cfd187d9a9bed6d31b8bf1394edf53ea013934b78"
+    },
+    {
+      "path": "validation.json",
+      "size": 8348,
+      "sha256": "6a1ff91d0585a2d9d30446261b99933ae73b749fec3301dc879af3fe88ca75e1"
+    },
+    {
+      "path": "vendor/harbor/LICENSE",
+      "size": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "vendor/harbor/README.md",
+      "size": 2986,
+      "sha256": "6428c013e8b6cbe1b419d3d50e7e50fbf291edc87fc20aeaf3e715bdc4ae01e6"
+    },
+    {
+      "path": "vendor/harbor/pyproject.toml",
+      "size": 6289,
+      "sha256": "530121e1ce27a437ff1a9bc8865587503c38dfc28b39a2759f08fcf09f376f6d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/__init__.py",
+      "size": 8046,
+      "sha256": "f18a927b54b8b27aab72b5fa59bad1a1a68efd0090d66b441539d0476c3042b5"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/base.py",
+      "size": 9547,
+      "sha256": "2793d9788bdeb5228f4477fc1eaa834471a0f4d485cc19c02143e7a0a115ae65"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/computer_1/__init__.py",
+      "size": 83,
+      "sha256": "ec044fc0b42c8e91b5430b7ccf17487feebd8621ad889c8a079a236b83770ebe"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/computer_1/compaction.py",
+      "size": 13164,
+      "sha256": "6521ff5d00503a74a19d5ada762c86e2bdca4e65240a5aba13611120d6c5b736"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/computer_1/computer_1.py",
+      "size": 63975,
+      "sha256": "602137e185791e6f545f3376fdc963df5c1b586912e5f11b975c76d4d968cb17"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/computer_1/providers/__init__.py",
+      "size": 1038,
+      "sha256": "afa8126575bbe6725ecf0637f4011d4fb578097ebc77956f6e8a2ac36f085b30"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/computer_1/providers/anthropic.py",
+      "size": 19533,
+      "sha256": "25d2b59df1b2b71750bac9c8b4a1af3de98e0e74f3361df1df6c9a79fac7e93c"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/computer_1/providers/base.py",
+      "size": 18597,
+      "sha256": "c48082c2e2489c4f9642ae96f9c84bcd6fc66826fee902decbf4d286d70dc8d8"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/computer_1/providers/gemini.py",
+      "size": 18720,
+      "sha256": "439c8d35dda615935d7c8a54ec2f5b888534ab7f44e7eca27eafc13072d8a895"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/computer_1/providers/generic.py",
+      "size": 13447,
+      "sha256": "cb7d3b813e86aed322e56ff5706ce7160d26832cdd8703ce5b4bc98f4191c652"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/computer_1/providers/openai.py",
+      "size": 10189,
+      "sha256": "e29a8ec5752836de62e86af71cb55ad7cec9bdcf37b1f961e9e06fca2d5d06d5"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/computer_1/runtime.py",
+      "size": 45053,
+      "sha256": "c396bac923a34580d80105d1dcbe75b4d26c7cd578345ffd536dd5388a466a9a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/computer_1/templates/computer-1-json.txt",
+      "size": 3380,
+      "sha256": "3924058660dfdb36a5e18fe9fa95e5e56d7ac0e7f791bf561250080bb968e5be"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/computer_1/templates/timeout.txt",
+      "size": 239,
+      "sha256": "b2d2d3a5ab0d6c4875083f0518b931a2f5a27df3a6c4d04e96cf89e646a703d7"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/dspy_rlm.py",
+      "size": 14478,
+      "sha256": "dac10f0fe4154b3685bc63f7155ff3cdffb40de2a6df199a1b1383fe110540c7"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/factory.py",
+      "size": 8296,
+      "sha256": "82f8d41e986e16768d42c3978e665460b5934533afd99e9396e9042c7b3704ee"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/acp.py",
+      "size": 60616,
+      "sha256": "862fed6bdf623c65888598b661907f9c77456dd7acfc5e83d958dfc15cdb99c5"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/acp_registry.py",
+      "size": 5170,
+      "sha256": "619548f2328e1fb9a6e50044ce2b44ccf3784e6dbb061ae0ba69feed78920453"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/acp_runner.py",
+      "size": 29667,
+      "sha256": "d0dc9d14f9aab9602032a52f21b922b4074b2a6a861dc56e522388d7b5ec5758"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/aider.py",
+      "size": 4518,
+      "sha256": "d507e19484d7e627c071f698a0751265534d749f3e23b92aa9202da85a0bf08f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/antigravity_cli.py",
+      "size": 33873,
+      "sha256": "3be891a20071f9b6a214393a6195e37ef501b3a3fd849cc578422ab160563737"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/antigravity_login.py",
+      "size": 9229,
+      "sha256": "106c581348024f63128405f413458e032c980c02f246274dd54171b3b58bb54c"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/antigravity_sdk.py",
+      "size": 9415,
+      "sha256": "9f8bab8c514962d6c2bf245e57b416e25108231c0205723400fa58c5ff5b01a0"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/antigravity_sdk_runner.py",
+      "size": 11725,
+      "sha256": "a823c8928fe26ea8fa3a84dcd5d916a92ab860e70e599dda7efd5e43a50836c3"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/antigravity_sdk_runner.py.lock",
+      "size": 155552,
+      "sha256": "e1fb19e6e7a1ba8364dc2545dbd73dc8472450ba4abaf33363d9edcd80da3bc6"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/base.py",
+      "size": 39192,
+      "sha256": "eb62e08543bf3eb7a4ef5da8df50c2079acdc1db9247c10119b254aafcf26d61"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/claude_code.py",
+      "size": 72692,
+      "sha256": "2e6f4b5d6394887e6b0a438a13465cbe5deb1652d5536f2c5fd916b9fea15ab8"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/cline/__init__.py",
+      "size": 81,
+      "sha256": "84d019c7c793122881ba953a0fdb972ea6a13953a0f11b473c9bb97a97ab698f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/cline/cline.py",
+      "size": 44329,
+      "sha256": "a4dae4dacdfb2b57c0e8d3206c5ddb830955b82ffe1f5fa646064212eed873d3"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/cline/trajectory.py",
+      "size": 10791,
+      "sha256": "6e11192b92250ff8a012c9c6850fde6ef94acd69d1c7514fb2ac2ba68b5e5e5f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/codex.py",
+      "size": 57202,
+      "sha256": "46a3b65f811ab34ecb32f485cd25856985c35ebae47b2a372bb60b7d40540c0d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/copilot_cli.py",
+      "size": 32584,
+      "sha256": "c2e65a699f62abc928486ddc144a262dbfad7338a61b45c05954976fbad82bd7"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/cortex_code.py",
+      "size": 38009,
+      "sha256": "4c2db0fc401bf99836b335afe66b49b94af53dca0f441e56dceca2c27c69acef"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/cursor_cli.py",
+      "size": 32072,
+      "sha256": "d407f60c31e1ecbac8b75e9d6b006a2605efa8bef63cadde0aad4096c47b3961"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/deerflow.py",
+      "size": 29955,
+      "sha256": "914f0c58347fdd59c2ec819507ddb027a4094f1d6a1dff5e5372f62098472bbb"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/deerflow_runner.py",
+      "size": 9290,
+      "sha256": "2ccd1fa554cd01ac84ee24622595802baa1e6d4ed5a5af34fbe71e88ee5fb18c"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/devin.py",
+      "size": 17469,
+      "sha256": "a8cc10e63104a7f8013939e1232dcb5aa71d92836ea287d67eb67def1cbcb082"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/eve.py",
+      "size": 37110,
+      "sha256": "2095bd58c00b82e540ca056ace8a6e8f09cc4715049c24e1fd864795629a26ce"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/eve_runner.mjs",
+      "size": 6932,
+      "sha256": "5ab9d9f35ebd85d811837b51726e055915452ba71486937e675a05c44eaedc66"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/fx.py",
+      "size": 7667,
+      "sha256": "9f1d98f2f9f3af05d3b209d3e6adb1274b300b9f51f12cccd5f45d6860f651f7"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/gemini_cli.py",
+      "size": 35100,
+      "sha256": "c020eb05d2e9ee363a26fd7cdc4d017cd8155b80b610f602003f694324b464a6"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/goose.py",
+      "size": 28091,
+      "sha256": "20d429a3a734cdf009010968cb524c11dd0b2d367cc3cc91dc79086422b890ac"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/grok_build.py",
+      "size": 41921,
+      "sha256": "63c7b621fd6150b1c3695e0ef68c088f584d9fb557367b50db68992aac7fc49a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/hermes.py",
+      "size": 16877,
+      "sha256": "bd103873cf77f14f8fce2742f5b3670d2dae065a7ac4be6abe0de7fb2c3e1a88"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/junie.py",
+      "size": 37268,
+      "sha256": "5037ca3d06944b1f09e0bb353e19b38d0ae8e3d7e9e4513413edfc4e2c7b370a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/kimi_cli.py",
+      "size": 22015,
+      "sha256": "9f7415b1d92554d730b9292e9065bc8779571cf111bd5477886f602321d059ff"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/kimi_code.py",
+      "size": 5887,
+      "sha256": "1a5c13e8fd4d055843d1f9609177fccb12ca7531f5a4d356b34ea35e471ffbe1"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/langgraph.py",
+      "size": 31757,
+      "sha256": "c6ec28407f4a13745eae6d0602c64694a05550beee82d01e03fc1ae8c77de790"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/langgraph_runner.py",
+      "size": 13301,
+      "sha256": "6125551565a3242bf042d141f4c7892f4c581f38cbd42ce67ca9c21a8c6c0333"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/langgraphjs_runner.mjs",
+      "size": 16893,
+      "sha256": "4f300ab1db7877820e14b270fd1106cdd2c96e1cc701f1e95235743dd7b272b9"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/mcode.py",
+      "size": 15653,
+      "sha256": "b4a06244381ba8361d5c227e5613546203d122dc5f9420c904db0be61003ef6d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/mimo.py",
+      "size": 17584,
+      "sha256": "0bdcbce95745c7d17b8e47858d96c3d3df4a82f8259a42ca97b07eb4aadadd1f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/mini_swe_agent.py",
+      "size": 31374,
+      "sha256": "6775eca2f1307cad0d671f2d84529ad1aee7728800c75f673d55add085204284"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/nemo_agent.py",
+      "size": 19911,
+      "sha256": "43d725ed605792c218dc2e0fe4c0263e495248aed3b4fd4b22a98d34b8a8f658"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/nemo_agent_run_wrapper.py",
+      "size": 5167,
+      "sha256": "38b665fa752870bbabb4540d8bce83d2113fe91f94785cb2fdb8b54586b6b8cb"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/node_install.py",
+      "size": 1245,
+      "sha256": "67bae8c32bc7d98902cb3e1dcc56fde0026764606bd377b4d07b2346e82ad29d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/openclaw.py",
+      "size": 35091,
+      "sha256": "c1a6511b54a926feda887f457df815b6a9e95873e2783d35be7a112849a0a0a7"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/opencode.py",
+      "size": 21018,
+      "sha256": "444a6b90f9f6cfa5e0e6731951ef4b9a60a6410259bfdda9f3f8847aac764f49"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/openhands.py",
+      "size": 40941,
+      "sha256": "dcc131d0d8e5dcbef3c6e1e82f7100109b8dab302593e02da67e50722be021f4"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/openhands_sdk.py",
+      "size": 9809,
+      "sha256": "a5da8472b7cd8f4f3c461d203b0eb01be6317eb47b55039943cc065b0d782a58"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/openhands_sdk_runner.py",
+      "size": 16181,
+      "sha256": "f7447d2e938c118a4c0e04c0daa7d32d4e631c81deed6cc557f6e112efc48668"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/pi.py",
+      "size": 9047,
+      "sha256": "2a4d99fc1f229ced58bc8ded5c9795cdce7065400212cf26c3952a5ca980e4db"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/qwen_code.py",
+      "size": 12469,
+      "sha256": "be710640f59a95d56c09c019874ed51ca371fb6b944478594fdb40e01b1977ce"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/rovodev_cli.py",
+      "size": 25874,
+      "sha256": "0941a4711dc6725d4ea65b7e011ecd57b002eae0c28d2edd3236413dc278f1ab"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/swe_agent.py",
+      "size": 17151,
+      "sha256": "1fcd19be73a8f6f696439f19d5c1b25f3e473cb988764fd475073ae4c0f0a790"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/trae_agent.py",
+      "size": 16169,
+      "sha256": "dc51162964a4d52812f60f55b302e29bdf86505ae28c756da3042f834a66441b"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/installed/vibe.py",
+      "size": 37324,
+      "sha256": "b364fb7aee94ce757665f72fa6f60540707090d23d2e94a7893cd325da0df577"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/model_connection.py",
+      "size": 10715,
+      "sha256": "20f4ecc5aaf204f3b8d8cec1fba54a89ea5961194a6dec46831119c8461f75f7"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/nop.py",
+      "size": 708,
+      "sha256": "67727f4ea45a708647d029fc7eb2f5676f6fdfb9db6eb33d6f1989e6f466403a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/oracle.py",
+      "size": 5730,
+      "sha256": "7f27c34efa069173b74d2498baa5a86955f7b0c79fd4f3e232a33b25066ff620"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/terminus_2/__init__.py",
+      "size": 83,
+      "sha256": "d8cebb1fbd7e3ca6390879d747acc261fe9604107514ded06be5c1c787c84c62"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/terminus_2/asciinema_handler.py",
+      "size": 3706,
+      "sha256": "98a58cd8640745d5712ec6f7c3313b8d622706249b795378b914926ff563738d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/terminus_2/get-asciinema-timestamp.sh",
+      "size": 923,
+      "sha256": "a75362b93fd028504d0f7e89ec777f5ecb2db3b74ce1bece2641cfbc0e01262f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/terminus_2/templates/terminus-json-plain.txt",
+      "size": 2916,
+      "sha256": "89a3dc3a15752b748a99fb907c9251ab31a464e13386583fb48476b078b54a34"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/terminus_2/templates/terminus-xml-plain.txt",
+      "size": 3417,
+      "sha256": "721c0ada54921cbb7bb9f817f2306c79ff4ba3381d08be7eb97fbeb0d99d298d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/terminus_2/templates/timeout.txt",
+      "size": 365,
+      "sha256": "32bf9aa7b157a6a0e0ba0d33b81e59dd67204276f158afc1fe6cb684ced68872"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/terminus_2/terminus_2.py",
+      "size": 81558,
+      "sha256": "c6b72b8c6289809b2ff3a3009b8f118fa1edb1da205f48d0b56c6938a49cb12f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/terminus_2/terminus_json_plain_parser.py",
+      "size": 13703,
+      "sha256": "ba7eeaeb28e2f72ecdc5850617c77cc571692c68698306637cc2cfed41130688"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/terminus_2/terminus_xml_plain_parser.py",
+      "size": 21648,
+      "sha256": "b36a7349ebb5db3fcac94cc61df36d8473869672f9d62fbdf5c63548861760c2"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/agents/terminus_2/tmux_session.py",
+      "size": 34402,
+      "sha256": "38642b794c3358809dabddfb36ea53d57fadf3e1e6fd736d82b39da8f3ce7976"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/analyze-task-template/task.toml",
+      "size": 312,
+      "sha256": "66c0a03d0d26f580ca4b649d41c96a3d60a7682049403e1f2689311b240c5b34"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/analyze-task-template/tests/test.sh",
+      "size": 170,
+      "sha256": "22dacc1ba65089aa8a0ce219ba852a2967fd485576134a213692247100bf77a9"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/analyze-task-template/tests/validate.py",
+      "size": 2241,
+      "sha256": "c68ffef4a5aaeeb8ce69a5e56398f6b0c69bb23b78088d73d62c2d6eb53157cf"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/analyzer.py",
+      "size": 14346,
+      "sha256": "3ed9ab4ada2e6a5ba952b363e931901a1cbac7af2502a8124204fd03e8b986f9"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/check-task-template/task.toml",
+      "size": 320,
+      "sha256": "eb4a3239e7d1dd203b4d6762ccf71950d9a793ee48d8bf854ab25bd4407cb541"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/check-task-template/tests/test.sh",
+      "size": 174,
+      "sha256": "2e5886c5dbaa49459ec18623270e4478d187ec49fddc67ff496923175a1bd52f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/check-task-template/tests/validate.py",
+      "size": 1812,
+      "sha256": "272a33e5e8c3b7d710fb169d88e8f873ba2f6ffb5328c1e8794fb8a1c2034925"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/checker.py",
+      "size": 11235,
+      "sha256": "da82ef6a2bf9c73e38a91c551b88f82c7ec8419770e76b0abe94d6bd5641320f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/models.py",
+      "size": 4287,
+      "sha256": "24105debf3a81c21bae65bb2325e2f84fb796fe376e4219dc67aea43ce66b564"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/prompts/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/prompts/analyze-job.txt",
+      "size": 686,
+      "sha256": "d0c6f5227207995892e42b7b863c7db038fbaafb20d5398f5fce515852607112"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/prompts/analyze-output.txt",
+      "size": 583,
+      "sha256": "41bd99f50e7400b8dd6681117022637ffa7c4913a3595a4ab22202d9559af69a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/prompts/analyze-rubric.toml",
+      "size": 1495,
+      "sha256": "01f7a994577501d94105352c6a1f35759c4c74c54deac5e81afe235e3738d5c2"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/prompts/analyze.txt",
+      "size": 1163,
+      "sha256": "1653a04f5f8833a517e6231d289fae70185e7747fc816595f3e1cd934bf661d4"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/prompts/check-output.txt",
+      "size": 493,
+      "sha256": "17c9c6f5dec0ebb61f7b19dcc01e1dda1d258ce3f5aeed59d773682580a39f0b"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/analyze/prompts/check.txt",
+      "size": 934,
+      "sha256": "49d7c0b529bd4bd42edcb5d342a0b865c27137bfe821ccc7923c280de61b9ed0"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/auth/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/auth/client.py",
+      "size": 5089,
+      "sha256": "64ab242d1074aae0719da1975304a91c0643cbe52ca688532c3192711d2e8c70"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/auth/constants.py",
+      "size": 2034,
+      "sha256": "90cfcf350ecf396d9d6c6166faa6f54c9de4348deef6b6240440fdb942f71dd3"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/auth/credentials.py",
+      "size": 5837,
+      "sha256": "7c930cf57d01a8fe5c897c97b9cb1672cf9e446f68a647b3ff015eed4ccba962"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/auth/errors.py",
+      "size": 1025,
+      "sha256": "c96555482c147d15cd02fb8deedc83af70561e3a90126990adc0c8bb1fd67788"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/auth/flows.py",
+      "size": 8194,
+      "sha256": "8aca7371c2682d78bf1376ef504940afb30a1ead2bd9549eb3d412ce3f626079"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/auth/keys.py",
+      "size": 6170,
+      "sha256": "2359fb0960758718b6ae823c63f331dbce2c11ad6dcc23561bbc12601f46a556"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/auth/oauth.py",
+      "size": 9669,
+      "sha256": "18b3b6f9dc0c01460cdf1930352c371017a9a24881b6455e4609aa910b066d39"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/auth/orgs.py",
+      "size": 2701,
+      "sha256": "5629fb2a40fa32552d26f741f7381827b8ada0f1de9a77e898f23732c97341b3"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/auth/retry.py",
+      "size": 3650,
+      "sha256": "4b24c235270c597cec54a0489a2b75f1302ee1d4c0743a58776e03b8432be139"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/auth/tokens.py",
+      "size": 9038,
+      "sha256": "75aa72359a73f5509dae705709eca36b4f308412bd9b3226d1d1baa9fafb33cc"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/adapter_review.py",
+      "size": 59655,
+      "sha256": "82bd2381694d273397faee7429c01baba2ceb634823a2efae6b67ba9ce72cbcc"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/adapter_wizard.py",
+      "size": 21136,
+      "sha256": "155793b23a70dfe49ac3e556497eae7348e91d2fdace6f0b9d2796133dffddf5"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/adapters.py",
+      "size": 5299,
+      "sha256": "b63106de8914e6eb753c6ad4511bc32e9b32dad0f76dec21a6ea271926db8930"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/add.py",
+      "size": 13062,
+      "sha256": "59a4ea8d72411ae48e6ccf0272b2ebbe009aec23492b6159e340d18fe591f3f5"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/admin/admin.py",
+      "size": 12491,
+      "sha256": "a8e5965341a07bc653d36d1e3f8d1447d906465ac2534bfcc818d8c9b0c6df63"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/admin/docker-compose.build.yaml",
+      "size": 220,
+      "sha256": "ea84a2e07997eb3ed750fd5c5ea8f11cf5b981bc7b1fd97d3c1ca14dd3ef9ec0"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/analyze.py",
+      "size": 13435,
+      "sha256": "103cb539cdbf12ab70eca856caa8d1c3a81a4ca0b62b424bf1e6ce93e368a363"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/annotator/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/annotator/annotate-task-template/task.toml",
+      "size": 326,
+      "sha256": "bf809a55eeca8ca660b0e92d5656c7f6fb50ee85b1ff2f7641c4db0da0cb1f2b"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/annotator/annotate-task-template/tests/test.sh",
+      "size": 177,
+      "sha256": "9e19ed236a39a45d2353632c11f017a22fa6b716c52db3a06993a4a63a602b08"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/annotator/annotate-task-template/tests/validate.py",
+      "size": 1005,
+      "sha256": "ec76e0439dc88d64e44e184f61de1684036890b8f38cf51929fdfadbce906bee"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/annotator/annotate-task.md",
+      "size": 1185,
+      "sha256": "a90b913cf274caf90bae21bc80a3326d74db22a927fe2f7be6039b032a156239"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/annotator/annotator.py",
+      "size": 9475,
+      "sha256": "bc83123ee6e2c825595c3095a96674188f5bdf88fb69210db19e45ad26dccc58"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/auth.py",
+      "size": 11494,
+      "sha256": "c63a114864ca6bec6f97690cec7bedcbf7471978c8edf4cb7d8787606ac8003b"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/cache.py",
+      "size": 4927,
+      "sha256": "1a980972288335d8068ecb5c66100a3bce936635b4eeed1eee7e5185c730a7c7"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/config_init.py",
+      "size": 6794,
+      "sha256": "6c492de9b5bd872e44c6dad4539b4ea6ba07e6160c69cb44da9a42cd00223c9d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/config_sources.py",
+      "size": 2312,
+      "sha256": "6749b336dfbee4b0a393271cb570d2907d724843b6f684d92a52bdacdf00a00e"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/datasets.py",
+      "size": 12408,
+      "sha256": "d20baa510e0b1269dab5f202a049ae39c7181d180b860a802f44a42d6666f341"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/download.py",
+      "size": 12169,
+      "sha256": "7564180ef628a0b59992b7e8646a4f9ce2f31a89ead43d2c0ee0826a0e54026d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/exec.py",
+      "size": 40767,
+      "sha256": "e08894591c75d05d521da06424ad936b312c864680b73bab46e43ea68a2633ed"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/hub.py",
+      "size": 55193,
+      "sha256": "8bcb3c31c5e91ddc541f9e2ade31618731e5648a28a192017ef25a4ae5167964"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/hub_leaderboards.py",
+      "size": 51776,
+      "sha256": "71ff3569e74c06eec46cf0faf545c14d8675d260aedadf650f44646df7e7e4e0"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/init.py",
+      "size": 17950,
+      "sha256": "438e572a1c1d553928a9b3eba160f093a7b3227b2dc3dfd30a0cee04a2802253"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/job_plugins.py",
+      "size": 1950,
+      "sha256": "280e94c6a3f9b4f4abcd5f5567f5cb5d7460a2969fcaa2600a47c6ab0f40b4b3"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/job_sharing.py",
+      "size": 2158,
+      "sha256": "df8bd2b21957e131793159b812fce8e6128f7a2131c1e66e61e0463f34e6ddf1"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/jobs.py",
+      "size": 84092,
+      "sha256": "85f10ed4ee306082790e0f5da93a478a706843c0b41fe97001ccc37194cac12c"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/main.py",
+      "size": 6429,
+      "sha256": "8c0ca6469143bd19a0156355aa4d276ec3b0fd61a6da41d204a742365734c790"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/notifications.py",
+      "size": 1478,
+      "sha256": "0f59f5529a0edfc257fee92c70668ec17718f40c3d6f5df608375b1fd74f3ae2"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/package_access.py",
+      "size": 20892,
+      "sha256": "e529585f99aaa36f5a61b9b19b202edbde38f5a4be78158f789776bbddb34483"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/plugin_registry.py",
+      "size": 761,
+      "sha256": "ddabb198fb2f2b594a383862ce1d33b11cf3bb729abb8a453f88c95e6d2bf8e1"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/plugins/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/plugins/harbor_hub.py",
+      "size": 6037,
+      "sha256": "1eb07e066454af6dfbc7cc1fc00c991594db20596fd94dd3791962e64169789f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/plugins_cmd.py",
+      "size": 945,
+      "sha256": "8ac34ff5ea66991f26bce56e50928770370a08da71329f3d60897cf85cc13a55"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/publish.py",
+      "size": 13657,
+      "sha256": "a0cf562288d4276955b57e9f5dc310255316f43f286f884adbef909795d6b954"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/quality_checker/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/quality_checker/default-rubric.toml",
+      "size": 5316,
+      "sha256": "0b2bf9e42e8a6290d9f43dab68c9ba61e5e00784deef0f586ca53af608f2903d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/quality_checker/models.py",
+      "size": 1750,
+      "sha256": "77fe0eee798808656fbffbf513391c9c5df57941bd32445b9a331ce59a806b3d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/remove.py",
+      "size": 8579,
+      "sha256": "76150688d7ccebed944f640d0177be50e7e9d3faf07c3e46a67a743bbaeaf359"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/sweeps.py",
+      "size": 12542,
+      "sha256": "0a7c6136dd3312013af0d3a4034569850509d0478b8a60152793f6731347966d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/sync.py",
+      "size": 9351,
+      "sha256": "80acf33d7490ee082d2a4fcc25624b7426d33a37fd1fa6ba134b58b7a4516a82"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/tasks.py",
+      "size": 31448,
+      "sha256": "eb876676da1ad59d9ec605b95c50e63a7df245f03ab53b35f4fff89837f48b24"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-adapter/README.md",
+      "size": 10434,
+      "sha256": "8ac4f506e9122299647d9e99383a2c68af8920918e625e3ea1b2ac3d88563391"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-adapter/adapter-oracle.yaml.tmpl",
+      "size": 485,
+      "sha256": "8348ddb15197f437646fd726ac6d7de8112e5f9476b2a8a3b35eb4a5185c8370"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-adapter/adapter.py.tmpl",
+      "size": 2329,
+      "sha256": "7424871fb6d99907edf023a61d62d50b65adc03c8f2a21b82432618128f90fbf"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-adapter/adapter_metadata.json",
+      "size": 673,
+      "sha256": "47003b3ee4bc2c29ed2490672bcdca883def2721244cd020f119273cd5aedbd8"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-adapter/main.py.tmpl",
+      "size": 1367,
+      "sha256": "f6bdd5a0add5edf8d56aa3b241e89dd06422dd939955f2c8be0222722dff6d0b"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-adapter/parity_experiment.json",
+      "size": 658,
+      "sha256": "81c0b28e96db8a390d94172f6b47f2c23e8b39b550502b312e348ac2777aada6"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-adapter/task-template/environment/Dockerfile",
+      "size": 286,
+      "sha256": "6043e6667589022a3658b967bb17cb8d9e4bcdd3dc0931a7aaee2d6cbe941141"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-adapter/task-template/instruction.md",
+      "size": 22,
+      "sha256": "e7b6b784bdac1dea28c8a3a1f29ea58cb4c6a60e400baf2b19d3d036aa750d66"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-adapter/task-template/solution/solve.sh",
+      "size": 224,
+      "sha256": "a4df1c2f163bad31bb3d085db7049b198a3dc660c2f5d7f711716e60a5ce976e"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-adapter/task-template/task.toml",
+      "size": 2133,
+      "sha256": "4c5d251f9b19353850479362d566883bff7fdf2e2c84a3bc645f2a66e98980a1"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-adapter/task-template/tests/test.sh",
+      "size": 365,
+      "sha256": "609e701993c6ce220f13e5cebee4da53543297a5b6e8fd9f7eb838601ecb577b"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-metric/metric.py",
+      "size": 1233,
+      "sha256": "52904120417c9a58c21750ce5e2eb721c4b0ef1c1536d0b31d208e55e377ead9"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-task/.gitignore",
+      "size": 177,
+      "sha256": "9a8dd8d9b6c3adb8e9e56328df27deef859a3e98fffc9b8133c8b22207c25953"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-task/environment/Dockerfile",
+      "size": 90,
+      "sha256": "609c87cda17b93e63c8f9c6c9286fbc3dcceb761c2cfb0f1c0d74bf8141a543e"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-task/instruction.md",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-task/pytest-tests/test.sh",
+      "size": 598,
+      "sha256": "e26daee2de02446ae541140c19d4616cc85818bb3291713657e2bd360db6248a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-task/pytest-tests/test_outputs.py",
+      "size": 273,
+      "sha256": "24d63c4308ecfbacbeac9c5cb2fb6c104b1e170dc40deb3cf61e9f2091f9310e"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-task/solution/solve.sh",
+      "size": 47,
+      "sha256": "38241b65dbe53dbd55be479a71261f6ad9578589a0c0a324dca795c13056d996"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-task/task.toml",
+      "size": 137,
+      "sha256": "627cc961495ed9060ab6e3ce7276f655ac9863054e9ac24cb0a71c32d846db37"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/template-task/tests/test.sh",
+      "size": 340,
+      "sha256": "24df404270a12e1197b51059eded2c8a03935849a81913e18baeceec9bee84a2"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/traces.py",
+      "size": 7557,
+      "sha256": "1fb86eace5c38fcba5a26736fa1ec3e35581091a571839be43046c82ac356f06"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/trials.py",
+      "size": 40128,
+      "sha256": "10562fb0ee5a191a3128f34f4904103cc50ded5e83cfed8ecbc1fb703437b48b"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/upload.py",
+      "size": 9350,
+      "sha256": "cc1deed2cdcf609531f2ec6c3b8f5c01e5cbd411ea52cd3b437668a5236116e7"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/utils.py",
+      "size": 9146,
+      "sha256": "53f8d74575fc30de48368a9f7b034370b70a1a8f7f33fdc324fac49eb3f1158a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/versions.py",
+      "size": 8500,
+      "sha256": "96ce16c97840287e12489e1e5c58c579048cc4c5284e4ac9de2a1e2caae64b31"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/cli/view.py",
+      "size": 13052,
+      "sha256": "13fc0d5c7dd70b85f002c47ece46e1bdc64444e6141c8b3b28b6aa01d18e8d9c"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/compile/__init__.py",
+      "size": 69,
+      "sha256": "94426c013f839679762d394723a584765978d9d850560090cdddc296cf30dd6e"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/compile/compiled-task-template/tests/auto-verify-artifacts-with-schemas.sh",
+      "size": 2565,
+      "sha256": "96558dfb32740ee82fc34a37ee173dd9a4f69ff0fcd7508e1758cc9a8bd848db"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/compile/compiled-task-template/tests/auto-verify-artifacts.sh",
+      "size": 1645,
+      "sha256": "519ad5655293951e5d598d72ca5d57b0b198476190c42f375e1a48310a01e075"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/compile/compiled-task-template/tests/promote_reward_artifact.py",
+      "size": 1628,
+      "sha256": "bd629b3ad4be509c4f8cc0c8529978af8205e647d6ee3e4dd40efcb00d40557a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/compile/compiled-task-template/tests/validate_artifact_schemas.py",
+      "size": 1769,
+      "sha256": "4711bed20819a83dca484a9ac3b660419017cd13621d376456251989b7b8abee"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/compile/compiler.py",
+      "size": 13463,
+      "sha256": "579cf72cf67f29e95930f1514b986dcebc432fd8cf5a196c50967e02f578b316"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/constants.py",
+      "size": 1222,
+      "sha256": "41a2592d260b68bcb6412887c1f9ecce52ae0268bf539944c758cb796a67fd06"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/db/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/db/client.py",
+      "size": 29045,
+      "sha256": "deea3df6972491724534932e849066e67aa2e7da513b478eef2824c5d94e201a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/db/types.py",
+      "size": 39604,
+      "sha256": "97d485665dd8deb7c90827f326332097472447bb084bd0cd0ab5369401d00f31"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/download/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/download/downloader.py",
+      "size": 21197,
+      "sha256": "879ddc8eabf8977bfa680548bc41e2c9ec59f2f6adc8880b73585900192b061d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/ack.py",
+      "size": 99416,
+      "sha256": "c373e29249721f9874846a4c16144d58e9ff82faabd08a6e347dbab24ef2507c"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/apple_container.py",
+      "size": 15038,
+      "sha256": "813eea575190bc04c30c848ccffe8ca8f6e9ca5750d3d5fd631e93aadaae516e"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/base.py",
+      "size": 53658,
+      "sha256": "74ce73b043041ac8ec3214b73613a9827ca878d8a97b32f0d572a7f9173fef08"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/beam.py",
+      "size": 46183,
+      "sha256": "c64f045d5101f1d6061193b8bfa6c9c321bbf1c2c6b812c6309a86492292355b"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/blaxel.py",
+      "size": 45665,
+      "sha256": "821dbab2b6bb1074f4b87d21074f17dfbf406eb2e1769e3f4a26ce73fbe0de35"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/capabilities.py",
+      "size": 2894,
+      "sha256": "82fffe93761ba6ea677ed08a51563768426cfc95a14a7a464d97c2843edcf280"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/compose_service_ops.py",
+      "size": 4879,
+      "sha256": "630064699f0c6b95e2fa07386a5109098d4b5c7dd5886b95112537aeff92eb27"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/cua_cloud.py",
+      "size": 50307,
+      "sha256": "027ad9846bdf9e919a1acb59f8b27b92d9be2c7cada7a1a7e7f3e4077055fa3d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/cwsandbox.py",
+      "size": 34251,
+      "sha256": "a47bd7fabf334c2f73af7fd671d6349dcd4b6cd417f9d9bf1def487b42b2d385"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/daytona/__init__.py",
+      "size": 255,
+      "sha256": "3f18936fb6e00788c648c608dafb716353e0392e043068cbc0db377556c8a443"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/daytona/environment.py",
+      "size": 78549,
+      "sha256": "cacd53f958f0f7a08bf7ef8034fa2f5632dc74d09d7c8045ace6dd9c0621eeb7"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/daytona/snapshots.py",
+      "size": 11497,
+      "sha256": "8ba84bff4eb06fef6f8f047a739430d382fd7986c11d24e8f0b2a943914eddad"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/daytona/utils.py",
+      "size": 4614,
+      "sha256": "6e5471dffa69ff65aee158744fdc2b34d61ef5d087da3ef44f4a1e02f161d3a4"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/definition.py",
+      "size": 4587,
+      "sha256": "025580b1cbb70e143a8ae623c6c7d1a21860e6d8e6e6a1819f756403760a1dd0"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/dind_compose.py",
+      "size": 12603,
+      "sha256": "7398eb8cd3f5ac0d818dc240491dbda44b0e1aa8dd4b18fe2890163f92aad44a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/__init__.py",
+      "size": 3409,
+      "sha256": "77283b61cd219d01b795d940bd8ca608e04be43f696f6d0ffbce14499ceef7e5"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/compose_env.py",
+      "size": 2494,
+      "sha256": "214cf98664b82e5af9290563527adadaea99fa2ef1762279f93adbb96025e932"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/docker-compose-build.yaml",
+      "size": 128,
+      "sha256": "e363cbb606a6a2b9781b8e7c26fb31a83140536d4d55c4a3cb937e3d176b762f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/docker-compose-egress-control.yaml",
+      "size": 564,
+      "sha256": "6a7e63d3cdad6d7be919d110e536b8dbc52b871d0ee3a5195d65cbd0e5e36ca6"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/docker-compose-no-network.yaml",
+      "size": 41,
+      "sha256": "17ceef0a82e7dfb63d9f5ce974350f392dd8a323eac174ec69d28a90c7de8388"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/docker-compose-prebuilt.yaml",
+      "size": 98,
+      "sha256": "1dfdd58a598685bb60fb90ca11c4fc16024b5cb1cdf73d83f8f84a2a4978e4d4"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/docker-compose-windows-keepalive.yaml",
+      "size": 159,
+      "sha256": "dc9900d924b2d75ba03c4e02167e51929a084fd89580320bbf30abc7f84b4bea"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/docker.py",
+      "size": 48008,
+      "sha256": "32f7c7b1b875cb9682a172b5cbe9d4c4e5e90c69fedeef5186baf363ed9d00e5"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/docker_unix.py",
+      "size": 6931,
+      "sha256": "58b525e4e2fff1ab39997c82c971beba98f5a0dd80984778f493aec0191cb642"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/docker_windows.py",
+      "size": 6019,
+      "sha256": "7d076cdc04f5cc5fec93e712a472b0c3c1e1b76a45d78fb1ad37d8f0dfbe6252"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/harbor-docker-egress-control-sidecar/Dockerfile",
+      "size": 294,
+      "sha256": "a2385dd6b3eee6e04c49b467df84ed2a273fd402a9cdd404a64fb535e9b26ff7"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/harbor-docker-egress-control-sidecar/allowlist.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/harbor-docker-egress-control-sidecar/bin/network-policy",
+      "size": 2712,
+      "sha256": "1b3b726b21233a28d652e4b693afadeb81c4479b3072b5f2f22fb559a8348120"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/harbor-docker-egress-control-sidecar/entrypoint.sh",
+      "size": 1250,
+      "sha256": "2e225ed745eb5976f93afd52d91c844b954b5f6f45373fb70c4c509e36d1e069"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/harbor-docker-egress-control-sidecar/gost.yaml",
+      "size": 583,
+      "sha256": "78c18e58efbc7c8e226cb311e2a4cf3863d5a2f3e54b3bf15a0ea4b885345290"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/docker/utils.py",
+      "size": 8191,
+      "sha256": "1e21dc6547b0af0659ed8de980f7155d03d43a85de1cb2f8dd9cd1fbd96c706a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/e2b.py",
+      "size": 17149,
+      "sha256": "44d623f99a9af9318672ea2c7523527e498ffae04defa36c58f478ce5c076e0d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/ec2.py",
+      "size": 49904,
+      "sha256": "834117295d315825bb77827185dcf969c3a09c2234628c7726ab74bab1b92be9"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/factory.py",
+      "size": 12275,
+      "sha256": "5f806a6c1bca4b972af36e5139cc7d5ce0f5eb18dc028e5aa4d222d59aaad571"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/gke.py",
+      "size": 81327,
+      "sha256": "bd70ac63ba18ec72f606770f1651ef4fb87b317c41f537e1365bfea0c62a45d7"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/hf_sandbox.py",
+      "size": 14272,
+      "sha256": "ed34e840fa1ae832cc9aeff213edba2dbfe0f774badfcfdba7a3f326a6f31058"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/hyperbrowser.py",
+      "size": 45002,
+      "sha256": "1940b0c3189f0ab96bdef44edf396a67e41e49d94c50ad5d2855dc44d8fe9883"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/islo.py",
+      "size": 51523,
+      "sha256": "e9f472219111083454616d9ff12a79447d733ae9b89950b066e7081d4a84079d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/langsmith.py",
+      "size": 57753,
+      "sha256": "28b8e7c6f7926d40b417c31d96baee15f9a7aa226fc465895c499e2e7d6f2c3a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/modal.py",
+      "size": 59521,
+      "sha256": "76d6c1079cd98a914fda19a36101865205613b9cc8aa7df4c62144f88261b69a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/novita.py",
+      "size": 59807,
+      "sha256": "8028079d04c42c892cb609c37c951eaac9789b057eda636b93ccf62c8a5578d0"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/opensandbox.py",
+      "size": 30571,
+      "sha256": "eee9d8daaedba71d0a75d22e1445d2aaab26bc1e105313638907fcf0935d57a8"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/openshift.py",
+      "size": 31415,
+      "sha256": "06613eac35fe3268942787ab687c339d95068bc36b07d253cbfa1de8d32d6fec"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/resource_policies.py",
+      "size": 2028,
+      "sha256": "1a85aa405b1c78d24d3433ebd45e41644e771d61403a4d03ba959ba6a3ac94e4"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/runloop.py",
+      "size": 27556,
+      "sha256": "7a33ad9abbe185728ed73aad5c18b1039076449ef83af1d50c4ee3905057be24"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/singularity/README.md",
+      "size": 3103,
+      "sha256": "c4bac8f68dfb3cff07754b811a3fb94a64bb4d4c6983d6448c27d22e4fa12e29"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/singularity/__init__.py",
+      "size": 184,
+      "sha256": "c29f8e06a85f6b6529157fb3a62ec2bb40b9a13cd9f15f04ba30137974dfad2c"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/singularity/bootstrap.sh",
+      "size": 4471,
+      "sha256": "97be6fadd9d3eeeaa9905c0de5de6dc2699e07c599de26d3037910adfb6af193"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/singularity/server.py",
+      "size": 13566,
+      "sha256": "1c4966bc330e6bd010ec9201f947389bb858defe6bc8e9647a24980f2e0d6b5c"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/singularity/singularity.py",
+      "size": 34065,
+      "sha256": "53a311a61eb32feb3d36dc238951456098e17ec227d0b2dc0db1e9fe8e73eb75"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/skypilot.py",
+      "size": 22943,
+      "sha256": "a88f4d6be8a5ee898f60a5413bbc0dfc4d162d6b1477e10a0dbcf570ddb9bec7"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/tar_transfer.py",
+      "size": 3822,
+      "sha256": "ea81cd3bb4c4130526ce171b39162701672f439cc082bd66a36cc75bc0f2e8c5"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/tensorlake.py",
+      "size": 123057,
+      "sha256": "a6a3a24c1a88c5be20062a2e0b49b1335a245683c3711e23f2256ddc02a48597"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/use_computer.py",
+      "size": 41661,
+      "sha256": "a85719af2d48517ba123232cf0aa67a5f57446b6f7160a2421d35af11b44388f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/vercel/__init__.py",
+      "size": 157,
+      "sha256": "93c636326ba790ea09627e2ae49c75c8d7ad63a7d88dc66cb2ae099e59f62e71"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/vercel/compose.py",
+      "size": 24512,
+      "sha256": "448dc4331af54e2cac6aa58acfffd56d640390d2950c74bf70b9d261adfcbb46"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/vercel/environment.py",
+      "size": 57353,
+      "sha256": "f1a8889c938c8754b926a7a6193bd22226ea32c0e6325cf33a1afedb97c72bc1"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/vercel/scope.py",
+      "size": 6418,
+      "sha256": "a949121c8826ba789f49c29559e38340d41c1703fbd9f0974245e2b8377fba54"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/vercel/snapshots.py",
+      "size": 20907,
+      "sha256": "0489a0dc2603b495ab6a5e539ca81beb061ab89cbf882f6d4f5f51110bd20b10"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/vercel/vcr.py",
+      "size": 14297,
+      "sha256": "dbfe3826b1ff232ee14db0818942cc2d1b811be12bd96f7cc55fcc2864aed805"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/environments/wandb.py",
+      "size": 2763,
+      "sha256": "fb0f1c6f8ba5b4d843220de57efc03597fd3f223c370684542b7bf4c4a6c661f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/exec/__init__.py",
+      "size": 143,
+      "sha256": "7270b3b2d1a42bb11fe75757d687dff408a47aa0b98024566c046b977f39dac6"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/exec/executor.py",
+      "size": 6151,
+      "sha256": "dcaf7accbf8426021c9ca683a94680c299e2a28d5bdf7730d6946ae667c65865"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/hub/__init__.py",
+      "size": 623,
+      "sha256": "aa7353a5ea8b577a1d75ec9fc623d54639d992a9c6137d99ee43e8926d15bfa6"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/hub/client.py",
+      "size": 7420,
+      "sha256": "4f3ad21a689943056a1d906ac7c79a0f4c95cf1bfbbd6134284f87cd6593ea5a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/hub/copy.py",
+      "size": 7770,
+      "sha256": "869852f5e648a8f062dc4ccbe505711ffb9f09dea361fd3951d09f0f9408def8"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/hub/leaderboards.py",
+      "size": 26475,
+      "sha256": "26ee304b6a89c062cc7e9f401d651c6879fe682aeff97df0c88aecd80c261b53"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/hub/models.py",
+      "size": 18030,
+      "sha256": "6f4713f02ce201cf79b508da4dce55dc01a1918223c0fbb23ed20cca2b9e2772"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/job.py",
+      "size": 49795,
+      "sha256": "cf2162967156a0739078603612fce69e8f9e19d5e7171323fbe4c20f9ad90b1b"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/job_plan.py",
+      "size": 15364,
+      "sha256": "dc65744d9d5fd620fddbbf4f241332879f8ec02f854b3a2bef081997ef153e06"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/llms/base.py",
+      "size": 2417,
+      "sha256": "7a6b03a835d8f62f770291a94bc6269291675e60a38c74c0b8a764c692a522a9"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/llms/chat.py",
+      "size": 5588,
+      "sha256": "cb986e957a8d0239d7a1d0b7d700efbba249684d56bda9f908d5cb3d6f580ed1"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/llms/lite_llm.py",
+      "size": 30318,
+      "sha256": "8faa5941aee862bdb9c020874ec721e348165a9b907c5a3509381a2ab50ec5a8"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/llms/litellm_config.py",
+      "size": 221,
+      "sha256": "c1be294204ea3216aaf79f0d447e5e5aadedb2c1d528c79baf6124b08fc9e6dd"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/llms/tinker.py",
+      "size": 10799,
+      "sha256": "59f52760ab989780d5ebba42ba087ab394d3499c8c263c076df455444292eb9c"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/llms/utils.py",
+      "size": 6753,
+      "sha256": "96df7cb139e62aaa2e5b7f36a9b827e420a1ff1794de9a426e8336edf5aebaeb"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/mappers/terminal_bench.py",
+      "size": 19045,
+      "sha256": "6522ff065d0807a4ff2fce093461799ccb11f7d2bcfab7154bfaa17933c16e69"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/metrics/base.py",
+      "size": 928,
+      "sha256": "373de596294fde446c1b2d73cd7af7f35852407b63cb852def14c63584c11236"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/metrics/factory.py",
+      "size": 1560,
+      "sha256": "f4c4651821e27978e57e6d51d1cfd48abbdc185009cbfe97707b4c65cb24b7d9"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/metrics/max.py",
+      "size": 310,
+      "sha256": "2b401fa34844dcc8040d92f0a1a36f3d2ec2f1d8452bc6dc719a2c3fe83c05f3"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/metrics/mean.py",
+      "size": 396,
+      "sha256": "fcebbfd69bb2b52c52da59af9ca4ef6080bd7064d8c3a301a9762353ed71efbc"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/metrics/min.py",
+      "size": 310,
+      "sha256": "2fecf3c67970878798c48a49744faf1a1589ad66f7521840b38e0f611d03ff6f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/metrics/sum.py",
+      "size": 310,
+      "sha256": "250733e6b8a22d0355b62ac38d20f769571552e7337d90538619907533692e2d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/metrics/uv_script.py",
+      "size": 1525,
+      "sha256": "baf7be5f62a9fdbd29e04baf3ebe079c8e192d939f77d8790a1c28d843d44ae3"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/agent/acp_source.py",
+      "size": 5587,
+      "sha256": "1fef2f4a3b666092e427aa822f6c0ea938ca2faecef89dfa3380ea574aefa94c"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/agent/context.py",
+      "size": 1245,
+      "sha256": "323e4708716bc011bd9bf80b20c5c96ccc17a6515934dc59e2d9d14b49f60d91"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/agent/name.py",
+      "size": 1274,
+      "sha256": "fa5865c927681b755f65e81049bb78dc29d64b09bc0e8dbb8ef1aedc748d406e"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/agent/rollout_detail.py",
+      "size": 1130,
+      "sha256": "6af5970f5a8c28341287e5304bb7aa8ed91a3edeb5f8a27d8d11203d00d34306"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/agent/trajectory_config.py",
+      "size": 724,
+      "sha256": "4b2a1d81f95ece116a2156383e18da17479b25d60bc1bd562bafc4500301fa93"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/compile/__init__.py",
+      "size": 308,
+      "sha256": "e9f9ec5b73b7988afac65bfa8d6b0980a81ea8ab0b5c91992047155d571c4f7f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/compile/config.py",
+      "size": 5807,
+      "sha256": "b2238caecfcdfe7c07c4e1b6c8a7b2020124b0afc82b79d134d97711cde92444"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/dataset/manifest.py",
+      "size": 9557,
+      "sha256": "d51002d3e41b968f6a204080b51a0fcebb5848e460709a05008c90d915f154f2"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/dataset/paths.py",
+      "size": 894,
+      "sha256": "13ade60a6e5d95bcebfef5904ba422cc0719848e02c8a4977b2f84e3c6037091"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/dataset_item.py",
+      "size": 246,
+      "sha256": "cb8a7edd3410d428330d25e2c1ded58e2d96713136073868dce081d0dde4a3bd"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/difficulty.py",
+      "size": 135,
+      "sha256": "600e413ade9af5bcd5c5c5b9bb18198abc1389869167dfc9bf530ff9c52c08c5"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/environment_type.py",
+      "size": 704,
+      "sha256": "0572d0d90bacfc7d25bdfffa9509bf5ae168d28ad6b536bfa30d0e548e83072d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/exec/__init__.py",
+      "size": 327,
+      "sha256": "74cc8bfe8d50e131ffab7dc5b152f22d8be9656bfc61a11c08541faeee4dd670"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/exec/config.py",
+      "size": 4889,
+      "sha256": "063e488e2be93264b880eec434983dd066266743dac809f3b7caeb0aac9dd792"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/job/config.py",
+      "size": 20228,
+      "sha256": "1831a90070cc9b813d79bc22998c09403d6def2153c068ff0ac3155a13da11eb"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/job/lock.py",
+      "size": 21411,
+      "sha256": "c2bf1abf8380c60524283aa65a195e2eb401913ddb225b7c46d13deb6243b946"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/job/plugin.py",
+      "size": 665,
+      "sha256": "6535da0549797a166a2fb57781e68831aa1487fa8b2ebad306de4d59c77b4bb2"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/job/result.py",
+      "size": 11041,
+      "sha256": "caa09a62a06aab2dda7ccab18ceaeba0232b082be459ebfe5a01eeee05584f6f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/metric/__init__.py",
+      "size": 112,
+      "sha256": "6083695ee6e0c83ed140b7efc844fd48799f3e5de9506e0fb7f7eb7ffb591b17"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/metric/config.py",
+      "size": 256,
+      "sha256": "f22910afecc04a95a8171cbad80dd4ab16e5b056cd42da1d46b1495a6b587b28"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/metric/type.py",
+      "size": 147,
+      "sha256": "6c4110638a8176d6bcaa383600079fa081bec6fef3820fbafbe44458b79cf087"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/metric/usage_info.py",
+      "size": 892,
+      "sha256": "28cdbbfb5f2ef1d59bde2c6aef26a1b4195c0838564687b751276b53c8534cf5"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/package/access.py",
+      "size": 2850,
+      "sha256": "b99f91a8749ded58152193512fd1a8265c118d6d7a627ee48795a8d2c58a662e"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/package/dataset_task.py",
+      "size": 819,
+      "sha256": "59b980ee330c68313b0c7e6b93ac57b37f14697d135041b161670b8e044d1368"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/package/reference.py",
+      "size": 2867,
+      "sha256": "c8f7ba00f0f9fc10c75f6c6b5ede82bebd2c3f5c43465b2b5591aea9e1d9ad8d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/package/version_ref.py",
+      "size": 3232,
+      "sha256": "2c8203ebff4b0b18bea54da5265ad63646c94a19ecdee2323567358328138656"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/registry.py",
+      "size": 2844,
+      "sha256": "1dac233bb49a1e601dd9735a51fa2414af87cf690773925bd9144d75bd8e2a89"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/task/artifacts.py",
+      "size": 6582,
+      "sha256": "87fa44e86b62e6b5b7723de64e386138d9115ac92d6cc5c1f6766348a3de3093"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/task/config.py",
+      "size": 35842,
+      "sha256": "f9f63db9128f64243394c43d5bba18845554adcf5e86a661979fd5cdf3b1801f"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/task/id.py",
+      "size": 1407,
+      "sha256": "c18ff1f48abba2699d57f9963e1b9da751c01a5a8798bd4b1f638cabffa428fc"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/task/paths.py",
+      "size": 7043,
+      "sha256": "3b668555fb7de67f7c33abe5186d2abd0cc9dd4878a78466be5ce48527a279b1"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/task/task.py",
+      "size": 8585,
+      "sha256": "342f62400cbc354208187a5ad4f104377a2e449762c5bb57f8d39e241b38c1ec"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/task/verifier_mode.py",
+      "size": 3062,
+      "sha256": "e3d30753a48cf741fc39f974e36e9730f6afb1e5da7ebffee32d9af6cc7ae1c2"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/trajectories/__init__.py",
+      "size": 1059,
+      "sha256": "6d42a5d2832d055387b72436309aea0cba669659bb16b664a742639fe58ecbad"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/trajectories/agent.py",
+      "size": 919,
+      "sha256": "ae26f91b1aa9cba2f9f308b3b1b6a8e92c0851bb191e4bd8df3042b49a0425c6"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/trajectories/content.py",
+      "size": 2139,
+      "sha256": "f7ebfb9d0d77969d75e0d9172f84827c5463fd6ea8e83f9a0ef7e1177875c2c3"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/trajectories/final_metrics.py",
+      "size": 1265,
+      "sha256": "c4897c3b7f6d6be0d891d5fc9a72d13407d01c897c099e3ca195c50424734caf"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/trajectories/metrics.py",
+      "size": 1396,
+      "sha256": "c6d724d80d250dd27fefc4462a3f70aff2333fe42775382cb8073b889becf165"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/trajectories/observation.py",
+      "size": 453,
+      "sha256": "2bb40e781053428e172af45110b0119bda4143594d592e414e9af0a60f057d28"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/trajectories/observation_result.py",
+      "size": 1544,
+      "sha256": "edbe26ca85aa8ef5f13a08a62d4d777d20832a7a5b67dcfa9162d6dbdaaf4c0a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/trajectories/step.py",
+      "size": 5319,
+      "sha256": "6d8cc176449e0d5be46b40fdc9802bcb417f6b11d295c111e670055552abaa4a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/trajectories/subagent_trajectory_ref.py",
+      "size": 3746,
+      "sha256": "207388b30eec20aaba3d21effb66f984caecfa0cb23dbaaa8fc055abd6347aea"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/trajectories/tool_call.py",
+      "size": 841,
+      "sha256": "b28fc0526c45a5a253edaaaa305a8f53ac436e5fd44918fe4dadbe573214030b"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/trajectories/trajectory.py",
+      "size": 8839,
+      "sha256": "75efa9fa53720099814df1895f8f84d9dc414037df3b8bdb36887640bbaf69f5"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/trial/artifact_manifest.py",
+      "size": 586,
+      "sha256": "bd4cb7ec6f31ab39cdfcf7f514e7766db6c614203b343172ebf71c90cb8c05a5"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/trial/config.py",
+      "size": 18591,
+      "sha256": "9627a4873fe9aa845e5bbe4ad3f938a3e8c010ce093e38b391b5e2357df0a184"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/trial/paths.py",
+      "size": 11358,
+      "sha256": "6a858156cd4f036425ee8beb36fe849cbee4feefa8b8e1c634ee7e75d65f38f6"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/trial/result.py",
+      "size": 4763,
+      "sha256": "66130539641e97e6f07569a5264c2d2d2ffda962a68b0be13255a1f8539edcb7"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/models/verifier/result.py",
+      "size": 116,
+      "sha256": "4ce7378d3782f9f11082db66341e55058919145955b17745167e987d6bad93df"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/publisher/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/publisher/packager.py",
+      "size": 2826,
+      "sha256": "9a1ae0a18575f98798bcfe0d9746ea8a792861430db77605a6106b28c36e1c73"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/publisher/publisher.py",
+      "size": 15495,
+      "sha256": "d8b67f68c33876d2dc0c5426e8d05998e52cb9ea6fb8e49af3b026e3b8219283"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/registry/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/registry/client/__init__.py",
+      "size": 102,
+      "sha256": "29f541f0c7546a60a94b9b57c249c4415098b6d18a1b2889b782d4284e0ece4a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/registry/client/base.py",
+      "size": 4817,
+      "sha256": "fd8ddb2bae1c9804257dba578765fe5af167723e644230d54fc696f439d13f6e"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/registry/client/factory.py",
+      "size": 1473,
+      "sha256": "92121f7db3fe4a54ae763a6e374a8115645a4c33382a10e2d32aa5adc67c3ca8"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/registry/client/git_repo.py",
+      "size": 16012,
+      "sha256": "ee6ccc734844ba4c1fc5bd7f7f6fe44580d1ecd9b9552a21d9b6ea1dbbbdb2f2"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/registry/client/harbor/config.py",
+      "size": 308,
+      "sha256": "bd059802800e86ef9e7a7239a9a14faec13cb7b1c75211ddccc394fb34f6fd40"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/registry/client/harbor/harbor.py",
+      "size": 5869,
+      "sha256": "93d8de49bbda5371c7fd0be4f7dfa9c2a031f33ffad681323855a8bb97bfa00d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/registry/client/json.py",
+      "size": 2884,
+      "sha256": "55c4d872d23b919811cbc6850997ffd982200c30cbf0b687685cdda7a3f363b1"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/registry/client/package.py",
+      "size": 4373,
+      "sha256": "6807b3f18e9de20c3f086965529ac4e8fb3064e55a2e232d8b8127709b0e6389"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/skills.py",
+      "size": 13873,
+      "sha256": "45fa5d0f45dce8029c47eac7468dc8bdb01157cc2b7c9271503719fc157cc7f3"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/storage/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/storage/base.py",
+      "size": 308,
+      "sha256": "09a7ad1456520229cdac5ffb617c9552889f4971ec3bf7e50ff619e59b706ca2"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/storage/resumable.py",
+      "size": 6764,
+      "sha256": "9487c63f4d1e4822ca6d5cffc1e7f6c07b2df0bc942881fff05ffd43aa44c6e6"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/storage/supabase.py",
+      "size": 1950,
+      "sha256": "7fd6981002430c6eacd709dd198ab0a1dbad53a816f86866eeb90e44d4069110"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/tasks/client.py",
+      "size": 20761,
+      "sha256": "aac3be314558dd8fdfcd321ed12e3428c1e7d3552b6701ca714ef427dfa8dfbe"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/telemetry.py",
+      "size": 32164,
+      "sha256": "d5cc25cae03555a84ba77fd240f2bfee640e40dbc865174006d33051d700a3bf"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/trial/artifact_handler.py",
+      "size": 17124,
+      "sha256": "1edb206978de86a2f4965e1b87268e66db09fb1300aad9160c9f71d3c8fc6cb4"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/trial/errors.py",
+      "size": 266,
+      "sha256": "4d049545d9b04f32e96d34c749f84f500e892f57d9e373464f5ff1dbbd1378ec"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/trial/hooks.py",
+      "size": 2128,
+      "sha256": "6df8faa741edbb413191ce7b3fb5edbc48e32b4f9e44359aa1bec6e8799cddaf"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/trial/multi_step.py",
+      "size": 16840,
+      "sha256": "f9a2630cc164976303f2e37da58b899090566c1854a41fc349afce02a33ad583"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/trial/network_policy.py",
+      "size": 6045,
+      "sha256": "f8b3978681637a35905640eb8ba52c3b9c8d6f7cc0d49e6572c7c5e9433bf275"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/trial/queue.py",
+      "size": 10373,
+      "sha256": "f70040dd9e47800407ee545bd0017a37f72066ef20b28b13d2d838cfde044ebd"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/trial/regrade.py",
+      "size": 15852,
+      "sha256": "ae7a1ca76e7bbf18b8485fa95b8e3b0d0324392494f36fbdf35e5d236f5acbe6"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/trial/single_step.py",
+      "size": 4198,
+      "sha256": "02d7ddef0213e84e395ef62dae18a7aad1cc4e31622c239650c7184b436a0583"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/trial/trial.py",
+      "size": 50167,
+      "sha256": "9510871c99c55661f1a6b584235146d49d2d2dd68a61735f6f4c028c7edf8be6"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/upload/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/upload/auth.py",
+      "size": 1094,
+      "sha256": "1bb9e406e9fa580a47438470e51605f3403311e1701a3db148922cfda6ebe0b3"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/upload/db_client.py",
+      "size": 17774,
+      "sha256": "876decbfab5ff05670f77de1cda7b15659d929413aba2a7a90cd00d392ca8c49"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/upload/storage.py",
+      "size": 3959,
+      "sha256": "f285aaf8b623985af3b7b185850389c346dd1eb89f6b893f00a80caee2836b9a"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/upload/uploader.py",
+      "size": 33321,
+      "sha256": "dce3a8e51a2bc9e27ede9c48e55748b49b32f4a6f3a69addd49a97192945fb1b"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/utils/container_cache.py",
+      "size": 1915,
+      "sha256": "5caabfe0b2abd1bfba292109a47a8a4c83113d857c56c9ccd09d96ac0154422d"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/utils/env.py",
+      "size": 4811,
+      "sha256": "bd0a94dfc593fcf2f076bab355c99e6e1a9850d4e4fba34a9584c9fe0050ebec"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/utils/import_path.py",
+      "size": 1304,
+      "sha256": "b9854a090dbc542f5138fbaf62093e6780fe8b9a2e69357a7b6226ae17446a62"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/utils/logger.py",
+      "size": 188,
+      "sha256": "7469fb9db0164020138a9d1b357d568353005bb685d585e0b135c0f66a4724f0"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/utils/optional_import.py",
+      "size": 1210,
+      "sha256": "c1972a939c124e29e0955e21044408a9f104835a44b717aeb3aadbe86f353a36"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/utils/pass_at_k.py",
+      "size": 2569,
+      "sha256": "a81e63e0d4caae56b6cf2e5847bed123e3895a77f24f5b7e34cc11901aafc2c4"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/utils/path_filter.py",
+      "size": 896,
+      "sha256": "765db66b4a975515a844c4dbf026e5094912924a341d9314e81d1a536c2675c0"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/utils/scripts.py",
+      "size": 5939,
+      "sha256": "e8fbe52e7c29cb92f9730ad31efbb68dfa8aaa3e0a38c5439700d23aa803ec8c"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/utils/templating.py",
+      "size": 2427,
+      "sha256": "c5216da04ff95a40fb03071641f2f30e967f7775e433556080920ab570b26826"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/utils/traces_utils.py",
+      "size": 54163,
+      "sha256": "c6d3f64e2f2e072b7af59089bec266a9ae731523d50b6f424d44754bb62a9912"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/utils/trajectory_utils.py",
+      "size": 1363,
+      "sha256": "d5e90a884539bdc61dad7d2c34f5000e67961e48dad0f377a097ba70de17eda9"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/utils/trajectory_validator.py",
+      "size": 10726,
+      "sha256": "42932838ccabf2d88bee05af370c58a8ff3e3f67cf543d13c24d5015c80aa0c4"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/verifier/base.py",
+      "size": 1453,
+      "sha256": "267cbf792ff65c135aa99887c6fc56442a4657de6b9cea39a33be60f4724d041"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/verifier/factory.py",
+      "size": 3310,
+      "sha256": "b4b470efe8ce84c0774b836a8992a09c2abf105ed5d35abf3640a317ab6ccac3"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/verifier/verifier.py",
+      "size": 8659,
+      "sha256": "7110e7b854ec216f9bbef2e3b03712f2fd2614d5d0dc8a9a1768c0e887e129fc"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/viewer/__init__.py",
+      "size": 777,
+      "sha256": "30ff12b83172d711b317b4273c6b96e14da433a8547460d4f879ddc61cd9b4bd"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/viewer/models.py",
+      "size": 5406,
+      "sha256": "e5219bc31e80e877c42d0a570534cab254dec9bd234903d07a1ad94c36fae7b6"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/viewer/scanner.py",
+      "size": 4052,
+      "sha256": "408bfda723cb28f38ff636810d239310e3469cc76c34a9cacdd3838b10873cf7"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/viewer/server.py",
+      "size": 106354,
+      "sha256": "a402f881347150677a25be8faf3795629b45ef079f5e27ba34b88076c795e0c2"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/viewer/task_scanner.py",
+      "size": 5250,
+      "sha256": "30a66e932163f067f20791aa48c514db808756ea83f62a489e624829dcc25318"
+    },
+    {
+      "path": "vendor/harbor/src/harbor/viewer/trial_utils.py",
+      "size": 3020,
+      "sha256": "f0e98a3b3bf8cacc8acdb049334e1c9739e5e89cfcadf27e9ea670e1008854eb"
+    },
+    {
+      "path": "vendor/harness/harbor_integration/box_provider.py",
+      "size": 39498,
+      "sha256": "97cb3a6d07eeb40de818dd3abe97c655c43773ed7972d7df90c17bb2d28e0bbe"
+    },
+    {
+      "path": "vendor/harness/harbor_integration/box_transport.py",
+      "size": 3879,
+      "sha256": "941f34fae922eab8d9ae91dd0d710b54dcaeaacf5e9392b948012bbb0e0e7091"
+    },
+    {
+      "path": "vendor/harness/harbor_integration/judge_codex.py",
+      "size": 2658,
+      "sha256": "467cd268baa6dd068e162c3d3a76d3b4d9ad3f018e9b94a092090ca6dac253b2"
+    },
+    {
+      "path": "vendor/harness/harbor_integration/judge_hermes.py",
+      "size": 5574,
+      "sha256": "dd7bdbd6c38ecf085c99cbb79f869bc4175979a92acaf8de317384e18118f5bc"
+    },
+    {
+      "path": "vendor/harness/harbor_integration/judge_opencode.py",
+      "size": 5219,
+      "sha256": "833caa042d999ff64b45653c0a3af319e4c360045f7710bf9333599a00c54cf0"
+    },
+    {
+      "path": "vendor/harness/harbor_integration/judge_openhands.py",
+      "size": 964,
+      "sha256": "37022471ccbf0bb2b8cb099a5916def91f86d00d51a52f98a1f25d7002fe80fa"
+    },
+    {
+      "path": "vendor/harness/harbor_integration/judge_pi.py",
+      "size": 3791,
+      "sha256": "86653af0241ccd929c0a1414159812f15a30b3ffcd7fd1353864153a370bb14b"
+    },
+    {
+      "path": "vendor/harness/harbor_integration/local_docker_provider.py",
+      "size": 7355,
+      "sha256": "b443e906cac2996ef3b69a3d386099b5cdf9051255147c036b6c5e0664f14b77"
+    },
+    {
+      "path": "vendor/harness/harbor_integration/verifier_execution.py",
+      "size": 4924,
+      "sha256": "8bafefd8e1eed915f0dc289ef7462f297d0ca19e74f309b8581eb3f446d83e34"
+    },
+    {
+      "path": "vendor/harness/judge/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harness/judge/core/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/harness/judge/core/llm_call.py",
+      "size": 3843,
+      "sha256": "5ec5b2e3b67451cac3ab491d966dbfaa1135db88aa3dab836754b8cad2bd43c2"
+    },
+    {
+      "path": "vendor/harness/judge/core/package_inputs.py",
+      "size": 10854,
+      "sha256": "62772c71242344458fb70350dd65544e6ffd4e45014f16ba33ac0b305a7d0acf"
+    },
+    {
+      "path": "vendor/harness/judge/core/probe_core.py",
+      "size": 7864,
+      "sha256": "2f3d8a1c5af394b078e95c3ec7aebc3eb4fd7cc5355f9e852a74bcff9feedcf3"
+    },
+    {
+      "path": "vendor/harness/judge/core/prompt_compose.py",
+      "size": 10513,
+      "sha256": "323aa4d5d633939540295286dd0a1425ce6e158404a56917438e066279e2931c"
+    },
+    {
+      "path": "vendor/harness/judge/core/session.py",
+      "size": 33611,
+      "sha256": "b65d2bf185d067ddc1856d543b009bfe14d05f09f6a4b07b5c2ab4878d15ef64"
+    },
+    {
+      "path": "vendor/harness/judge/core/task_transform.py",
+      "size": 16050,
+      "sha256": "2244011ef094008dd786e7f597a1d290764bd73b72c62bddfb0c84e5141a0578"
+    },
+    {
+      "path": "vendor/harness/judge/core/verifier_package.py",
+      "size": 12752,
+      "sha256": "499f215a374d6f53bcb7e1313ac990d6eb2212da0a92d8307ad36ce861979295"
+    },
+    {
+      "path": "vendor/harness/judge/evidence/__init__.py",
+      "size": 812,
+      "sha256": "c893c6fcdc59cbc08a11560bf22e035f6c38565f38a3d9d2c249db641ca3c9da"
+    },
+    {
+      "path": "vendor/harness/judge/evidence/certificate.py",
+      "size": 7486,
+      "sha256": "abe72a1f14e9ee8a035de58da0d2580f30dcc5433508e74c3551266112882275"
+    },
+    {
+      "path": "vendor/harness/judge/evidence/cli.py",
+      "size": 2735,
+      "sha256": "686baa3c209bb97b9968e0ea4dd9325268fc2bab643cca0545f65097e29deff5"
+    },
+    {
+      "path": "vendor/harness/judge/evidence/collectors.py",
+      "size": 21784,
+      "sha256": "8b5f29e17c22b1d210ba1f7edb07e598f5e06fc979398acbb1f2ed2f986cea35"
+    },
+    {
+      "path": "vendor/harness/judge/evidence/conformance.py",
+      "size": 8550,
+      "sha256": "09df8f92bc271a1caca4fe891ea45471c0d0162d1c38394a6a0c48a8a0ec3918"
+    },
+    {
+      "path": "vendor/harness/judge/evidence/model.py",
+      "size": 10527,
+      "sha256": "3fee567b120b2e2b232118d587a6a90ed6b41f8eca9b57b74e427f9abf32b920"
+    },
+    {
+      "path": "vendor/harness/judge/evidence/operators.py",
+      "size": 15588,
+      "sha256": "0b0e87241b7131ac3a42ab1a3b18195642a61425360ed79f5b89454e145aee9d"
+    },
+    {
+      "path": "vendor/harness/judge/evidence/trace.py",
+      "size": 9825,
+      "sha256": "50c63df22e6955b537c1fb24a800fe250c6298086d833bb23394d99c414ab5f5"
+    },
+    {
+      "path": "vendor/harness/judge/evidence/trial.py",
+      "size": 6783,
+      "sha256": "3d8a2f0a9df5d520396e792d0a8dddc4b627c7c2adefaecadde7c5eb689c0300"
+    },
+    {
+      "path": "vendor/harness/judge/prompts/contracts/metabench_pair.txt",
+      "size": 745,
+      "sha256": "3b617ac87cc94eebb52cc60ccb0d0a6ef8b405b8a17dfb66ab90548769492e39"
+    },
+    {
+      "path": "vendor/harness/judge/prompts/contracts/swe_verified.txt",
+      "size": 4080,
+      "sha256": "ed6af6d45f1382865aa7c32aca63266d44281761206ce2dee389409762d4cd29"
+    },
+    {
+      "path": "vendor/harness/judge/prompts/contracts/tau2.txt",
+      "size": 1287,
+      "sha256": "915031c76e75da07cdea4fecdf2023e12b8991690546143664ce283748db4c10"
+    },
+    {
+      "path": "vendor/harness/judge/prompts/contracts/tb4.txt",
+      "size": 1144,
+      "sha256": "77502f3a9992a61444256a7797ab0baf5583f6e48b07c72a3fe003ce50449af2"
+    },
+    {
+      "path": "vendor/harness/judge/prompts/contracts/tbsci.txt",
+      "size": 1307,
+      "sha256": "d42117a4ff1e36cd214ab5b3fda092e5cec01604af6d41148bef5bdb529a0377"
+    },
+    {
+      "path": "vendor/harness/judge/prompts/contracts/traj_full.txt",
+      "size": 936,
+      "sha256": "3e674b88ad690057088838146976a67ad089fc062db61989b9024ef55cae19d2"
+    },
+    {
+      "path": "vendor/harness/judge/prompts/core_manual.txt",
+      "size": 2813,
+      "sha256": "6a0b3cff245a7d7100f049fa5c7fb7f16ea5756b0c2516ab0a2299da1bfb0456"
+    },
+    {
+      "path": "vendor/harness/judge/prompts/evidence_header.txt",
+      "size": 804,
+      "sha256": "8a3cecb8220d9ba34f3dfb5434317f26e2f27091d194131f787aa34d0a4c120f"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/__init__.py",
+      "size": 513,
+      "sha256": "430a58c0a01d3d9e413dc49dfb5831912a6b8487d3b52fd17a454d2c03342ffe"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/build.py",
+      "size": 5716,
+      "sha256": "cfadbffe06af87ae1deca2261be225457f31e95387d0390dbfcb8af1d42bc13c"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/cli.py",
+      "size": 2221,
+      "sha256": "225a533044aec0865e79aef217eeb296f00946894ed28c4745273de87d7db608"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/ingest.py",
+      "size": 5388,
+      "sha256": "31f8a53583346ea403ae678cccc3bb32d22e9f978f42b04d6eb70385903875ff"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library.py",
+      "size": 14317,
+      "sha256": "126a883bcee4569de3d7dc922d637ceeb2b7f638b4e7cb39c74a46a56045e38c"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/airline_ops/README.md",
+      "size": 368,
+      "sha256": "9a8913a5b800dcc5f286355cb72e9068f9d6f87f5b22410ec660ce4b1cc27479"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/airline_ops/service-assertions.md",
+      "size": 11725,
+      "sha256": "4a31131bf822330e99ccc06d994700171f2b4d4d1adc0c6110bae519f6d52dd8"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/banking_ops/README.md",
+      "size": 1237,
+      "sha256": "44f38c38e408a0be7413610da0516496dc462984d5354fe36f635f81b8f6db5f"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/banking_ops/bank-accounts.md",
+      "size": 122906,
+      "sha256": "54749b019fca02abf228044a64b54cfd2632a14d68e84ca8a4a03fbd225c1a77"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/banking_ops/business-checking-accounts.md",
+      "size": 120591,
+      "sha256": "4ef2666e588a859a36258de6732121fe1122ed64d27b3eb1be87bde825581b61"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/banking_ops/business-credit-cards.md",
+      "size": 91613,
+      "sha256": "2d5a20885de521617d6d9098ba278441f426e4f44fac68a54484af1380148123"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/banking_ops/business-savings-accounts.md",
+      "size": 101454,
+      "sha256": "fff07067b47f59743e2056331ffbd394c3738edddd98a27e9a639c669e3edc63"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/banking_ops/buy-now.md",
+      "size": 53994,
+      "sha256": "094e1ccf40de3808c1a24dbe64c12d0525a58b8fa9d166edd79e2781a6800f23"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/banking_ops/checking-accounts.md",
+      "size": 142281,
+      "sha256": "3a8d7dd96c190aff2e54c9d3a6468fa3e7b2e9e07c7a4673526d14e889012137"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/banking_ops/credit-cards.md",
+      "size": 171827,
+      "sha256": "7e8d3dfb02146c64a2675bb7abcf85a16bd52a7c3079d908af3d0d8c6e2250a7"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/banking_ops/customer-support.md",
+      "size": 2834,
+      "sha256": "9789ce7c8c2155f73ed9ad3e0a57666387ea56b20ad2c595188e2f58a7067d42"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/banking_ops/everyone-pay.md",
+      "size": 51965,
+      "sha256": "6002676240eb5e3ab164a324b83b7783da80fee542a3485e61522d13d8c2a7b8"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/banking_ops/personal-subscriptions.md",
+      "size": 3880,
+      "sha256": "c7d13d483bee9e0b2c37a8137cb96835c7418c832b9ab2b06d2142dae4e8a6ec"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/banking_ops/savings-accounts.md",
+      "size": 81448,
+      "sha256": "4f06c218e0b32d08022110c37f6884ce55b45aac44f57c8dda1c3f1a65f26db4"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/build_audit.json",
+      "size": 1022,
+      "sha256": "70efc5581226d53dae831a8bc20fc9d95dec030aa033e08877ade198d0af680e"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance/README.md",
+      "size": 996,
+      "sha256": "7bda079419abdcdc6b43c00b0b36e4a87af5e7836c7da8aea6e7401dfd6afa9e"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance/financial-accuracy.md",
+      "size": 459090,
+      "sha256": "25cda552398805858038c9d1ff599b595019af2fb11aed4c2ea62683541fcb82"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance/handling-uncertainty.md",
+      "size": 125602,
+      "sha256": "7994db99bac1d4a8a3d6ce5012d0571b63c6683cd1bc0d806297b9082d8dc8bb"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance/instruction-following.md",
+      "size": 89726,
+      "sha256": "46c5d9dcb0b6c935c2fe49b3d20aebcad30b17a33a19f90329e570b7f4987a6a"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance/practical-utility.md",
+      "size": 435632,
+      "sha256": "e137b64e45c9e75d50b53323d228f1e2bcd17186e7e378f489c81399b2d07d82"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance/process-transparency-auditability.md",
+      "size": 129889,
+      "sha256": "82679238200a0b8c70b6e89ea53e0b93a2bf4e5ad733e8328452c82636ec39b3"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance/risk-regulatory-disclosure.md",
+      "size": 415892,
+      "sha256": "a2c82203c934a9e3bb32ff3ccc30d62b8fa41770f7b0f56ad3828418af9ec666"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance/supplemental-insight.md",
+      "size": 57226,
+      "sha256": "2eab8a4771e2dd144543065ad809d7053bef67d23d50e76f4b7a90e822fb86c9"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance_hard/README.md",
+      "size": 1002,
+      "sha256": "1310447ed0de15b989547be6ef3fe8c6ae82a4f7afd3b5389aa05c6197514b74"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance_hard/financial-accuracy.md",
+      "size": 492975,
+      "sha256": "6409b3fe3a056f4c87ce4d94797e104048389ac98991af39369ca5417db15706"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance_hard/handling-uncertainty.md",
+      "size": 129117,
+      "sha256": "48e44eb4a723c32d48427666c0582d190e47f543dba6bf7023c73966105fac72"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance_hard/instruction-following.md",
+      "size": 100563,
+      "sha256": "4b86a04e877817224a877af58cd0b68fb25cdfe1cc4b9ce2caf4798c53c088bf"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance_hard/practical-utility.md",
+      "size": 437680,
+      "sha256": "54a1de00a3ac793ebdb1534343fedf8b9a18a65f60136ee9f158bf775bd37508"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance_hard/process-transparency-auditability.md",
+      "size": 175643,
+      "sha256": "40be4ac6d0be194be69f3b859622101bb2b7fe7c133f0d52eac5713c887b38e9"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance_hard/risk-regulatory-disclosure.md",
+      "size": 405556,
+      "sha256": "988fd408e473d78a8db1138964ae0fd35f2b8f1e8dd5f54f7455a269c7ec3c10"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/finance_hard/supplemental-insight.md",
+      "size": 61479,
+      "sha256": "8d6a7838361d84c6bc20e26bb0074edf6f15f34a2ea0a81cf9100e066243adaf"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal/README.md",
+      "size": 1069,
+      "sha256": "78a84ff30467e1376155d5deb692ff9c7abbc582e4033ad75d65ca9d44eb7cf5"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal/application-of-law-to-the-facts.md",
+      "size": 174108,
+      "sha256": "edf696b810fb240e21828cc06b0ce357c0f8bcb666c8e702b6e952db02870476"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal/handling-uncertainty.md",
+      "size": 30902,
+      "sha256": "6999e6a3e8b7abfb5e311d0e3c13624729c3ed027fa4b596e9d8b48b56062fb7"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal/instruction-following.md",
+      "size": 44006,
+      "sha256": "d0fb0a484f158b5e8f4789e6277d27d2e225e56c6419199e6f6948e78b90d113"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal/legal-accuracy.md",
+      "size": 711149,
+      "sha256": "82891a35c1153e753879a4b363dd9928048ea6912a1e31d83673b2241658a983"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal/practical-utility.md",
+      "size": 254124,
+      "sha256": "ba1867631f9756e014717df7422388e3f7d71cc57a20fb600bb2943504896a93"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal/procedural-correctness.md",
+      "size": 84707,
+      "sha256": "30184504712b38f40160967835584e638f668e1b5b612ada5840d8c1f7a8893d"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal/risk-ethical-disclosure.md",
+      "size": 57599,
+      "sha256": "b81439d004e3802e78bc7e27874cf261b9b63a5bba6303b1a5cce7717ec2b761"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal/supplemental-insight.md",
+      "size": 123424,
+      "sha256": "3782fbf1311ab3c3e66ad62e9af057038755081efe669045202d997016a5c960"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal_hard/README.md",
+      "size": 1075,
+      "sha256": "dcbd86537cbad3a89f239f99a7bffe5c8880b5352a9d2de3fffb639885f125ea"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal_hard/application-of-law-to-the-facts.md",
+      "size": 169878,
+      "sha256": "b9a32e1874d252384917f462179ea41b26e8166e53b0927841ef7ea2cdc350a3"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal_hard/handling-uncertainty.md",
+      "size": 36311,
+      "sha256": "2522475c39effeb3a892b272c0be0bf328b1faa0a8fa88f5850ef72de2aa7cb0"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal_hard/instruction-following.md",
+      "size": 46650,
+      "sha256": "debbfe662322714370c1de8b3aca09366353ff20fc5854367115b6fae6c474ec"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal_hard/legal-accuracy.md",
+      "size": 759342,
+      "sha256": "c9c43a88844d1337c8740b11b2489590e10db3dde07d08a0eb0c9d08135d35cf"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal_hard/practical-utility.md",
+      "size": 235247,
+      "sha256": "33b23dfc665c78934294750e6d12d2cbc3933b562ad5cfaf04476deebe9871a8"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal_hard/procedural-correctness.md",
+      "size": 98171,
+      "sha256": "989d3f3f61da5bdc46a636e087c4f74e75bb71c235b1e6d9f696343501db6d65"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal_hard/risk-ethical-disclosure.md",
+      "size": 53544,
+      "sha256": "2afc0b0b47cc37421cbc9f8ee862c20945d26b8bdd2c7544ce2fead8a8fa1f45"
+    },
+    {
+      "path": "vendor/harness/judge/rubric/library_v1/legal_hard/supplemental-insight.md",
+      "size": 114678,
+      "sha256": "89edac759e6230510aeeb9957ecca8181d56b6f3d0ed97157d579ff6f88a0221"
+    },
+    {
+      "path": "vendor/harness/judge/schemas/contract.schema.json",
+      "size": 953,
+      "sha256": "4384a0907bd96ea811bfe8daaeac53ad228f0a2f65ee385dcb6cf82f5324a5ae"
+    },
+    {
+      "path": "vendor/harness/judge/schemas/env_map.schema.json",
+      "size": 1098,
+      "sha256": "536ce7e4963a94e262e11a2febd9c599aa51952a37c6d545be1ad9c88fa0e834"
+    },
+    {
+      "path": "vendor/harness/judge/schemas/evidence_manifest.schema.json",
+      "size": 1053,
+      "sha256": "772903b94b14db64da002fcd42b0d513a03eece98fa57abc433809b199614a90"
+    },
+    {
+      "path": "vendor/harness/judge/schemas/evidence_surface.schema.json",
+      "size": 897,
+      "sha256": "ae1921f3b9ac86473de7bd0789cd2b681f683c9aabfdc16dc916e48439baec1f"
+    },
+    {
+      "path": "vendor/harness/judge/schemas/provenance.schema.json",
+      "size": 1914,
+      "sha256": "ac828729cd084112c8c16c581050e3439f328b9a60e7777573944854bb35985f"
+    },
+    {
+      "path": "vendor/harness/judge/schemas/verifier_package.schema.json",
+      "size": 1009,
+      "sha256": "810b1ed29fa852d499deafd9b0cf80a6d96b6a309174e3b735122b668bb7a5ed"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+gavel-harness
+Copyright 2026 The gavel-harness authors
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Third-party material
+====================
+
+src/gavel_harness/rubric/library_v1/
+  Rubric library: 19,603 entries in six domains, built without any model call by
+  src/gavel_harness/rubric/build.py from the two sources below. Every entry
+  keeps its source text verbatim (whitespace runs collapsed to one space) and
+  names the source task it came from.
+
+  1. Domains finance, legal, finance_hard, legal_hard (18,828 entries)
+     Source:  PRBench: Large-Scale Expert Rubrics for Evaluating High-Stakes
+              Professional Reasoning, by Scale AI.
+              https://huggingface.co/datasets/ScaleAI/PRBench
+              Splits finance, legal, finance_hard, legal_hard; the parquet files
+              used have sha256
+                finance       4e3d790d00eefdc9ec7090a2e19459e74c1788921c525b3d14ed0dbf1f155dc0
+                legal         3d80ca175eaf5072880f33fd28e74a610ab99cc74e6c5b173d89312365a7c67f
+                finance_hard  5218eeb81834b8d0786b0b1ee414dbf7f563fcd01f355420d48376614af04b2a
+                legal_hard    9eebf855786e9b7c719ae80ad58fab0aba184b5406944e8c5b9d9cebcdb32895
+     License: Creative Commons Attribution 4.0 International (CC BY 4.0),
+              https://creativecommons.org/licenses/by/4.0/
+     Changes: only the task, topic and rubric fields were read. For finance and
+              legal, only tasks that a deterministic hash split (salt
+              "rubric-v1") assigns to the library half were used; the other half
+              is held out for evaluation. finance_hard and legal_hard were used
+              in full. Each rubric criterion became one entry holding its title,
+              description and category verbatim; its weight class was mapped to
+              one of three severity levels (critically important / important,
+              slightly important, detrimental classes); criteria with any other
+              weight class were left out. Entries were numbered and grouped into
+              one Markdown file per category, with a per-domain README.md and
+              INDEX.tsv written for this library.
+
+  2. Domains airline_ops and banking_ops (775 entries)
+     Source:  tau2-bench, Sierra Research. https://github.com/sierra-research/tau2-bench
+              commit a2c024725189473d2d7cea3a5cfdbcc67478e41f,
+              data/tau2/domains/airline/tasks.json and
+              data/tau2/domains/banking_knowledge/documents/
+     License: MIT. Notice reproduced as required:
+
+              MIT License
+
+              Copyright (c) 2025 Sierra Research
+
+              Permission is hereby granted, free of charge, to any person
+              obtaining a copy of this software and associated documentation
+              files (the "Software"), to deal in the Software without
+              restriction, including without limitation the rights to use, copy,
+              modify, merge, publish, distribute, sublicense, and/or sell copies
+              of the Software, and to permit persons to whom the Software is
+              furnished to do so, subject to the following conditions:
+
+              The above copyright notice and this permission notice shall be
+              included in all copies or substantial portions of the Software.
+
+              THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+              EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+              MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+              NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+              BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+              ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+              CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+              SOFTWARE.
+     Changes: airline_ops holds the natural-language assertions of the airline
+              tasks that are not in the evaluation task set used with this
+              library, one entry per assertion; the 14 held-out task ids are
+              listed in
+                src/gavel_harness/rubric/library_v1_inputs/tau2_held_out_ids.txt
+                (sha256 4c3dbd44720074cd469f57d3a6e63f3cecc07871f43776429b67991d58041480)
+              and data/tau2/domains/airline/tasks.json at the commit above has
+              sha256 ccd8ba737b4cc371415af70151187788f728d6108d0916e73bb4317b40542052.
+              banking_ops holds the 698 banking_knowledge documents, one entry
+              per document (title and content), grouped by the category in the
+              document file name.

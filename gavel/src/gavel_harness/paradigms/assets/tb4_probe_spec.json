@@ -1,0 +1,14 @@
+{
+  "crash_patterns": [
+    "verifier\\.sh missing or empty"
+  ],
+  "nodirection_patterns": [
+    "PROBE=NODIRECTION"
+  ],
+  "ok_patterns": [
+    "verifier\\.sh present"
+  ],
+  "crash_feedback": "your previously generated verifier FAILED TO EXECUTE in the target environment. Diagnostic:\n{diag}\nRewrite it so it builds and runs: use only identifiers you can actually see in the provided material.",
+  "nodirection_feedback": "你的 verifier 产物未通过机器检查:/app/verifier.sh 必须是语法合法的 bash。诊断:{diag}",
+  "skip_patterns": []
+}

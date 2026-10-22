@@ -1,0 +1,183 @@
+{
+ "at": "2026-10-21T04:41:13.679339+00:00",
+ "status": "clean_prepare_and_resume_verified",
+ "unit_tests": {
+  "bootstrap": 14,
+  "runner": 58,
+  "hf_assets": 9,
+  "native_setup": 15,
+  "environment_image": 14,
+  "passed": 110
+ },
+ "real_checks": {
+  "hf_dataset": {
+   "repository": "Catherine1213/VerifierBench",
+   "revision": "8e5d72dfc112aaffca75934a0caaa22067ba8df1",
+   "files": 66,
+   "bytes": 1207855,
+   "sha256_verified": true
+  },
+  "swe_frozen_public_fields": {
+   "source_tasks": 500,
+   "frozen_tasks": 47,
+   "verified": true
+  },
+  "existing_native_pip_check": {
+   "backends": 4,
+   "passed": 4
+  },
+  "isolated_hf_swe_offline_original_api": true,
+  "harbor_build_and_install_no_sources": true,
+  "veritas_package_consumer_categories_passed": 6,
+  "fresh_clean_prepare": {
+   "host": "original development host",
+   "tasks": 222,
+   "candidates": 4993,
+   "public_generation_packages": 222,
+   "categories": 7,
+   "frozen_view_files_verified": 5217,
+   "returncode": 0,
+   "model_calls": 0,
+   "runtime_manifest_sha256": "9ab597f7c66c93ec341174d8704311bd45f8de60e2f354990680aa8f9038220a",
+   "generation_image_id": "sha256:5df0309cd8408f77342ec068994e93651843375573f17aa587435ff0318f6744"
+  },
+  "idempotent_prepare": {
+   "status": "already_prepared",
+   "packages": 222,
+   "model_calls": 0
+  },
+  "prepared_workspace_status": {
+   "pending": 222,
+   "active": 0,
+   "metrics": null,
+   "historical_results_used": false
+  },
+  "fresh_native_environments": {
+   "appworld_tasks": 28,
+   "appworld_candidates_reconstructed": 494,
+   "agentdojo_tasks": 20,
+   "tau2_tasks": 32,
+   "swe_frozen_tasks": 47,
+   "swe_image_digest_checks": 47,
+   "swe_images_already_cached": 47,
+   "swe_images_downloaded_this_validation": 0,
+   "generation_python": "3.12.14",
+   "evaluation_python": "3.12.14",
+   "generation_evaluation_dependency_parity": true
+  },
+  "first_http403_barrier": {
+   "runner_tests_passed": 58,
+   "independently_reviewed": true,
+   "same_task_upstream_retries_prevented": true,
+   "first_refusal_sha_bound": true,
+   "overwritten_log_cannot_hide_refusal": true,
+   "missing_or_changed_receipt_stops_dispatch": true,
+   "checker_and_scorer_changed": false
+  },
+  "private_network_health": {
+   "method": "ephemeral fixed-image health-only container on the original private network",
+   "no_credentials": true,
+   "no_mounts": true,
+   "model_calls": 0,
+   "original_private_network_live_health_verified": true,
+   "portable_start_branch_regression_tested": true
+  }
+ },
+ "boundaries": {
+  "fresh_clean_prepare": "passed",
+  "new_model_calls": 0,
+  "new_full_benchmark_completed": false,
+  "historical_results_included": false,
+  "clean_prepare_archive_sha256": "ab9097e01ddd2ab99b4b46c200523e911868ca50713a20e9716b9574082e3a75",
+  "final_runner_start_changes": "Fixed-image health-only container probes the proxy through the original private network; terminal runs return before network startup; first-403 receipts prevent upstream retry and are checked before delivery/scoring. Targeted regression tests and independent review cover these branches; clean prepare does not invoke them."
+ },
+ "runtime_distribution_tests_passed": 5,
+ "revisions": [
+  {
+   "revision": "no-sudo-network-isolation",
+   "change": "Generation isolation no longer adds host iptables INPUT rules (removed sudo -n iptables). The private network is internal with com.docker.network.bridge.inhibit_ipv4=true, so the host has no address on it; the model proxy runs as a container on the private network (alias vgb-proxy) plus a separate egress network; each start proves from the private network that the host gateway address and the model endpoint are unreachable; task containers drop NET_RAW.",
+   "files_changed": [
+    "runner/network.py",
+    "runner/proxy.py",
+    "runner/start.py",
+    "runner/provider.py",
+    "runner/task_worker.py",
+    "runner/tests/test_start.py",
+    "runner/tests/test_network_isolation.py",
+    "README.md",
+    "validation.json",
+    "vendor/harness (8 default/selftest paths of the original installation replaced by placeholders under /opt; none on the suite execution path)"
+   ],
+   "unchanged": [
+    "scoring replay (original VerifierBench executor, rounds, metrics)",
+    "Veritas generation flow",
+    "proxy request transform, 403 barrier and transport audit"
+   ],
+   "verified": {
+    "offline_unit_tests": "116 passed (was 110): runner 58 -> 64",
+    "docker_inhibit_ipv4_supported": "Docker 26.1.4: an internal bridge network created with the option has no host IPv4 address (checked, then removed)",
+    "unit_tests_after_revision": {
+     "bootstrap": 14,
+     "hf_assets": 9,
+     "native_setup": 15,
+     "environment_image": 14,
+     "runner": 64,
+     "passed": 116,
+     "python": "3.12"
+    }
+   },
+   "not_performed": [
+    "live end-to-end isolation run with the proxy container",
+    "model calls",
+    "fresh prepare on a clean host after this revision"
+   ]
+  },
+  {
+   "revision": "rename-veritas-to-gavel",
+   "change": "User-facing name Veritas renamed to Gavel: suite and runner text, report label (<model> + Gavel) and artifact manifest harness name. Kept unchanged: VERITAS_* environment variables and data field names of the original framework, the vendored original framework code (except the neutral /opt/gavel placeholder paths), and runtime/ALIGNMENT_CONTRACT.md pinned by the runtime manifest.",
+   "not_performed": [
+    "model calls",
+    "live Docker run"
+   ]
+  },
+  {
+   "revision": "remove-internal-references",
+   "change": "Comments, docstrings and documentation no longer name internal hosts, paths, infrastructure or process notes. Two original-framework modules and their identifiers were renamed to generic names without changing logic, structure or inheritance: harbor_integration/box_provider.py (class BoxEnvironment, the base class of LocalDockerEnvironment) and harbor_integration/box_transport.py (box_run, BoxTransportError, BoxRunOutput). Name-like literals of the unused remote transport and of the non-suite executors were renamed the same way (environment variable names, the task image prefix, now harborbox, and a placeholder endpoint host). The model proxy no longer keeps one vendor-specific header in a refused response's receipt. README is bilingual and states the supported Docker version; runner/README.md describes the no-sudo network isolation; NOTICE.md adds the PRBench (CC BY 4.0) and tau2-bench (MIT) attributions and the Apache-2.0 license of the suite.",
+   "files_changed": [
+    "vendor/harness (25 Python modules: comments/docstrings; 8 of them also renamed identifiers; two modules renamed to box_provider.py and box_transport.py)",
+    "runner/proxy.py (one vendor-specific header removed from retained refusal headers)",
+    "runner/adapter_contract.py, runner/dispatch.py, runner/task_worker.py (comments/docstrings)",
+    "runtime/pipeline/runner.py, runtime/pipeline/capabilities/cap_exploitbench.py, runtime/pipeline/repair_profile.py (comments/docstrings)",
+    "runtime/MANIFEST.json, runtime/provenance/source-bindings.json",
+    "README.md",
+    "runner/README.md",
+    "NOTICE.md",
+    "validation.json"
+   ],
+   "unchanged": [
+    "generation flow on the suite path: every edited module has the same AST as the original after the rename mapping, with docstrings stripped",
+    "OpenCode provider id 'ark' in runner/task_worker.py, which OpenCode writes into the agent's system prompt",
+    "scoring replay (original VerifierBench executor, rounds, metrics)",
+    "proxy request transform, 403 barrier and transport audit"
+   ],
+   "verified": {
+    "ast_equivalence": "25 vendored modules: 17 differ only in comments/docstrings, 8 are identical after the rename mapping; 7 runner/runtime files differ only in comments/docstrings; runner/proxy.py differs by the one header token",
+    "import_smoke": "Harbor 0.21.0: LocalDockerEnvironment -> BoxEnvironment -> BaseEnvironment with no abstract methods left; runner VGBEnvironment keeps its three overrides; session selftest OK",
+    "unit_tests_after_revision": {
+     "bootstrap": 14,
+     "hf_assets": 9,
+     "native_setup": 15,
+     "environment_image": 14,
+     "runner": 67,
+     "passed": 119,
+     "python": "3.12"
+    }
+   },
+   "not_performed": [
+    "model calls",
+    "live Docker run",
+    "fresh prepare on a clean host after this revision"
+   ]
+  }
+ ]
+}

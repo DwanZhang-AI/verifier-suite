@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Acceptance Contract (contract.json) — pipeline stage D1",
+  "description": "Task-specific acceptance criteria extracted from the task statement and environment BEFORE verifier synthesis. Criteria are the unit that evidence bindings and ablations reference.",
+  "type": "object",
+  "required": ["task_id", "criteria"],
+  "properties": {
+    "task_id": {"type": "string"},
+    "criteria": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "statement"],
+        "properties": {
+          "id": {"type": "string"},
+          "kind": {"enum": ["outcome", "constraint", "invariant", "forbidden_side_effect", "quality"]},
+          "statement": {"type": "string"},
+          "source": {"enum": ["task_statement", "environment", "inferred"]}
+        }
+      }
+    },
+    "notes": {"type": ["string", "null"]}
+  }
+}

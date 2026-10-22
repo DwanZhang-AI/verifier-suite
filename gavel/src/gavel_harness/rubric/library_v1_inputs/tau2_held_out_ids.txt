@@ -1,0 +1,17 @@
+# tau2-bench airline tasks held out of the airline_ops domain of library_v1: the
+# airline tasks of the evaluation task set used with the library. One
+# <tau2 domain>__<task id> per line; lines starting with # are comments.
+airline__11
+airline__14
+airline__15
+airline__16
+airline__17
+airline__18
+airline__19
+airline__20
+airline__21
+airline__22
+airline__23
+airline__24
+airline__25
+airline__35

@@ -1,0 +1,25 @@
+# Generation executors, by the name `gavel-harness gen --executor` takes.
+#
+# import_path     the agent class Harbor loads (AgentConfig.import_path)
+# cli_version     the CLI version the packages' install block pre-installs; the
+#                 executor skips installation when the CLI already answers --version
+# endpoint_api    the model API the endpoint must serve ("chat_completions": the
+#                 OpenAI-compatible /chat/completions)
+# config_kwarg    the agent keyword argument that carries the CLI configuration
+# [<name>.env]         environment of every agent command, as the original harness set it
+# [<name>.permission]  the CLI's permission block, as the original harness set it
+
+[opencode]
+import_path = "gavel_harness.run.executors.tagged:TaggedJudgeOpenCode"
+cli_version = "1.18.3"
+endpoint_api = "chat_completions"
+config_kwarg = "opencode_config"
+
+[opencode.env]
+OPENCODE_DISABLE_AUTOUPDATE = "1"
+OPENCODE_DISABLE_LSP_DOWNLOAD = "1"
+
+[opencode.permission]
+webfetch = "deny"
+bash = "allow"
+edit = "allow"

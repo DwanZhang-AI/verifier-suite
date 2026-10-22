@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Provenance (provenance.json) — pipeline stage D5",
+  "description": "Where this verifier came from: generator model+params, pipeline mode and stage switches, compilation-probe outcome, and the source trial. The execution plane never regenerates or edits a package; provenance is what makes a verdict auditable.",
+  "type": "object",
+  "required": ["generator", "probe", "source", "created_utc"],
+  "properties": {
+    "generator": {
+      "type": "object",
+      "properties": {
+        "harness": {"type": "string"},
+        "harness_version": {"type": "string"},
+        "model": {"type": "string"},
+        "params": {"type": "object"}
+      }
+    },
+    "pipeline": {
+      "type": "object",
+      "properties": {
+        "mode": {"enum": ["monolithic", "staged"]},
+        "stages": {"type": "object", "description": "stage -> enabled (ablation switches)"}
+      }
+    },
+    "probe": {
+      "type": "object",
+      "properties": {
+        "outcome": {"enum": ["ok", "crash", "nodirection", "skip"]},
+        "shipped": {"enum": ["original", "retry"]},
+        "markers": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "dataset": {"type": "string"},
+        "task_id": {"type": "string"},
+        "roll_tag": {"type": ["string", "null"]},
+        "trial_dir": {"type": ["string", "null"]}
+      }
+    },
+    "usage": {
+      "type": "object",
+      "description": "matched-budget accounting (tokens, tool calls, wall seconds) — filled by the metering channel",
+      "properties": {
+        "tokens_in": {"type": ["integer", "null"]},
+        "tokens_out": {"type": ["integer", "null"]},
+        "tool_calls": {"type": ["integer", "null"]},
+        "wall_sec": {"type": ["number", "null"]}
+      }
+    },
+    "created_utc": {"type": "string"}
+  }
+}

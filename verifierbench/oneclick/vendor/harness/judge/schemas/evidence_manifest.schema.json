@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Criterion-to-check evidence bindings — pipeline stage D3",
+  "description": "Binds every contract criterion to concrete evidence (env_map observables) and the check that consumes it. This is not the adapter's judge-time vocabulary surface; see evidence_surface.schema.json. A criterion with no supporting evidence is declared 'unsupported'.",
+  "type": "object",
+  "required": ["bindings"],
+  "properties": {
+    "bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["criterion", "evidence", "status"],
+        "properties": {
+          "criterion": {"type": "string", "description": "contract.json criteria[].id"},
+          "evidence": {"type": "array", "items": {"type": "string"}, "description": "env_map.json observables[].id"},
+          "check": {"type": ["string", "null"], "description": "checks/<file>[::name] implementing this binding"},
+          "status": {"enum": ["bound", "unsupported"]}
+        }
+      }
+    }
+  }
+}

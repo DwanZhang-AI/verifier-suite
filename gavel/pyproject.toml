@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gavel-harness"
+dynamic = ["version"]
+description = "Generate, write back and validate closed-book verifiers for Harbor tasks with one command."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+keywords = ["agent-evaluation", "verifier", "harbor", "benchmark", "llm"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = [
+    # Every generation and anchor run of the method used commit 2fe1615 (version 0.21.0);
+    # the 0.21.0 wheel on PyPI is a different, earlier build.
+    "harbor @ git+https://github.com/harbor-framework/harbor@2fe1615503fed39ad82b7ce09b22497996b30f1f",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+# Reading the PRBench parquet files when rebuilding the rubric library
+# (gavel_harness.rubric.build / .cli split); verified with pandas 3.0, pyarrow 25.
+rubric = ["pandas", "pyarrow"]
+
+[project.scripts]
+gavel-harness = "gavel_harness.cli:main"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.version]
+path = "src/gavel_harness/__init__.py"
+
+# The wheel ships every non-ignored file under the package: prompt and contract
+# texts (*.txt, *.tsv), profiles (*.toml), probe scripts (*.sh), verbatim upstream
+# modules (*.py) and the rubric library under rubric/library_v1/ (*.md, *.tsv, *.json).
+[tool.hatch.build.targets.wheel]
+packages = ["src/gavel_harness"]
+
+[tool.hatch.build.hooks.custom]
+path = "hatch_build.py"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--import-mode=importlib"
+markers = [
+    "docker: needs a reachable Docker daemon",
+    "cluster: needs the original harness trees (GAVEL_UPSTREAM_HARNESS, GAVEL_RUNTIME, GAVEL_SEALED)",
+]

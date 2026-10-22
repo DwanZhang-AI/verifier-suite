@@ -1,0 +1,8 @@
+schema_version = "1.0"
+
+[task]
+name = "gavel-examples/deliverable-mini"
+description = "Summarise a CSV file into a report file (deliverable example)."
+
+[environment]
+build_timeout_sec = 900.0

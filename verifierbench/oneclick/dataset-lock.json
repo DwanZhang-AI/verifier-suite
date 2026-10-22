@@ -1,0 +1,338 @@
+{
+  "schema_version": 1,
+  "repo_id": "Catherine1213/VerifierBench",
+  "repo_type": "dataset",
+  "revision": "8e5d72dfc112aaffca75934a0caaa22067ba8df1",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 2504,
+      "sha256": "9e75dd981de037ec3769f24f790e126bc5a160b6871f510214e68dc70649aeeb"
+    },
+    {
+      "path": "LICENSE.md",
+      "size": 1198,
+      "sha256": "b5cac339f50c4e440b492f62591b00beb81d8633841d6be3c3f36be49257669a"
+    },
+    {
+      "path": "README.md",
+      "size": 877,
+      "sha256": "186fbe64e256ce771facd952ecfaf412bffdc0af24eb3c0bfaaae8b9363ac243"
+    },
+    {
+      "path": "USAGE.md",
+      "size": 1555,
+      "sha256": "34c29a30192d7b14f76552c170593b09f996c52d6310329e4d527e439b245292"
+    },
+    {
+      "path": "data/candidates.parquet",
+      "size": 774926,
+      "sha256": "9fa417a295fcd377424cffecdf0b825ed07418df33e05fbb817a2e7b0a0bc168"
+    },
+    {
+      "path": "data/tasks.parquet",
+      "size": 217212,
+      "sha256": "754bc4670a1bd75c2837c4ac4e032b7ff14e029538a46b20b13ca97f20fc7cd6"
+    },
+    {
+      "path": "licenses/ACEBench.txt",
+      "size": 1140,
+      "sha256": "d9a1b1e30d633d5732ea18e3cba9538d293ebc53e1a9e4e96ab739e0c5c4f1cb"
+    },
+    {
+      "path": "licenses/AgentDojo.txt",
+      "size": 1161,
+      "sha256": "4285a071f2d382338e52b4fb0a186d952984a34d43a33d8872e1a1d8cb43401e"
+    },
+    {
+      "path": "licenses/Apache-2.0.txt",
+      "size": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "licenses/AppWorld-redistribution.txt",
+      "size": 358,
+      "sha256": "07a8965d361da3aea3429fdd3f5ab4a62d8837bcaae6ad7d874bf14889c434ae"
+    },
+    {
+      "path": "licenses/AppWorld.txt",
+      "size": 276,
+      "sha256": "3786bdb398d95201c067c3b59a3943659a36783579f70ad0fab99f915b499609"
+    },
+    {
+      "path": "licenses/BFCL.txt",
+      "size": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "licenses/SWE-bench.txt",
+      "size": 1159,
+      "sha256": "2bd2e08df7147f67a69b42c10efae09bd4bf119df397371036187d5dd1b02f57"
+    },
+    {
+      "path": "licenses/astropy-astropy-0df94ff70979.txt",
+      "size": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "licenses/astropy-astropy-19cc80471739.txt",
+      "size": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "licenses/astropy-astropy-298ccb478e6b.txt",
+      "size": 1496,
+      "sha256": "c24e11182f188ebb0ff7d92132b7d3394411816dd4eb6ecccf8e91f3dc168d8e"
+    },
+    {
+      "path": "licenses/astropy-astropy-5250b2442501.txt",
+      "size": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "licenses/astropy-astropy-6500928dc0e5.txt",
+      "size": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "licenses/astropy-astropy-7269fa3e33e8.txt",
+      "size": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "licenses/astropy-astropy-80c3854a5f4f.txt",
+      "size": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "licenses/astropy-astropy-c0a24c1dc957.txt",
+      "size": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "licenses/django-django-003bb34b218a.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-14d026cccb14.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-1f8382d34d54.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-21aa2a5e785e.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-36300ef336e3.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-55b68de643b5.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-571ab44e8a89.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-58c1acb1d605.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-5d9cf79baf07.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-69331bb851c3.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-7d49ad76562e.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-8180ffba21bf.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-8dd5877f58f8.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-999891bd80b3.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-b1d6b35e146a.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-ba726067604c.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-c2678e49759e.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-d26b2424437d.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-d87bd29c4f8d.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-ddb293685235.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-e065b293878b.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-e8fcdaad5c42.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-f0adf3b9b7a1.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-f618e033acd3.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/django-django-fc2b1cc926e3.txt",
+      "size": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/manifest.json",
+      "size": 15986,
+      "sha256": "87c599b37a28e60a85553a45f372761001b4535017758be1a229869f98bd9033"
+    },
+    {
+      "path": "licenses/matplotlib-matplotlib-14c96b510ebe.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/matplotlib-matplotlib-3eadeacc06c9.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/matplotlib-matplotlib-5ec2bd279729.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/matplotlib-matplotlib-6091437be977.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/matplotlib-matplotlib-6786f437df54.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/matplotlib-matplotlib-8f0003ae9029.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/matplotlib-matplotlib-9d22ab09d52d.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/matplotlib-matplotlib-a2a1b0a11b99.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/matplotlib-matplotlib-a9ba9d5d3fe9.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/matplotlib-matplotlib-af39f1edffcd.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/matplotlib-matplotlib-b7ce415c15eb.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/matplotlib-matplotlib-d65c9ca20ddf.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/matplotlib-matplotlib-f0632c0fc733.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/matplotlib-matplotlib-f8ffce6d4412.txt",
+      "size": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/tau2.txt",
+      "size": 1072,
+      "sha256": "e67c5aa0074dfcaefd3c3a1aedb94cb539234aecd15d5a972574e3200e6252fe"
+    },
+    {
+      "path": "metadata/appworld_reconstruction.json",
+      "size": 28311,
+      "sha256": "a7b3bd84051517c88b0f182b7a5030c20a4b24ea14c810c246ad2e14bb685c22"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 120,
+      "sha256": "1ba4f0100b33830602f8692b3ecb87cfcc868a56583562867ce3ca6a3f414001"
+    },
+    {
+      "path": "scripts/appworld_reconstruction.py",
+      "size": 13006,
+      "sha256": "d01c726a080f0f967920e87bcb4a5e26fcdb45abbbf579d70af9449901c25191"
+    },
+    {
+      "path": "scripts/materialize.py",
+      "size": 5891,
+      "sha256": "fbdc9021fd12063ef9062e61601477e1e2ef0eacb95fe98f85b5495853de51ae"
+    }
+  ]
+}

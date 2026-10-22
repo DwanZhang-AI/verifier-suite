@@ -1,0 +1,68 @@
+[
+ {
+  "domain": "finance",
+  "library_tasks": 299,
+  "entries": 4922,
+  "categories": 7,
+  "severity_mix": {
+   "必须": 3857,
+   "建议": 763,
+   "负面": 302
+  }
+ },
+ {
+  "domain": "finance_hard",
+  "library_tasks": 300,
+  "entries": 5085,
+  "categories": 7,
+  "severity_mix": {
+   "必须": 3987,
+   "建议": 734,
+   "负面": 364
+  }
+ },
+ {
+  "domain": "legal",
+  "library_tasks": 251,
+  "entries": 4363,
+  "categories": 8,
+  "severity_mix": {
+   "必须": 3602,
+   "建议": 491,
+   "负面": 270
+  }
+ },
+ {
+  "domain": "legal_hard",
+  "library_tasks": 250,
+  "entries": 4458,
+  "categories": 8,
+  "severity_mix": {
+   "必须": 3667,
+   "建议": 462,
+   "负面": 329
+  }
+ },
+ {
+  "domain": "airline_ops",
+  "library_tasks": 36,
+  "entries": 77,
+  "categories": 1,
+  "severity_mix": {
+   "必须": 77,
+   "建议": 0,
+   "负面": 0
+  }
+ },
+ {
+  "domain": "banking_ops",
+  "library_tasks": 698,
+  "entries": 698,
+  "categories": 11,
+  "severity_mix": {
+   "必须": 0,
+   "建议": 698,
+   "负面": 0
+  }
+ }
+]

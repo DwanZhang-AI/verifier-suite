@@ -1,0 +1,46 @@
+# Any single-container Harbor terminal task, packaged as the upstream
+# harbor_generic adapter did (the TB4 packaging over any task root; its
+# contract is byte-identical to the TB4 contract).
+description = "Generic Harbor task: closed-book /app/verifier.sh in the task's own environment"
+paradigm = "terminal_state"
+contract = "harbor_generic"
+# The wording for new tasks.
+wording = "state_gate"
+env = "plain"
+package_prefix = "harbor"
+install_block = "tb4_install_block.sh"
+task_toml = "harbor_generic_task.toml.tmpl"
+from_injection = "first"
+
+[evidence]
+testbed = "final.artifact"
+fs_manifest = "final.manifest"
+
+[timeouts]
+build_sec = 5400.0
+agent_sec = 7200.0
+verifier_sec = 300.0
+
+[intake]
+# A task that already ships tests/ is refused unless the run replaces them.
+strip_tests = false
+allow_compose = false
+allow_mcp_servers = false
+allow_missing_gpus = false
+
+[anchor]
+image = "original"
+workdir = "/app"
+network = "no-network"
+timeout_sec = 1800.0
+swap = "none"
+keep_images = false
+
+[declare]
+# Above the 330 s of capped steps in the evidence-capture block.
+verifier_timeout_sec = 600.0
+
+[run]
+# The original harness ended every agent command after 3900 s (its Docker
+# transport limit), also for the tasks its generic adapter packaged.
+agent_exec_cap_sec = 3900.0

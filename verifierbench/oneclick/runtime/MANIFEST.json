@@ -1,0 +1,559 @@
+{
+  "version": "verifierbench-oneclick-vendored-runtime-v1",
+  "derived": true,
+  "dataset_pending_hf_bootstrap": true,
+  "tasks": 222,
+  "candidates": 4993,
+  "files": [
+    {
+      "path": "ALIGNMENT_CONTRACT.md",
+      "bytes": 1855,
+      "sha256": "ef5ef319161c76e36ccc8e70f2420771ab453c515e96ef0e7cd58b230e94da00"
+    },
+    {
+      "path": "EXECUTION_CONTRACT.md",
+      "bytes": 4846,
+      "sha256": "7bdd70b1bb406f45c0f4561125d999393b5711461e4731cba54ca06fb8b2764e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1281,
+      "sha256": "5c38d554010e9d6f7c1c58f97690b4a3f76a81846381b87d145697f103f93e26"
+    },
+    {
+      "path": "environment/_venv_ad.requirements.txt",
+      "bytes": 1395,
+      "sha256": "e69275576f0ab7019ccd4169cbc300427fa0339d537a8cf7e0aa7940d123b0b1"
+    },
+    {
+      "path": "environment/_venv_aw.requirements.txt",
+      "bytes": 1488,
+      "sha256": "461126d193d7b3c6d55b41cf36802ae31e7d77cef8e9af19957086e8744e1744"
+    },
+    {
+      "path": "environment/_venv_swe.requirements.txt",
+      "bytes": 748,
+      "sha256": "01bb97a948d1df2851bc281ef632c7fa89f2b35f54f3a0ef19bf87270719d870"
+    },
+    {
+      "path": "environment/_venv_tau2.requirements.txt",
+      "bytes": 1819,
+      "sha256": "808705fc2502909a5464ada36ef376fdb1cc5c4da9cb68b9e06a24aeea1b8d3b"
+    },
+    {
+      "path": "environment/observed_execution_host.json",
+      "bytes": 17850,
+      "sha256": "41c6929a5101c983c9361c266517793c2d4569b9e341810630fa96694c39a72b"
+    },
+    {
+      "path": "licenses/DATASET-LICENSE.md",
+      "bytes": 1198,
+      "sha256": "b5cac339f50c4e440b492f62591b00beb81d8633841d6be3c3f36be49257669a"
+    },
+    {
+      "path": "licenses/dataset/ACEBench.txt",
+      "bytes": 1140,
+      "sha256": "d9a1b1e30d633d5732ea18e3cba9538d293ebc53e1a9e4e96ab739e0c5c4f1cb"
+    },
+    {
+      "path": "licenses/dataset/AgentDojo.txt",
+      "bytes": 1161,
+      "sha256": "4285a071f2d382338e52b4fb0a186d952984a34d43a33d8872e1a1d8cb43401e"
+    },
+    {
+      "path": "licenses/dataset/Apache-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "licenses/dataset/AppWorld-redistribution.txt",
+      "bytes": 358,
+      "sha256": "07a8965d361da3aea3429fdd3f5ab4a62d8837bcaae6ad7d874bf14889c434ae"
+    },
+    {
+      "path": "licenses/dataset/AppWorld.txt",
+      "bytes": 276,
+      "sha256": "3786bdb398d95201c067c3b59a3943659a36783579f70ad0fab99f915b499609"
+    },
+    {
+      "path": "licenses/dataset/BFCL.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "licenses/dataset/SWE-bench.txt",
+      "bytes": 1159,
+      "sha256": "2bd2e08df7147f67a69b42c10efae09bd4bf119df397371036187d5dd1b02f57"
+    },
+    {
+      "path": "licenses/dataset/astropy-astropy-0df94ff70979.txt",
+      "bytes": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "licenses/dataset/astropy-astropy-19cc80471739.txt",
+      "bytes": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "licenses/dataset/astropy-astropy-298ccb478e6b.txt",
+      "bytes": 1496,
+      "sha256": "c24e11182f188ebb0ff7d92132b7d3394411816dd4eb6ecccf8e91f3dc168d8e"
+    },
+    {
+      "path": "licenses/dataset/astropy-astropy-5250b2442501.txt",
+      "bytes": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "licenses/dataset/astropy-astropy-6500928dc0e5.txt",
+      "bytes": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "licenses/dataset/astropy-astropy-7269fa3e33e8.txt",
+      "bytes": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "licenses/dataset/astropy-astropy-80c3854a5f4f.txt",
+      "bytes": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "licenses/dataset/astropy-astropy-c0a24c1dc957.txt",
+      "bytes": 1496,
+      "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5"
+    },
+    {
+      "path": "licenses/dataset/django-django-003bb34b218a.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-14d026cccb14.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-1f8382d34d54.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-21aa2a5e785e.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-36300ef336e3.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-55b68de643b5.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-571ab44e8a89.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-58c1acb1d605.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-5d9cf79baf07.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-69331bb851c3.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-7d49ad76562e.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-8180ffba21bf.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-8dd5877f58f8.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-999891bd80b3.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-b1d6b35e146a.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-ba726067604c.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-c2678e49759e.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-d26b2424437d.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-d87bd29c4f8d.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-ddb293685235.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-e065b293878b.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-e8fcdaad5c42.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-f0adf3b9b7a1.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-f618e033acd3.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/django-django-fc2b1cc926e3.txt",
+      "bytes": 1552,
+      "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669"
+    },
+    {
+      "path": "licenses/dataset/manifest.json",
+      "bytes": 15986,
+      "sha256": "87c599b37a28e60a85553a45f372761001b4535017758be1a229869f98bd9033"
+    },
+    {
+      "path": "licenses/dataset/matplotlib-matplotlib-14c96b510ebe.txt",
+      "bytes": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/dataset/matplotlib-matplotlib-3eadeacc06c9.txt",
+      "bytes": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/dataset/matplotlib-matplotlib-5ec2bd279729.txt",
+      "bytes": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/dataset/matplotlib-matplotlib-6091437be977.txt",
+      "bytes": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/dataset/matplotlib-matplotlib-6786f437df54.txt",
+      "bytes": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/dataset/matplotlib-matplotlib-8f0003ae9029.txt",
+      "bytes": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/dataset/matplotlib-matplotlib-9d22ab09d52d.txt",
+      "bytes": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/dataset/matplotlib-matplotlib-a2a1b0a11b99.txt",
+      "bytes": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/dataset/matplotlib-matplotlib-a9ba9d5d3fe9.txt",
+      "bytes": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/dataset/matplotlib-matplotlib-af39f1edffcd.txt",
+      "bytes": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/dataset/matplotlib-matplotlib-b7ce415c15eb.txt",
+      "bytes": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/dataset/matplotlib-matplotlib-d65c9ca20ddf.txt",
+      "bytes": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/dataset/matplotlib-matplotlib-f0632c0fc733.txt",
+      "bytes": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/dataset/matplotlib-matplotlib-f8ffce6d4412.txt",
+      "bytes": 4830,
+      "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc"
+    },
+    {
+      "path": "licenses/dataset/tau2.txt",
+      "bytes": 1072,
+      "sha256": "e67c5aa0074dfcaefd3c3a1aedb94cb539234aecd15d5a972574e3200e6252fe"
+    },
+    {
+      "path": "paper/freeze.json",
+      "bytes": 32441,
+      "sha256": "adb462a87694bdb7acf673252a65fcc418bef15c1930565cb678b7a8fae66746"
+    },
+    {
+      "path": "paper/input_hashes.json",
+      "bytes": 747470,
+      "sha256": "64f3623b3618746de76c5763cb5f7f0d24f0459ac84b9b186ffca54ba0e8a253"
+    },
+    {
+      "path": "pipeline/budgets.py",
+      "bytes": 6775,
+      "sha256": "1921a47c89504ea304f32ab7e6b885f49c41aa7f22ed8bd6179e4a08baf5cefb"
+    },
+    {
+      "path": "pipeline/capabilities/appworld_execution.py",
+      "bytes": 2007,
+      "sha256": "54d25711e74cf97830539c97d88e29f8a7fcfb8ce93849ad0b476959447294b7"
+    },
+    {
+      "path": "pipeline/capabilities/appworld_state.py",
+      "bytes": 556,
+      "sha256": "5f9f7dd6ee3483d26de8cc904b2e6ea5d130ef608a1347afa1af2d712b0607fb"
+    },
+    {
+      "path": "pipeline/capabilities/broker.py",
+      "bytes": 14347,
+      "sha256": "fa00a6dded777e888517b2e8414dd1dd85c894859db6faf18dd29ea50b902f52"
+    },
+    {
+      "path": "pipeline/capabilities/cap_agentdojo.py",
+      "bytes": 7578,
+      "sha256": "a14468585d297fa74aeb8034b6c91f93845189e4b86f7ea9f991b256f39dc7b1"
+    },
+    {
+      "path": "pipeline/capabilities/cap_appworld.py",
+      "bytes": 5551,
+      "sha256": "4317d01406088b77dbcfee262e0ee72eee6cf73c51af9b6d5a959a1cfb3067a8"
+    },
+    {
+      "path": "pipeline/capabilities/cap_exploitbench.py",
+      "bytes": 10223,
+      "sha256": "2b57bea93c618caae364eba7fe2e80cf9062c75129864ae2614014ebc781b72e"
+    },
+    {
+      "path": "pipeline/capabilities/cap_swe.py",
+      "bytes": 10253,
+      "sha256": "4de29a1a7a0eda96bbc7b33ef0c5d87f443a18b767f220632fc04c31f1c78879"
+    },
+    {
+      "path": "pipeline/capabilities/cap_tau2.py",
+      "bytes": 9075,
+      "sha256": "f77be3128c435e84bb48744bbd57a6d89678816cf4f53cd697fbb4eea8ea92d7"
+    },
+    {
+      "path": "pipeline/capabilities/cap_tb.py",
+      "bytes": 8569,
+      "sha256": "bfff5edc4b7c16aa6106eb2694ab3b5bf95fc4e44b9f1aa53ef59aefd0608796"
+    },
+    {
+      "path": "pipeline/capabilities/public_observation.py",
+      "bytes": 4281,
+      "sha256": "40407cfdfee5e240c10cfcddf367c21d3a6723054f5a9af64e7a062f30184a4b"
+    },
+    {
+      "path": "pipeline/capabilities/registry.py",
+      "bytes": 5754,
+      "sha256": "0a917c984afdc5c1eacc4be824e3511706d9c8328c5aa0debbfdc6908cd83265"
+    },
+    {
+      "path": "pipeline/capabilities/vgb_env.py",
+      "bytes": 11536,
+      "sha256": "5a6436e3efe77bca1ff86eebf022e70058f18e9b17aadffa8436537648cf74df"
+    },
+    {
+      "path": "pipeline/capabilities/vgb_env_client.py",
+      "bytes": 3944,
+      "sha256": "9a41ae9a13efb434205a8420890be14b76022f31676279e5deb3cb76361687d5"
+    },
+    {
+      "path": "pipeline/data/agentdojo/ad_gates.py",
+      "bytes": 4884,
+      "sha256": "99de70a2b3a5516595cf0ff09b95fd8dfd046b86d9c365e71258c168c086d47f"
+    },
+    {
+      "path": "pipeline/data/tau2_full/tau2_all.py",
+      "bytes": 12816,
+      "sha256": "045b546c99ecc863665449dfa883bd9f889e5c8825d7bbcaeff417d3f94ed295"
+    },
+    {
+      "path": "pipeline/data/tau2_full/tau2_stub_embedder.py",
+      "bytes": 3258,
+      "sha256": "ec36707a55191bdedc5672fc6f9bf0206866f30f29ad53ad59ed377aff4ba46f"
+    },
+    {
+      "path": "pipeline/decision_audit.py",
+      "bytes": 1048,
+      "sha256": "3bd04924da68f2b3c19be54294bd480354e7a42e7cf0722c744932cb290fa0e4"
+    },
+    {
+      "path": "pipeline/execution_policy.json",
+      "bytes": 675,
+      "sha256": "3ff9359618c2283290df2c798dadc61135eca6f0f0fcd21e81e724309d69423e"
+    },
+    {
+      "path": "pipeline/generation_input_freeze.json",
+      "bytes": 69037,
+      "sha256": "7059712543e04622b238246454267d7a7e57665424c1ef4880797f8aa848022f"
+    },
+    {
+      "path": "pipeline/generation_provenance.py",
+      "bytes": 4326,
+      "sha256": "83199390545f4d7d4fe2228282bb45484e3840e973e0b82e8b17f371856d7c4c"
+    },
+    {
+      "path": "pipeline/input_revisions.json",
+      "bytes": 73782,
+      "sha256": "380815d6a06fc1d84b5350005f8d29e84dca644cec39b8eb98ece449bbd07e10"
+    },
+    {
+      "path": "pipeline/pool_policy.py",
+      "bytes": 1286,
+      "sha256": "4a7b3ea41abbfb0ff541aa63102e918b57c6485d2a9cd7295109c401718ae6c8"
+    },
+    {
+      "path": "pipeline/repair_profile.py",
+      "bytes": 7986,
+      "sha256": "b2211a30657a54e0f6d7505ed5315b68d6e95363d4ccb70d8ffda3731efd86f1"
+    },
+    {
+      "path": "pipeline/runner.py",
+      "bytes": 35712,
+      "sha256": "921da7110ab2b48f6eae560bc303414f12d115e504559a0f671ef20f95c73921"
+    },
+    {
+      "path": "pipeline/runner_spec.py",
+      "bytes": 10266,
+      "sha256": "102d130e90de4c81bc9c9a86df9a3474bfca6095d4fcf47861e14e8f6c2a3202"
+    },
+    {
+      "path": "pipeline/runtime_contract_check.py",
+      "bytes": 734,
+      "sha256": "432f6a74f1c436c050f4580b8da24d4a05b7b94ea900cc4e67c6460f2261b054"
+    },
+    {
+      "path": "pipeline/spike_bundle/runner_spec.py",
+      "bytes": 10266,
+      "sha256": "102d130e90de4c81bc9c9a86df9a3474bfca6095d4fcf47861e14e8f6c2a3202"
+    },
+    {
+      "path": "pipeline/spike_bundle/vgb_env_cli.py",
+      "bytes": 4184,
+      "sha256": "b4df734cd69f025ddceacb1a2a88c77db3be8bfdff0af066828eebc066d56a96"
+    },
+    {
+      "path": "pipeline/spike_bundle/vgb_env_mcp.py",
+      "bytes": 7324,
+      "sha256": "c7b908edaa1e20dfb704425d4719a480376c01468ceb92a3df3be3842f23b216"
+    },
+    {
+      "path": "pipeline/spike_bundle/vgb_env_pi.ts",
+      "bytes": 5330,
+      "sha256": "182a840d81eb639d62138cc2fa063f43608bc46073d7d4ba3689a9a353572439"
+    },
+    {
+      "path": "pipeline/tasks_all.json",
+      "bytes": 28260,
+      "sha256": "787664a73b9a657ec03b6153c335beeee51133c0b5959043854eb615d6aab923"
+    },
+    {
+      "path": "pipeline/tau_replay_contract.py",
+      "bytes": 1643,
+      "sha256": "dc2c6d0def10c6d4f2fd2eabc89d43093071339029b988dd387465c7f2a29f12"
+    },
+    {
+      "path": "pipeline/upstream_defects.json",
+      "bytes": 19063,
+      "sha256": "332fd1036b9200ab472e424cbe15de3a602c0e5120bb400b1e53e8ade2f87100"
+    },
+    {
+      "path": "pipeline/vgb_env_cli.py",
+      "bytes": 4184,
+      "sha256": "b4df734cd69f025ddceacb1a2a88c77db3be8bfdff0af066828eebc066d56a96"
+    },
+    {
+      "path": "pipeline/vgb_env_mcp.py",
+      "bytes": 7324,
+      "sha256": "c7b908edaa1e20dfb704425d4719a480376c01468ceb92a3df3be3842f23b216"
+    },
+    {
+      "path": "pipeline/vgb_env_pi.ts",
+      "bytes": 5330,
+      "sha256": "182a840d81eb639d62138cc2fa063f43608bc46073d7d4ba3689a9a353572439"
+    },
+    {
+      "path": "provenance/source-bindings.json",
+      "bytes": 34611,
+      "sha256": "b4717371fd9122cb35e881a02e123695781edd563cceeee5e62c160ad5a95c08"
+    },
+    {
+      "path": "scripts/check_delivery.py",
+      "bytes": 1839,
+      "sha256": "623e546e11249cc29fe7d86140886dc436b91b6a6d6a5cc8a7792c9028b94c75"
+    },
+    {
+      "path": "scripts/paper_score.py",
+      "bytes": 4647,
+      "sha256": "1dcc09166e0ddefa87559070e8510074b628829b0339bd026d7da2142bb94d9a"
+    },
+    {
+      "path": "scripts/prepare_views.py",
+      "bytes": 4319,
+      "sha256": "66847adbbdb5e683f8d77faa48058b5d90004146476c2261e997e55b056e328c"
+    },
+    {
+      "path": "scripts/replay.py",
+      "bytes": 8864,
+      "sha256": "fdb318fac7b7fff6273d984093e035ab786674df9f9fc7bbe33903aabfce60d5"
+    },
+    {
+      "path": "scripts/score_verdicts.py",
+      "bytes": 4754,
+      "sha256": "c71cfc10c8381b98e3d85bd5918376f9b6d4c9d3377594db6942efb1f15e556b"
+    }
+  ]
+}

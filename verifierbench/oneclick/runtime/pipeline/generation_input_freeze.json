@@ -1,0 +1,1338 @@
+{
+  "version": "pool222-pre-generation-static-20260919-v1",
+  "scope": "public generation inputs only; not model-result certification",
+  "tasks": {
+    "vgb-t-0177263f96a941de": {
+      "task_id": "django__django-11740",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "6c10935f8d79a76a6917c4d1ed301f0c412c975f58840a4174063984feb653b4",
+      "effective_spec_sha256": "6085c2cf51c9ebd996bccb3bb8560e93b326d9de450baab860ac797ee9147fd2"
+    },
+    "vgb-t-03b3bf23bd24692b": {
+      "task_id": "astropy__astropy-13453",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "c0bb737505ebbaadaf99cbd4fdbb610735f1c05d9fca8fe0decf25a5af337b69",
+      "effective_spec_sha256": "665031ce48683a618904167f78c9bc703649c0c56333e39af4ec77e2fb1e9726"
+    },
+    "vgb-t-0480046e6a2a021f": {
+      "task_id": "data_en/normal_atom_object_deep_38",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "565034e08a2ab0533181d1f84001ca64640c2dc00964c57842e3ab03e2e0b502",
+      "effective_spec_sha256": "a7b6d5dd37799fb1115080db6268fe4b40b47199b83d011cd5eff2961227df01"
+    },
+    "vgb-t-05aaeb7d80edf966": {
+      "task_id": "travel/injection_task_2",
+      "benchmark": "AgentDojo injection",
+      "task_spec_sha256": "1255b16039f5ca59c68ebbc1a50d6b0ddb274ded62c707e8d58e6c225d8a6780",
+      "effective_spec_sha256": "73d3b0dcdae1541ad0591fb3e26bcb66752d014c27270ce75aa0d72f34f0a1f8"
+    },
+    "vgb-t-05c8127ce36fd215": {
+      "task_id": "parallel_multiple_195",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "c25b72ea450d422dcc0591e2c906b113ba39518e4292f404b57a3a796a49cab3",
+      "effective_spec_sha256": "3e07c1c5e8db3fa2d0ec36849d59bcaa421b82b25efcffcf39f62d856fba1bda"
+    },
+    "vgb-t-065f08d228c6ea14": {
+      "task_id": "retail/20",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "ac6552a21eeba0bc524bf580bbd17d425fb6b7676c7bbbca5ed2341062939ba6",
+      "effective_spec_sha256": "0aad82450be5b91948422dd17ac91177fbc996f7e7e72c6155d1c75e9f5fd8cc"
+    },
+    "vgb-t-06ebf868b74a4684": {
+      "task_id": "workspace/user_task_21",
+      "benchmark": "AgentDojo user",
+      "task_spec_sha256": "64f20d42b515f30a706628758f77a62120d74a2e5374581fa5e2e9d054899715",
+      "effective_spec_sha256": "7261e115bac9681af0a50c300f9bae2c9cf283e3b651be86e2bae5adec8d6740"
+    },
+    "vgb-t-08167d1b4c9984dd": {
+      "task_id": "29caf6f_1",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "7b0a8ee95581bb04c7cc7bc179ac80f8d1476b2ba2f6847fb41081818e8c7ce2",
+      "effective_spec_sha256": "f8d1e6c1b0d4be7956fd729c0202d0eb52b682e5915d518d907f47e668003896"
+    },
+    "vgb-t-08a24f7f949c8668": {
+      "task_id": "retail/17",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "3feea2412d1e08677a5ff68d9af4559b38c68394cf07ee2cb34d65331baf59bf",
+      "effective_spec_sha256": "ec5f4d1ae96ab1b33ec1672a93d9e15ad8318b1e1938cfefa76dba8d3233342e"
+    },
+    "vgb-t-099f64c1f5b7b6d5": {
+      "task_id": "parallel_multiple_63",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "f3cae1758e9f6189069832c11711ea48e7d53ab18be64951c8fa8da94ace9049",
+      "effective_spec_sha256": "b103f10d84a76a4de6b7debef0884d08f1101f0678c01e1c90c995b150f07ea6"
+    },
+    "vgb-t-0a8ce2cc94b13011": {
+      "task_id": "parallel_multiple_136",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "008eff0547456cbb29229a4aee46d7301682c78826a3229f3d731a8dff329277",
+      "effective_spec_sha256": "d788330cd37d55b64f59f979e1039dc309567f8f318ea08ffe11386c346d656f"
+    },
+    "vgb-t-0b005ba515d53b98": {
+      "task_id": "parallel_154",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "6cb7ec747a63323da021dc0b9c15dc08189a65f9cba8de8e88ccf15f895c2ca8",
+      "effective_spec_sha256": "a2d5aed7f32a2db99d29e66e6b0b6d06fe8b3a63505d2e579465052e733ade3f"
+    },
+    "vgb-t-0b3e042c45353f89": {
+      "task_id": "banking/injection_task_7",
+      "benchmark": "AgentDojo injection",
+      "task_spec_sha256": "e1dcc0ff43081d7a978b4501d8bf49fa8c788d625dbc23c39e53f526892e065c",
+      "effective_spec_sha256": "9a349a8d2096d737ff95fe3cc243898703c0dd070238a24bcad716b9288dca5c"
+    },
+    "vgb-t-0b57ac1f5984f794": {
+      "task_id": "matplotlib__matplotlib-24026",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "e1ddfc44a5dafdc0325fd2041f466ed3096cafed3c00ee5adc08ec06f8ae0c5f",
+      "effective_spec_sha256": "414f489673addbe83ed83bed2d08a110f25f31ff0ef47b547e45d6be7a4be24d"
+    },
+    "vgb-t-0c35f16ef4fcdbab": {
+      "task_id": "banking_knowledge/task_019",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "d7edb385d04eecdc015070fae5ee86a24d1a68295fbc522915dd9c7ada08558f",
+      "effective_spec_sha256": "62cd51c3f3425c213d1abae6bfeabbd4cfee417d154d0c712a3570d8af66a2b2"
+    },
+    "vgb-t-0c680f9798128e58": {
+      "task_id": "parallel_99",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "d9ec4ad7b246204a44cbac48f2a47f54f2ea341cd5527f13b97731687ea8ab93",
+      "effective_spec_sha256": "b884463c1e692fc7806a85ddef146e15495b724ae38dc05111940e7dfa9a0e78"
+    },
+    "vgb-t-0c6ca1b19696b09f": {
+      "task_id": "banking_knowledge/task_038",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "4332e1739d59e6427461a9809883c7876fde8f2be8b01658b6a9612aad7efce7",
+      "effective_spec_sha256": "032660ab78d882c2c1482bd8c1904e912687a7060236136622d924120d330f47"
+    },
+    "vgb-t-0ef4cc8135387ea8": {
+      "task_id": "django__django-11964",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "db1ec11659820a22c27c2704db61157c7fc70651d38cd3865eac9eabe20f273e",
+      "effective_spec_sha256": "a80e4a68c7875134edb778a6b10767ef41472580d898ec5b13f37849eb067abf"
+    },
+    "vgb-t-0f00e67899116e08": {
+      "task_id": "matplotlib__matplotlib-24570",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "ac8ec3d4d16a0764d97e0595079444cc311b7921fc92e94bfa7f0a3751215dba",
+      "effective_spec_sha256": "2b9c5ebc9cacdb757cb5f2f5fa57981a0cb0f8f2173bc543f4586e39a9a33bb1"
+    },
+    "vgb-t-0fbc335ea7612a85": {
+      "task_id": "django__django-11790",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "bd8468b5adc4c0ff67bf462128df66098dae9bd2763d724b018ff56f0a6e7040",
+      "effective_spec_sha256": "ae5c95902a57c7931d077a3d5c2c1a00f36181db6278611f7fdfa8adcfc6a175"
+    },
+    "vgb-t-103113979d3247a5": {
+      "task_id": "parallel_multiple_139",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "68f5d13c54b93088a7209e3089e0edd085aa35bf22fbdfd373c3c33c013fd5c0",
+      "effective_spec_sha256": "d2aae6fc3d96a16bedc95f01e104cd96671f943fe66863542407bcd9e3da62cd"
+    },
+    "vgb-t-114c2988ccedb53c": {
+      "task_id": "data_en/normal_single_turn_parallel_function_86",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "6306113c73ccff430284dd75649d5400c2b63e1ed08c7184cb46729e32874a4e",
+      "effective_spec_sha256": "2640011969a5e5522ad640318f5f1a2f48cec82c99ef97d046182ff2ee72f30b"
+    },
+    "vgb-t-12aafca53ad113b0": {
+      "task_id": "banking_knowledge/task_037",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "9ea07b9a178b8e83ef4b5f8929a43f395d163b078fdfcb92b8899a6b870b8a81",
+      "effective_spec_sha256": "e5cf0895b37fbe8cb7ece1273824ecf576698e1dd4cad113b118e727b6cd3a9c"
+    },
+    "vgb-t-12ca5d698728bc6a": {
+      "task_id": "workspace/user_task_8",
+      "benchmark": "AgentDojo user",
+      "task_spec_sha256": "997e4976a5cb3eefa0723849aad64e81565bb27fd0e3af40c25621f52e8c17c5",
+      "effective_spec_sha256": "7d250cfd22c06c46341625688d6836e9c70372f136efdc1bd9d34555d6ae8da6"
+    },
+    "vgb-t-14e04d5d49c5f931": {
+      "task_id": "parallel_72",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "2292fcfc47e649f89258bfe2537aa29c9b063132080cc4066c297939a05c0a9b",
+      "effective_spec_sha256": "9b3b31dbf217130801063e2ad15836c0e9081a3623efa61c36514533d692551f"
+    },
+    "vgb-t-176e2b2766d0d771": {
+      "task_id": "29caf6f_3",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "d56ce6c7fdc8018ce94aaa512d4feef5cbc39a358e9f070a7033ce340893f2c2",
+      "effective_spec_sha256": "3ab74aa8013e592b98a99b0c04ae92ee582dc009642570c8aeb1ec7a61b44c5f"
+    },
+    "vgb-t-19a8dc037ab942c6": {
+      "task_id": "retail/49",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "bf2100337acf60b4f0ab72450af5364b41d18fd11d5b767dee2f7f7eee558a42",
+      "effective_spec_sha256": "959e353a86f61cb7626c00e5c394e4fda1cff58709c805e24ad96633a5ea3f69"
+    },
+    "vgb-t-19dbc4a428ad60cc": {
+      "task_id": "django__django-11555",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "18a9400e2ae1b6d4e33ab3045b5d0ee64cae0a19364edd3e07897da1274f60e0",
+      "effective_spec_sha256": "b6927f593728bd4e56ce5957ce4b5a4d64b43905a44349ddfae0a4642982f352"
+    },
+    "vgb-t-1b672870ddd7e163": {
+      "task_id": "astropy__astropy-13579",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "7e26d9295449d34dc69351acbf6ed3821f7b3374f3a3866a299a38dbc430599e",
+      "effective_spec_sha256": "8cf2334705c5f17227ae5369d3d1c30029c9715ac9425901f1dcca108693c64d"
+    },
+    "vgb-t-1c3ab5f2e7d38edd": {
+      "task_id": "parallel_145",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "64d9878f94b83c3f00574372208ce23cb3745c8d4b6a5e6ccf51d31362d23566",
+      "effective_spec_sha256": "9e2a2d1c1046805b9d6b99d6772b4ca3ed8cecb084de42d07e28a2ecd4118ccd"
+    },
+    "vgb-t-1c7bee9ff3634091": {
+      "task_id": "data_en/normal_atom_object_short_43",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "602234b4f7a92e2a3469e93556f7567cf930dd82e70726feafb3e0b0f5f4c109",
+      "effective_spec_sha256": "c680c6a7b7959ad86b788b014f1ba8f7893175bad2356797e1dd5575e92dc990"
+    },
+    "vgb-t-1f8fe1d4894e0825": {
+      "task_id": "data_en/normal_single_turn_parallel_function_78",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "fe3663e7a548f13ed51a2e2d937fe85ddd5b074f67bf14204e848e82ecdebd03",
+      "effective_spec_sha256": "c2a743ba06bdc543488c2dfeeab065939b386d602edee75a1f044b0aeb4e6036"
+    },
+    "vgb-t-208d4ff17507be3f": {
+      "task_id": "retail/42",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "70a7f424c3e9526ed82b4b2f91eb7ae3c33776060c1388ae1affd1bef320256a",
+      "effective_spec_sha256": "0e66b0c8653e1bfdf5f2033e48086b4f5b7a46bcad4f763d455ee4454c64843a"
+    },
+    "vgb-t-2207dea5623b28b6": {
+      "task_id": "retail/27",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "ded7505ca53f98ecc47c359e513d6e7ca9baa083e53a334fa5e63a8cd10469c8",
+      "effective_spec_sha256": "f10866dc0c3ad740ade7ad72e8f041f138904d5f2ddf3cecc885d3cd739746b0"
+    },
+    "vgb-t-223a9b6c88c5e396": {
+      "task_id": "django__django-11087",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "c88b4537e239ee01872d4ced080d4d169111fbd798fd19c6c7e6378540a5ac3a",
+      "effective_spec_sha256": "9ddd92df1b8266ab81570aeee83734f7cbf9de6f1dd4e3d377cd872ed66da9d8"
+    },
+    "vgb-t-2338c3ec8458857d": {
+      "task_id": "parallel_8",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "8a07cd26e3a385f4e0d56cb025483322d48c00556f60234eeb07085f085c9113",
+      "effective_spec_sha256": "17250db4ae9062e2bd4aa000d73ecf0f6d63e3d9e635e121b73a3e2f76ce80b9"
+    },
+    "vgb-t-25932ca825bd7ab6": {
+      "task_id": "matplotlib__matplotlib-14623",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "7b9ca7c1fa672192e5aa58e1cedcf323bf3f7d143394eccdd0939cf4c84fe07e",
+      "effective_spec_sha256": "ce430938740718489446bc2db910c1a6366196bb9d14075b1adc4bc97020101e"
+    },
+    "vgb-t-28340581d9dde55f": {
+      "task_id": "parallel_multiple_151",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "c8aff50548f3c062465d6e2edd5d8a361c0ebf3954636bd10e98d8d0dbbd3292",
+      "effective_spec_sha256": "8e01f771426434b52f028fc28bf059a414b8605e22e8e4d6e35dc8c683cc4f23"
+    },
+    "vgb-t-285b545b6151e2f8": {
+      "task_id": "6104387_3",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "f90626827b09128f733c4af45fdf044afd12bc6e89a42a2bca9a54a4abc06367",
+      "effective_spec_sha256": "14b6260a77aa630c35856427c3c9be15f5f16ac3305c292e405c78ec71afd32e"
+    },
+    "vgb-t-2a4eb60a53bfc9ba": {
+      "task_id": "banking_knowledge/task_022",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "d4944ea8de54cdd7c783546f4f0cbd65d55b81296181764a67ae52687c9020fa",
+      "effective_spec_sha256": "dec2f390bc8c62c7960e4315492498e6e85ca792a83a0cfa3718a3ff9268c492"
+    },
+    "vgb-t-2b7ae567d49b79ec": {
+      "task_id": "data_zh/normal_single_turn_parallel_function_93",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "91407a596ef01e1a5a40b7b3729878a8d1876dc9bf81044830bb3565b973c4bb",
+      "effective_spec_sha256": "d8ccc4d4568aa9dd3b356a9e18b7bc7b0b29e76052a68894a97eddb405c306f4"
+    },
+    "vgb-t-2c01cbca531c05ac": {
+      "task_id": "matplotlib__matplotlib-20676",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "5cd4847de3392c284774b0158f20dd2288b37754046ba1af2c5a0530b60e547c",
+      "effective_spec_sha256": "7519d56733f9c7db98cda64458dc5b26af7b8c1da690c2a8a7f68ddd6e148550"
+    },
+    "vgb-t-2c4ccd44b6d19e6d": {
+      "task_id": "slack/user_task_5",
+      "benchmark": "AgentDojo user",
+      "task_spec_sha256": "8da8b2041816e3eca29656b458465dac7295bdab0a68226e02a5c428e2899b90",
+      "effective_spec_sha256": "4c1460c7844a0384abf71f3cc3138b0ff2177a85cd26ec9472b3b26e95c47078"
+    },
+    "vgb-t-2de811fb047dcfa6": {
+      "task_id": "banking_knowledge/task_040",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "b7f14af30ebdb463fc5a7c117eb2a5fddadd97607626595f6dcda551dd1582e8",
+      "effective_spec_sha256": "212f3bf24941849c87d2e29f713732eedeffa32bd84f38c6afd9c70666853c84"
+    },
+    "vgb-t-3193bf4191ecae04": {
+      "task_id": "22cc237_1",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "8a7dee01718bd42fc73d8f2c785a85d7ab29ef25c8d06b7bed8ebd285017d3ec",
+      "effective_spec_sha256": "d5967add099eab7d2938f2f7562bd41bdc29feac96568c78331d6b5d4e1f372f"
+    },
+    "vgb-t-344d5609f122ed1a": {
+      "task_id": "parallel_98",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "f2ed26e725a70834fb2c68e1ea144055135ad955ae47d60b6a16e5303573edf4",
+      "effective_spec_sha256": "9255b96316134085cea87d5dca3f1dab0ed973791e6037dfa166c9154fca767b"
+    },
+    "vgb-t-3582fd923df493bd": {
+      "task_id": "3c13f5a_2",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "8d928e3502e48d125913e5612d7434cd23e81a9449d3599c00002591159930cd",
+      "effective_spec_sha256": "f55795e08cfd0b9a9deb95766c8376721eb853142864cf9ab83c0b2e3580f48c"
+    },
+    "vgb-t-36bffdce14b3c57b": {
+      "task_id": "afc0fce_1",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "aa3caa13a0f45565c699d7cb8201ae16d0393055579877c2a25d24affb303e19",
+      "effective_spec_sha256": "838b3faaad174725b275c6bce2fa789d02262a2a6e3729093b0fd9937c831063"
+    },
+    "vgb-t-36e8a311f52b2bb9": {
+      "task_id": "banking_knowledge/task_041",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "8b182d551f3c12905925f965365c85c06be84ffc67a35867aabbeffafe6cd719",
+      "effective_spec_sha256": "af2139fc68aa47b47d0235b5552b57ea42ccf8b0cf87276dc947c1e8cb078426"
+    },
+    "vgb-t-384ac58d7e22b84b": {
+      "task_id": "parallel_multiple_101",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "5786b07e5364674fbc0fd8f5da49f6fa286d536c66f903d29ed35a30e1353451",
+      "effective_spec_sha256": "ed9d2ed2dfe8e85ca454bd379f51fea2ac82fece77fcbc2889ad1a5cc2dcc233"
+    },
+    "vgb-t-38fade10c67641ac": {
+      "task_id": "workspace/injection_task_1",
+      "benchmark": "AgentDojo injection",
+      "task_spec_sha256": "9dd04d638ba809e353d9202a2cbc1f14bdda6841291a9380a5327442fafd982d",
+      "effective_spec_sha256": "8338707d0a1aaed4fc61f0d44b8069fa69dc3655ed26161b74fa8fc97eae6bc3"
+    },
+    "vgb-t-3a07037bce70bedb": {
+      "task_id": "parallel_81",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "861386bb318442b824a0913ce7431deb5c9061d118836083edd6a81c81c56c5e",
+      "effective_spec_sha256": "f81c9a6fa5ca39c96abac2217e95837530fc0c51e42a91106b8ce9b79d6bee0e"
+    },
+    "vgb-t-3a6f44083911481d": {
+      "task_id": "parallel_64",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "ed14cb9b7c5fadd4384b09e86c68668eeffc60e0613c250d4c64ef872c8f9bac",
+      "effective_spec_sha256": "7f741d1a940672664e12243e8f99a8c322195ca3576a9ca044076b7d74ff4ec2"
+    },
+    "vgb-t-3b3c7341e66c0fc0": {
+      "task_id": "34d9492_2",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "a9d4061881a99939235ee261e749874c012177b9654b353743132b0de88a4f2c",
+      "effective_spec_sha256": "df80b413fe670d91d38033e4d3fe12978bc70b609a22b3d1784c54ccaded4dc1"
+    },
+    "vgb-t-3b9646d076c9683e": {
+      "task_id": "workspace/user_task_24",
+      "benchmark": "AgentDojo user",
+      "task_spec_sha256": "ebf98288fc72c21179faf724994b7a0f8d1929d21dbe35f86189b146b9c8dc22",
+      "effective_spec_sha256": "e4b0bc23e5ead00e0cc145c0e1b7117eba3adc1f1efffcf06303ef66e66b10a2"
+    },
+    "vgb-t-3c397fd715d05ce4": {
+      "task_id": "workspace/injection_task_3",
+      "benchmark": "AgentDojo injection",
+      "task_spec_sha256": "efa53132fb971e5d41189bf2eaedd899b349aa6b935cae23d994cc865d2fe6f1",
+      "effective_spec_sha256": "9fb3737f624343d41ecea37796c7f71ca14f115b7edbe45a4393fc0dd156d58f"
+    },
+    "vgb-t-3ca4462c9852c1a6": {
+      "task_id": "django__django-12039",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "26634079589c793fe4d4388193c4228aef53953cbf5f1654c1f2c361876d4d39",
+      "effective_spec_sha256": "9ad4475c189d4450f466444e6200a26ab9208394e80fee1f379a2113b3b2bf14"
+    },
+    "vgb-t-3d42d0598c5288bb": {
+      "task_id": "parallel_multiple_76",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "276c5b90848b8b95d9dd7e88c620c8c7fb87bdbd2741a8d656dd40c4047dd840",
+      "effective_spec_sha256": "0d5abb69b7d09b246b73a4c7c6ac69ea38c57805605a318cc7467b08b1dad793"
+    },
+    "vgb-t-3d4b51fc948f98ab": {
+      "task_id": "data_en/normal_single_turn_parallel_function_47",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "abc7d86ef83730a0f1d614a7aadf7d72725f97d030e54a739cf181c0672c4b4d",
+      "effective_spec_sha256": "387770750a82604f06d34361abe8ad93b178e34cfe717da766047c30ec740add"
+    },
+    "vgb-t-3dd1552a041fc2a6": {
+      "task_id": "3c13f5a_1",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "b6caeadf35a2290ccfec1ed5ef95cad01207e0e47204e5571d222b4cfbae9baa",
+      "effective_spec_sha256": "bd7c29e852681d23d3596a623fe4805f17ca4c5c552e18d5d50c35317a90d60f"
+    },
+    "vgb-t-3e83e8f191d886d8": {
+      "task_id": "astropy__astropy-14365",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "a0e95b17f4b7098e593af7dc8c608b0626128d3f2a26bbf8936affcf94b0d3ea",
+      "effective_spec_sha256": "5b9d0aeaf19c25904f47e70c7caf5c3fb246c7638de6966ee959d926f0084a7a"
+    },
+    "vgb-t-3e98783f7c49b3e3": {
+      "task_id": "parallel_162",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "0969f574ed671f90f9d579d4c3537139be721c4ae0d9c11f8f57a73e874ff38e",
+      "effective_spec_sha256": "6ea55b07c116d9e0cb1a4eeb447d7d5ad6d88c62326bf9a26c79f091190b24e1"
+    },
+    "vgb-t-3ed4044f4e66032f": {
+      "task_id": "django__django-11265",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "6770c1c2e5014756f9147fbbaec1b024d2f530201971191c267283b5722e2566",
+      "effective_spec_sha256": "afdabebe5af72288b5e93cea23e8e7944aed0ac670572603e3f95759f722ec0d"
+    },
+    "vgb-t-3faf893164a47410": {
+      "task_id": "afc0fce_2",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "3b1bf3c2bd6650e6702f30a3655a401daa335cfc9a2d13cbeeeae75bfb2db67c",
+      "effective_spec_sha256": "99da7ef90dac6c10a35ade9652705bf941f356c58bd63ce0a9b298de842dc9a7"
+    },
+    "vgb-t-40f3dffb5d6a37bb": {
+      "task_id": "data_en/normal_single_turn_parallel_function_74",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "3b7deafbcc975c172ad52da1fd17bf65e33d7135623b5d92fb01e86863a99466",
+      "effective_spec_sha256": "a1f9a87209470e2ef832959b0efd3994b3dc7b41d9182418640d3d6655c819ea"
+    },
+    "vgb-t-413a5b8ca6a353e9": {
+      "task_id": "django__django-11206",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "572a0056f1086a63e6dd5602d9e612836a666ec953e193bc70c19cccbe381c93",
+      "effective_spec_sha256": "9402fc8f8710d9c0940e242f34010f8041f4de2a1d58800ad2ad5a2a1ebe8ced"
+    },
+    "vgb-t-429fbc4a7731b3bd": {
+      "task_id": "parallel_26",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "a05fb45b13ae4f20e501a04d6e54c4ac5345f78f7fe3455b7bb32711331d757d",
+      "effective_spec_sha256": "a2f3144bdbb52e6117db5bafe13786e8824d61d02d0d37400cf7f8f3de700125"
+    },
+    "vgb-t-46a9af6bade2d273": {
+      "task_id": "parallel_124",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "a3a570514c112a00ed0b991ab2b3853402049a0f4d0af7e72632c4ae5dff0304",
+      "effective_spec_sha256": "767b15040f80d6cc3034afaea9c06370b9b0eb83954addc99addb667a58519bb"
+    },
+    "vgb-t-48110d63d1c28da9": {
+      "task_id": "34d9492_3",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "de4b5b4bd5529abed80182a02fe5db5a24a0a3d66eb59893c2a0a8e145ca68e9",
+      "effective_spec_sha256": "9775099652ff6af58a59b25bbc6fbbc2d17206b0a3ed86cdb09ac5ad32215531"
+    },
+    "vgb-t-484dea107ee7a4a6": {
+      "task_id": "matplotlib__matplotlib-25122",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "baed1e8850bee8ea7a05f7bc893b0b6aebc55f8e91557042c50b8c110310d4f5",
+      "effective_spec_sha256": "469d55ae1a44ba6c188dab7d8e45694f5c3c1bc7cef17044e22bf50b5c318aad"
+    },
+    "vgb-t-48a2922faa2206c2": {
+      "task_id": "data_zh/normal_single_turn_parallel_function_22",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "e9d8b2394d704b0ad245f33b964c43ed232d6552897f2641774922462d99493b",
+      "effective_spec_sha256": "545fd9184350fe3cf404e999f72540118845d855e4d8de85b7f35b3f538cbb5b"
+    },
+    "vgb-t-4931eb7642d0039b": {
+      "task_id": "data_en/normal_single_turn_parallel_function_36",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "57854a18b74fa47e709193986de41c9ca42e7d9908e97d71db623fbce5076e82",
+      "effective_spec_sha256": "ddbd7a96bc1c3665bd48ef7c84b734a0314d7770b430b6a7421137afa12b0b1d"
+    },
+    "vgb-t-494049615541ce6b": {
+      "task_id": "astropy__astropy-14598",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "2f0cd0fd0a3b626e2c2e2493fb5e03c09b4488528cd005ab4eb4f59f15ff773b",
+      "effective_spec_sha256": "067766ca63b38e0ee47d953531a6a0e9b110d6a6d2c1d13320d39e134dd67bb7"
+    },
+    "vgb-t-4a174adfefb7cc62": {
+      "task_id": "data_zh/normal_single_turn_parallel_function_44",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "78cc4995b344b8a7c484988ffe6335404209d1606a026e2bbfa6f54997ddd717",
+      "effective_spec_sha256": "5a751297875aee0c07ed055d871c39f3ac8d0e0570246ba19ce1bc851bc4b0e7"
+    },
+    "vgb-t-4b6b194b019ffc37": {
+      "task_id": "6ea6792_3",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "5588a203776cf97c20072c6d982be65e15053a2c519fd59259b8dc3299c0bdfb",
+      "effective_spec_sha256": "4437cc53b89dce9538ff0bd71086c5e003a5aded17532489fc6cc3f3865ad22d"
+    },
+    "vgb-t-4c1074a689d50fab": {
+      "task_id": "data_en/normal_single_turn_parallel_function_52",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "4841f0c9c97c051c2826aaeca4423bbaca28f311743f1ffbd423420922bc6d4a",
+      "effective_spec_sha256": "5d2b0bb78ac48eec337b2b6a7c11777b459d3dc76d6d59e76185f9e5c8dd4ff5"
+    },
+    "vgb-t-4c1acafaf514343b": {
+      "task_id": "matplotlib__matplotlib-21568",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "e8798954db00cdd1892e0b1df72cafd671aeccf83052e131e202f67b66c8a1eb",
+      "effective_spec_sha256": "feb90ae08f0c47b45381bd6826da13c39191b3a18cda20290d0817b4d7aac083"
+    },
+    "vgb-t-4cc50e797ed6e006": {
+      "task_id": "parallel_multiple_31",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "393c38cd3ee64208893c2352e2077b8f2c639d8f4ba4a29295b89527a556ce58",
+      "effective_spec_sha256": "8d09e426ef6ba862ca9806d95adac416c5b63113cef231eaf43bcf7b064b20d8"
+    },
+    "vgb-t-4f327d224e45a014": {
+      "task_id": "37a8675_1",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "1d4099ca572eb22ced9c5a91eaa70a86988c7a522bc639ca7118df3f4eddbb7e",
+      "effective_spec_sha256": "891ff69fbb219870c292ef1c24b617e4fa148fc3c0c6d3b31bf7ffc0df40f8f8"
+    },
+    "vgb-t-4f5eb2696c4cd50e": {
+      "task_id": "parallel_22",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "e0197f0ee0686c3cd200db72b16a01cbf4f6ce268f77d8d5ff5aba1686be6510",
+      "effective_spec_sha256": "ae8b6145eadd8fbd254c1fb0f185a7e0a7ef08425cb90c920d6491afaffd55cf"
+    },
+    "vgb-t-53910a4f0fdba4dd": {
+      "task_id": "68ee2c9_2",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "bbe818fb46b54fa3e4c7a44604a5f29d8b7e8aca5380b76966537aa1f719c946",
+      "effective_spec_sha256": "ca9ade9e58194924a5a5cd3bb2f3c01da3cab34bfffea86c001e723d8c4e19f5"
+    },
+    "vgb-t-53ca92c6f7ddbb2e": {
+      "task_id": "banking_knowledge/task_029",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "2196e37b75eb2c53f2d4656ff01c1cc394fd871333e0325fd45a662dbab9fa5c",
+      "effective_spec_sha256": "6810dd938d7c60059d53189bd645d4d70a4f1516b6e5f8fb34b265c341449ade"
+    },
+    "vgb-t-568464c54d9d765e": {
+      "task_id": "data_en/normal_single_turn_parallel_function_85",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "a13168f836a8f2012f77d6b408a2aaa38555a0fd66136dbda53255cd3ad2aec8",
+      "effective_spec_sha256": "1c144a1d3830dbf23a1bed39a82cd47f6e5ea4d1e24cb96cad828e058e0776e9"
+    },
+    "vgb-t-56ddffdbb6dd0c52": {
+      "task_id": "django__django-10973",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "0ad581f7e07de827935c1e4b2392b9aed59c2ad269c983c9a5f3389642be2b00",
+      "effective_spec_sha256": "0a7e5f175cbf82bf604e036f125445181d858497b79da21227a5993d69c41537"
+    },
+    "vgb-t-580b0c59c8d20ace": {
+      "task_id": "parallel_115",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "845a048aac0ecbedf9e65308ca30f0fc9ad476a8e772ae8d1b4ebac95d1333f1",
+      "effective_spec_sha256": "7fb97c68aee3e7868dbcc7695d366b64ffc42a521816ae97f2f9e70e2c7712a9"
+    },
+    "vgb-t-5881bd61846a490f": {
+      "task_id": "travel/user_task_7",
+      "benchmark": "AgentDojo user",
+      "task_spec_sha256": "60517a4f99e2e582442a01eb0b1d6fa76600e7820cbecf1fc2e44d1cc7a9afce",
+      "effective_spec_sha256": "410cb9daea5385f1c439cdf003f35ef4d7069ca361667091b90dacead38bb1c2"
+    },
+    "vgb-t-5a1722e5e6dda56b": {
+      "task_id": "matplotlib__matplotlib-24149",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "31b92ee60cf44e8f0a7ec9e313a315d2c64730781318cb763702ebc3e5e97f17",
+      "effective_spec_sha256": "e0cf7697a09e206f51ec431239662c0f340fffa62e96ba31c6a74c334f480f36"
+    },
+    "vgb-t-5e6a63d890f0f4e1": {
+      "task_id": "22cc237_3",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "7c668d63056d9f0bbd160f32a8786e9b4484cb7792716df3103ac7c4c42eff02",
+      "effective_spec_sha256": "9a3f973860de63e57ff2d282022654e834398fe3a205a22fbba2d9713d7ad0ee"
+    },
+    "vgb-t-5f0cdb3ae795c760": {
+      "task_id": "data_zh/normal_preference_28",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "39cbfc7ea92ad6a9e9033f45c6ef5b8ea264be2d47bd0d532c4cd1f72b7d3ee1",
+      "effective_spec_sha256": "ac6b4de04136527f25fc387669183ff61323434e5582528f3502261818154cb7"
+    },
+    "vgb-t-5f3ebeca44d0d5c8": {
+      "task_id": "matplotlib__matplotlib-23299",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "fbadb6980a17d24dfb79d7987f82975e137ae866f381da077eb17da1446df1de",
+      "effective_spec_sha256": "7737fed7da7888eb910336db32b8552351f77729563568b039920c48b9b920ea"
+    },
+    "vgb-t-5fdc4dcedc314c8f": {
+      "task_id": "data_en/normal_single_turn_parallel_function_58",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "b1314fe8c0c9f21c49a3cfa80887b7af764fae93308a3e47570238be5628795e",
+      "effective_spec_sha256": "3407e4bf01b8ac4af6e1c5e91e47f576cfc20c7505b247193fd05a78f052f97f"
+    },
+    "vgb-t-60bc490ec645d2af": {
+      "task_id": "astropy__astropy-13977",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "1ad781580a4e1433d00648c2cf18710590c5ea535117452e11aefede7be054a1",
+      "effective_spec_sha256": "0a2e333112ff3582cbafe2c1214a2e9d37231819bcb00433e791466ed702394a"
+    },
+    "vgb-t-63861e36af3f6ddb": {
+      "task_id": "workspace/user_task_6",
+      "benchmark": "AgentDojo user",
+      "task_spec_sha256": "65b1280b9aaf11f0c3006005f2936c2bfea9dc885deb08074e01d978d70f928d",
+      "effective_spec_sha256": "5ebb08883c7e4f6afc7cad44483d949c17eed4816643ee00a10c1a4e3c6dff11"
+    },
+    "vgb-t-65268498fc633bc0": {
+      "task_id": "banking_knowledge/task_044",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "7bbeb7506b07381a99063817078748e5754aad81b798a08f5df2d9dfc49249ec",
+      "effective_spec_sha256": "33e068143e1b7af4a51b62c70dd140643715a9eded6342fcd2cd674f6f97f414"
+    },
+    "vgb-t-653aebe550ebf3ec": {
+      "task_id": "data_zh/normal_single_turn_parallel_function_9",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "bd45e3a7278550a393f0c00c5de9267389b58f259ef7fd51a34972c308661377",
+      "effective_spec_sha256": "1bd6a4f2a3f6f2ed07d61eb082ac9a8cf8dca750745f10ef1cbf403a9deda2ff"
+    },
+    "vgb-t-66ac68e0e6a9c383": {
+      "task_id": "parallel_multiple_198",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "4b37baa20ffcdf926f92da82d99fb5feda8f75804ee9c2d12935fb3990d48f8d",
+      "effective_spec_sha256": "f79b078eae6dd8ae23cbbc867d62b0fa259bb24e983e86ac330e43e21cf1a383"
+    },
+    "vgb-t-6753921c33be2aa3": {
+      "task_id": "django__django-11400",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "4930e5fb9d51f6a9364298a721ac03fa0cffa34371b961c356ea0ae803d62dcd",
+      "effective_spec_sha256": "2c86e907b2f67fc2f317ccb1ff1cb4c8687039bf5815d3eeecfb017e05aa0e85"
+    },
+    "vgb-t-67b2c363ab980047": {
+      "task_id": "data_zh/normal_multi_turn_user_adjust_24_1",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "d2143534cc86f362dcb888d3e54e9e4b303532c9965f31df34074e4d66503ca8",
+      "effective_spec_sha256": "9e4d7e2d322e9beac45b42fc5c231f37d3ebf87a4f2b31325198858842682bc6"
+    },
+    "vgb-t-686a9ba0ca6102ca": {
+      "task_id": "retail/51",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "c64db6d9679aa53bfde62be4320e1240feef3f3cfc0a6a87d07de5834f775943",
+      "effective_spec_sha256": "14c93b991f86bffdc2223c6a208522cc78de15d2fa3a0736d3e99f5b94b8842b"
+    },
+    "vgb-t-6b9af14be5cca5be": {
+      "task_id": "parallel_107",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "4f6135e04c9b597e6f7a9645e56630d7829d3920f68a60039d4d09a1c1394386",
+      "effective_spec_sha256": "7547ae5dff221ea062af1c2190d7cbe90c70d697c7829cce064d2bbd309238c7"
+    },
+    "vgb-t-6c48cd26f3e6dbd3": {
+      "task_id": "django__django-11095",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "27187c1288e3d6aec5d639c3c8f71873b26d4105afb5be31f077326b6a3b7158",
+      "effective_spec_sha256": "04c17b5de6db275c5f539dbbca4da1c8b49dfa4a1c70d87c43ba567a7eb067aa"
+    },
+    "vgb-t-6c5e8c8ef185d112": {
+      "task_id": "django__django-11099",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "3a318f980a542a21b3c857cbb85cedd21e6ba362c5613ef870524183daaead7f",
+      "effective_spec_sha256": "fe3bedb3e98533637c3ba3067849bcb731a3a3187800fb6bb87ca2ff09343807"
+    },
+    "vgb-t-6fd1a12cc1467e3e": {
+      "task_id": "matplotlib__matplotlib-25287",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "d5ee44de3b1e8c21b64876df05cea559c6131bde1744c04f56ba1142cc462b16",
+      "effective_spec_sha256": "e2a3a0392420018e56926b3e3d3655294cf203bc951dd20edabc9fa2280f0630"
+    },
+    "vgb-t-70daba531152a745": {
+      "task_id": "astropy__astropy-13033",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "5fc88d14bcb4f8ff5a4f9ddbe9e44c44f317b1af44017f9ecdc7ba385831347b",
+      "effective_spec_sha256": "19e9751bb13d751b90b650006157f3eb891fe500b18983583de53dac04650326"
+    },
+    "vgb-t-74ee84a46ff944f1": {
+      "task_id": "banking_knowledge/task_026",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "9783263f17011c813dc14d6c2d53e6a5fc83438a7dd616c41231ee43d10f9da2",
+      "effective_spec_sha256": "e80ad834436db04de637d6e13322c197c6b5155c290fac5aae1b5ed641db6eba"
+    },
+    "vgb-t-76e5fa36779b7aba": {
+      "task_id": "data_en/normal_single_turn_parallel_function_35",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "d2d6424c5e1700a8e702b08c581ff77ff0aad914660896c5ab1c5e52e2124d6c",
+      "effective_spec_sha256": "9679bf6707f8abf72badcb1e262c962e0a24c7bfba50c0ed45bfc3f09fccebc9"
+    },
+    "vgb-t-77fe496e06a8a65f": {
+      "task_id": "data_en/normal_preference_17",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "e5c9974ea2f7dd64a4f56a7b784026b25fcd173d8d413c56fdf7aa6ff33b02e2",
+      "effective_spec_sha256": "2d70023c5d06c0a25d515e4c0eda7ff11aa89ef741f0001c0275ef88849d929d"
+    },
+    "vgb-t-79098e1fdd8dcd21": {
+      "task_id": "data_en/normal_preference_2",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "c896ad35c8d08bb478bbd6d3dcef319b17122631c4be12f1b00e916d1a57582d",
+      "effective_spec_sha256": "7d1bc1ab389cf815802ea4ece9f0e3703a8a3275ddf9327b9539be0bfba44aad"
+    },
+    "vgb-t-7e47544c3498491f": {
+      "task_id": "retail/33",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "90b913e2971eafb8c25b708c57676a68a64d05cdff61ae39602be283a376b51d",
+      "effective_spec_sha256": "a579b8125a6354003db29652b3cfc9e49791247143ae99412567f0addbe73d4b"
+    },
+    "vgb-t-804f57a4eb19b6a3": {
+      "task_id": "data_en/normal_single_turn_parallel_function_92",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "ae81e6cfd746180d28e6a8eb5af1e0604b6591b77bfb298efe9326b06f4067cb",
+      "effective_spec_sha256": "32eca26004b440de36dac66a01cd12a7a7008e2a9680eaf6437988745a433b63"
+    },
+    "vgb-t-80aea4bfe710d370": {
+      "task_id": "data_en/normal_single_turn_parallel_function_50",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "643623c424e5ca9acb6d3933ba5b6b15ff8976486af916e42559216ee5abfd92",
+      "effective_spec_sha256": "dd8871934c8cab85d13416ef1cbdc089cb639288fecbf9e6e2ae42f9d1eaedaf"
+    },
+    "vgb-t-8476318eb6c27aac": {
+      "task_id": "workspace/user_task_9",
+      "benchmark": "AgentDojo user",
+      "task_spec_sha256": "b2e36953c8be2ab7568534af4aa2ae5d144f0dd4d41f6795c6c3b6442ec8f49b",
+      "effective_spec_sha256": "6d3e56ae44e4f3f431a04b508d35a9ca881a1f4a10254d1c55c17e3cba0f56a1"
+    },
+    "vgb-t-851b737437a60e1f": {
+      "task_id": "data_en/normal_single_turn_parallel_function_94",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "df458646c19c602ab40173c4329498f5abedcbd1bf796f1e47e37456cba542ab",
+      "effective_spec_sha256": "59f166e705d69e318f39bbba1d5b91714091f94b77cb9dc200794b28d5cfc003"
+    },
+    "vgb-t-85a859ec5aab30e3": {
+      "task_id": "retail/23",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "1c8c027f039e8148b8f7d7bf27b480b9ce46c1c7ebd6d1363efb14c846630224",
+      "effective_spec_sha256": "109834e7fd5ff7d46f17a5ced2480f997e138b9ce1924cd29b120aa3f35a7b41"
+    },
+    "vgb-t-85d6586691dc5c3b": {
+      "task_id": "banking_knowledge/task_027",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "43e105e16526e2596e0b916d49d9573401674ad31a93525e001197c059b37cc9",
+      "effective_spec_sha256": "3889230e46ab6527bc4a46fb6c24db64bc515fcbc74f30a3e063341274783e07"
+    },
+    "vgb-t-8634b319e944345c": {
+      "task_id": "data_en/normal_single_turn_parallel_function_15",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "9046650774fe2875936b031bd4684add9d3ebd05bb894b6bf903397937c0c2cc",
+      "effective_spec_sha256": "40fe67fac995f48f2ddb79d87abb363a87b258d71cb35619576388bb12ab3a90"
+    },
+    "vgb-t-88479d7d5e4a2d72": {
+      "task_id": "data_en/normal_single_turn_parallel_function_2",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "5f3ab5abfbdfa2afceba402e0ed1c9951f03df6546332b763c680589fe0ba740",
+      "effective_spec_sha256": "5c36a93a04b822c428cfa3fa932f4c7cd565f2071c4a7a9d421fbe9a08a4b50f"
+    },
+    "vgb-t-8a2a4dc73d4af0a5": {
+      "task_id": "django__django-11848",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "e67e6c6889ab9a8f732f19fa441899f2a8a8f2eff83395b4d69a1546ce761cc6",
+      "effective_spec_sha256": "4d6fbf5baf87abdca31fd2e90b4f041ebce54038d46bb20c8e2a439580aa3349"
+    },
+    "vgb-t-8a61d78fc3b13e12": {
+      "task_id": "data_zh/normal_preference_42",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "fa4581895bb16ab91d9f43317ffbeeacaffcc90640e042c1720d7b4d1f1603bb",
+      "effective_spec_sha256": "7b4a0efe9723f56b680c9bd09484d26834e8ff77b3218504071ae60cf64a504d"
+    },
+    "vgb-t-8c0a6b2aec27e80c": {
+      "task_id": "retail/41",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "b551cdcb3dc2119f727fa5cc3f088c28aa2c4f4083564257cf74c3a155df93fe",
+      "effective_spec_sha256": "2014d2349eb06828f1aee59eaa1ca75c777a53a5a591da2e13bfa0c78d7957ea"
+    },
+    "vgb-t-8d73f9b04ae4673f": {
+      "task_id": "data_en/normal_single_turn_parallel_function_43",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "b6c2da082984d2b550207a279f89ff4ec13231abc5972e1fd6b10a74ab3981af",
+      "effective_spec_sha256": "3d416441d4750e4277d0a020d9da5548f99218048c80bfaf76ef3687d31b3696"
+    },
+    "vgb-t-8e24c6f98a0d5d61": {
+      "task_id": "parallel_multiple_179",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "ff61fd4277d7b3321b4216811d624352dcc249684fe7d16347354ad291d63fe7",
+      "effective_spec_sha256": "3057e1360c4952c601f4f513b26a48367aeb41b71a99d8e662c8443e7c248b17"
+    },
+    "vgb-t-8ebad8ae3e33ff3a": {
+      "task_id": "matplotlib__matplotlib-20488",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "f99b8d91a6712b76a7c719ce3e2f600f27e2b598b3d887369754839a8555a281",
+      "effective_spec_sha256": "61f133a2dfdd4a26b59a767d07f73c6c0f09b83e524c1a3f4be0bf607f9267fb"
+    },
+    "vgb-t-8ec05bf2c8e6adfd": {
+      "task_id": "parallel_multiple_193",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "f7ee265ab9fe12a46bacb8328af5ff7c06ff06d8e41f69189d78140eaac09f42",
+      "effective_spec_sha256": "a94096d96cb99b1e2e95d7c7ea4ea978bae364e9e01c29a8778ccab84a2cd245"
+    },
+    "vgb-t-917160fcbf6d7018": {
+      "task_id": "slack/injection_task_1",
+      "benchmark": "AgentDojo injection",
+      "task_spec_sha256": "da82a2dc9a28410a9571f9350e9d7a70a4758e637ad65ccd631686bb183a0cd3",
+      "effective_spec_sha256": "624ad31b1e8f93a8bce4fd20ba5600ddda15aaddaef6bc99e8a67f43a8c12a68"
+    },
+    "vgb-t-9210a64ef021876d": {
+      "task_id": "data_en/normal_single_turn_parallel_function_99",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "3a528c0abf6db84773d95f2d4bbe15cf101a95b41f7873d03c9002e416efabf8",
+      "effective_spec_sha256": "5d3ae7498807065307c0a6552fe121b404070eceb078e269f3ff6ebc3a21534e"
+    },
+    "vgb-t-927ba1179cb67195": {
+      "task_id": "banking_knowledge/task_039",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "5119080f656fa3e978f7b804e087e7a4325fb6745b4b9dadf2f53ee0af3142b1",
+      "effective_spec_sha256": "ba5a1e6591988b82a96382aee7a1ecb38d148bd76be5c30751e77db054a64923"
+    },
+    "vgb-t-93193f16a888b658": {
+      "task_id": "django__django-11820",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "f99a8ba1283dc9043bf897851753b7e5492dd730ea04452a052fd659cd4d4449",
+      "effective_spec_sha256": "b5641bc8cbbe5be5a060e5405837c6ad2aeaa9c186694512b73eb31a63e0c506"
+    },
+    "vgb-t-94fe8114ef985c04": {
+      "task_id": "banking/user_task_13",
+      "benchmark": "AgentDojo user",
+      "task_spec_sha256": "591c1073aeeafc5e8786700fc08c6579a53bd2bcbeb2d8baa9ef88eff898563a",
+      "effective_spec_sha256": "ad91faaf58f8dfb9096069d824d0bfb261a40ad8c18ab5952fe8458d47769167"
+    },
+    "vgb-t-95b67368dc06f18a": {
+      "task_id": "parallel_multiple_110",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "4cfa9bd870a035a56fb51b575cefeb76da5612b3042f219b904de211242fa15d",
+      "effective_spec_sha256": "c96b150acb8efb117e31b83e0651a6c811dc633bfaf142aa066556654a167a5b"
+    },
+    "vgb-t-95be0613b5b9a609": {
+      "task_id": "data_en/normal_preference_5",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "43a3e6ae500e233f1c18bc500019d32f5e4a83d6efe7f265172d5d210561ee7a",
+      "effective_spec_sha256": "93bccb6bed85bafd91658a42ed5d642b9c16cf5438d1728ef1cea9a47dd2df7c"
+    },
+    "vgb-t-96412d3af1ac0917": {
+      "task_id": "3c13f5a_3",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "661ac803dac777ec3d5310c526109f25444f7369e0b58e61466823c83092ae43",
+      "effective_spec_sha256": "ed213ade6438a758c17df38dc1cff92224052a2ce7cedcd63a4428d4de99803d"
+    },
+    "vgb-t-97e817ec5adc6e30": {
+      "task_id": "matplotlib__matplotlib-24627",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "9b46977028d77affc75a0866626c3879eb710570603742be38df882bf68273e5",
+      "effective_spec_sha256": "0e407baa41fcb62ee4911c3405e1f0826f2dc415d7efbcda5b1d426d3e4ca8ac"
+    },
+    "vgb-t-98138a244f81de5e": {
+      "task_id": "django__django-11239",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "b85bd16ea834084929ecf35079eb8a25d8f7167be2be080cdf0f0e41d54bed54",
+      "effective_spec_sha256": "710e9616824d3c4d79e3f6e9579309b6e271fd948e64744cea6cd68364c56603"
+    },
+    "vgb-t-987271d36bc58225": {
+      "task_id": "parallel_multiple_153",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "990a27804e40608190168a3ce91c66ce0c66e56e0341e44b2d637411f4ac75dc",
+      "effective_spec_sha256": "562740c93fda91b4adb3a759d2b6d056a71f2aa96214a649dde0a5a112cc74a1"
+    },
+    "vgb-t-98f571c634d872c9": {
+      "task_id": "parallel_multiple_183",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "1ed9e9538d0202e08e6bb6cd32b2a941b7f9e363f74d7f358395066e25cbe97b",
+      "effective_spec_sha256": "35de3c70004673939b4cb2b447560333bbef8ebebf8ae7a0dac9568733b36f0a"
+    },
+    "vgb-t-99ee7f3d1005eaa6": {
+      "task_id": "7d7fbf6_1",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "b69872649c8c1dc51ead1609ed85763713feb0450addac835c910d21dec59dab",
+      "effective_spec_sha256": "b589c6310e5c70bfa7a2350f30fe097e779d18c315655413af5918b88f4871fe"
+    },
+    "vgb-t-9a4e8777490da819": {
+      "task_id": "django__django-11603",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "5bf8a4eb82b4a76bb3afa9b718cfb680b8d2220801a000afcf78e5cf2ae1ffbb",
+      "effective_spec_sha256": "3bea7d0c8528c883ad196472a9b813dba8bc717c336b4b6c8bc16d363986892d"
+    },
+    "vgb-t-9c9949aa1e829b50": {
+      "task_id": "matplotlib__matplotlib-24637",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "b1641919da59061519650a2e7d185fcd1a83d609634d91aa6f4a359438ddb7bf",
+      "effective_spec_sha256": "b0ab5736622ee98ddf8b3265aa06e4a21736f8ca76d3101e807c6846ef331a2d"
+    },
+    "vgb-t-9d350dca816c4c35": {
+      "task_id": "parallel_multiple_175",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "18f2fb260f8c3d2180becfdfdedba577f14749cda47ee5a8e08144d12893660f",
+      "effective_spec_sha256": "a97b1e6715a417d4df0f74478e2d4abe412a60f4ee3ded75ffd4d3306c826760"
+    },
+    "vgb-t-9da502c8ad0f7828": {
+      "task_id": "37a8675_2",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "4ff6d2dbf6f2b6b5afce7988560a5252b1d71d94ac750639da00a561317be75c",
+      "effective_spec_sha256": "8853e9d1e0243681fd7a5a72fb9186fabcb4bc24dbf493e704eaadb1c61e5ffc"
+    },
+    "vgb-t-9fe4cb594e24ce54": {
+      "task_id": "37a8675_3",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "6f4bf83777fa9473211c92b5155db823e851bc5bb194036cbfd5a98a1e73c5e9",
+      "effective_spec_sha256": "4d456681beb585724c83fee0150cbf2cf29c31609d4ae75d47100c3fdbef52eb"
+    },
+    "vgb-t-a01d2697ad516739": {
+      "task_id": "django__django-10999",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "7f2ba3c88eea1a6ad5e74e8425f70aa5a2efed55db176c212b6057964c7ad58b",
+      "effective_spec_sha256": "78aab49229270aa02f79a26ef7363e578a712443b3c90c7c25a47b12a32ecc6c"
+    },
+    "vgb-t-a04a3f63f73c1340": {
+      "task_id": "parallel_133",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "21600cf5c3e39743a87f100bc3caa487f1f1869c5375286a522c54159b68585b",
+      "effective_spec_sha256": "4f3b3cdb8969d25bf7c22cc869a9849549d01b1d7b98ccbefc93396348247e7e"
+    },
+    "vgb-t-a24fb107e8bfee96": {
+      "task_id": "banking_knowledge/task_028",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "29168fb95a385c0edfefe8e320dc14533dda942e353da0aa17e12fa538ffe5ef",
+      "effective_spec_sha256": "405802487cae7be7fb3d584fa0ce35fa936798fcafc833ad0f31641090c73e06"
+    },
+    "vgb-t-a65848aa2cf69262": {
+      "task_id": "29caf6f_2",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "823b821f27df11c29ea0f7d7c53cc6db40c2226716d175ff4c9f95acdd5188fb",
+      "effective_spec_sha256": "f834cd865c07e66a9a166332620bc2d361464509fe7ad524f15128a00f9cfbaa"
+    },
+    "vgb-t-a6a0073d3700b733": {
+      "task_id": "banking_knowledge/task_043",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "a1c614fe208dc7978752fe68b9c84b78d0dc0212354fe382798d36af4395d489",
+      "effective_spec_sha256": "fb928c4d91875ea61dde3c0c9e8e5e22d70ea9045e21ff3ba39342010ed9ed5f"
+    },
+    "vgb-t-a792ecfeff85f1fc": {
+      "task_id": "data_en/normal_single_turn_parallel_function_51",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "5517f4664fc4ffb3884a03902c03896f074d42804d0861bf835e9225045e8501",
+      "effective_spec_sha256": "61895b9585b87dba768a280c78c1e52fc3789d131b439ca2c509afd5e40d14f9"
+    },
+    "vgb-t-a7f5d224c9fa1c0e": {
+      "task_id": "data_zh/normal_single_turn_parallel_function_39",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "ca25d5fc753ee592a58b19893ba94c40388bbe504e9eb9c4fe5336804ef27456",
+      "effective_spec_sha256": "aaef44d47e0c1a5eeb513389e49517e53bb744b75be601d0fa879a60139c0caf"
+    },
+    "vgb-t-a94789f6b45d4fb7": {
+      "task_id": "parallel_multiple_189",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "ec5836c141ee0e80510e795b0aa06d311abe4017416d4807cbb156e2badad20a",
+      "effective_spec_sha256": "07530ac460ab89240fc81041f1a4cc8a6f301c7eb9c77132fc30a51552761a63"
+    },
+    "vgb-t-aabbee82a961140d": {
+      "task_id": "workspace/injection_task_4",
+      "benchmark": "AgentDojo injection",
+      "task_spec_sha256": "e0ba3b142938c69eb0bde931a5bc1c12b5c18ab4212c00db1e2c135956dfa0b3",
+      "effective_spec_sha256": "c397e44f5ae44b38e614700df535b7a52f90a1b346992de42cf3ec015ade6218"
+    },
+    "vgb-t-abc7887647b99a90": {
+      "task_id": "34d9492_1",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "8b5e1eb67062fc8a3c60280b530e78c7456c0c7a5c415a79c96b8568047fbb77",
+      "effective_spec_sha256": "ee298affa1dfcdad8b47cd0bce3d3ff69ea5a758870d4ec4df82771235a8e1c7"
+    },
+    "vgb-t-abfa142d0da12f87": {
+      "task_id": "ce359b5_1",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "9b6a5aa163e0308a95aa9b36e2b3159e6f422e1619c91eeb7be0a118225c93da",
+      "effective_spec_sha256": "27bc5682d03b05378e9aaa2a1997b7a194ec87de742c4f62340bcdd0608ee818"
+    },
+    "vgb-t-ac127152b12a746d": {
+      "task_id": "parallel_multiple_157",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "dad6a549ecb1ad5ec0f317f5cd202a9a573815a2fc231bc0dfe56eb065b8f5f4",
+      "effective_spec_sha256": "4b97a56f1690f1e849b5a04d06a05a83d4e9bb0bd188122719a3a9be3f194f00"
+    },
+    "vgb-t-ae47c6f49b3bc8e3": {
+      "task_id": "parallel_183",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "514132ace8ac91584ab422189ebbf93bc52ea08ddc5a6a96dfd33d2743391ab8",
+      "effective_spec_sha256": "afbca9a46db1daf225e6488e0fb041626ad22f4d522a937af9e9939045ae8998"
+    },
+    "vgb-t-afca47d3d73e5653": {
+      "task_id": "retail/15",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "2ddee2cc5443225160291a92943c284ff8e4d513725bb0d0aaa53a0ccc3717b3",
+      "effective_spec_sha256": "44ac880aad69f4ce52e978bbe5d2403a7a07be376a6f043701d39d9b83311c59"
+    },
+    "vgb-t-b2f6b80ba445f365": {
+      "task_id": "parallel_multiple_176",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "4608faeb3e2e1d2359ccbcb881012dffac5e750f615da5ce9dee896d41b3208a",
+      "effective_spec_sha256": "cc0e91b65de70fccfdc9b1cc22783c11093721ef52aa58061409118937112566"
+    },
+    "vgb-t-b65108c143fcc0c8": {
+      "task_id": "django__django-11333",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "34e434d9c7fd680eaafd0a1636190b693f9d4c8d9bd79121ae4ef7d4ffc6551f",
+      "effective_spec_sha256": "7dc813dba5a3df529243ae26a1361db7e14c50a68b50fdb9b4010d71856d6fd8"
+    },
+    "vgb-t-b67ab505d6413b3d": {
+      "task_id": "retail/14",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "3fec7996c9bc15109240fc2e17f445381a82b5953a5a8bb7ba85cd31b0b9b495",
+      "effective_spec_sha256": "f998111556f3cc1d850d3a2942ada320682098687e634261cc154b4c6fe3db68"
+    },
+    "vgb-t-b74d033561b91e9b": {
+      "task_id": "banking_knowledge/task_020",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "243887d90881d537113de8b8070c87365f6a63a1998c01b210e3bc48991ea9a7",
+      "effective_spec_sha256": "c8b9c55fd5e4a20065f223a2513f59f7011fc11f299e9d1166674700f0dc1ca1"
+    },
+    "vgb-t-b7ccb9b688f67288": {
+      "task_id": "parallel_159",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "f25a37b260cf890cca96bf35804fccc50f78fa95f8ca5d218b438050a82a9894",
+      "effective_spec_sha256": "5fdb68658101252e111fd3f4aa191e7222ee9e7d76009b397398db203b3b477b"
+    },
+    "vgb-t-b7d3ca733b1cb07e": {
+      "task_id": "django__django-12262",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "3321e32e8c5ca1027a53afb32118e618cc5586c0ba4c2deb6b1ba2369c3c041a",
+      "effective_spec_sha256": "fe590727ee5778baaa1fdd3b1290ca526902e35fa83a3d8dbcc12274ee849c0c"
+    },
+    "vgb-t-b7ff7d56fdb7b861": {
+      "task_id": "parallel_multiple_61",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "249087fc0b069608efd84a1f27b0da775e743393d524a90cf2f786708ac32938",
+      "effective_spec_sha256": "3e46687e8b78784ac6134e4560efc603ac8699a15a2ea205f2f8b515cdf3ad66"
+    },
+    "vgb-t-b9500727609cf9db": {
+      "task_id": "matplotlib__matplotlib-24870",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "213ba7e50edbdb2ebd6544ccdbb6ac5b1dfc3f5957f62171852ae2f3f4f322cd",
+      "effective_spec_sha256": "fa80e0f116824f685b76841059735a5438b94e2af1f3e9dd540c077a6b4071a0"
+    },
+    "vgb-t-b9a3c153034784c2": {
+      "task_id": "slack/injection_task_3",
+      "benchmark": "AgentDojo injection",
+      "task_spec_sha256": "8c9c4ce8f228a8d6be5f6f9a53762aa0213cfca4448b7722d1201fe5f9473eae",
+      "effective_spec_sha256": "78f14f55e11cdb7640fe19d840ae9e9bbdcd5de33f7a059f1625b7ee3139c20b"
+    },
+    "vgb-t-baaaf3a520bc8128": {
+      "task_id": "banking_knowledge/task_018",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "4e2cff5d80acb6541b93b491670e13a3f19fcbb1c0c2616cb354e6c67741543c",
+      "effective_spec_sha256": "db5f1e368f396f26efee91a073d1e35cec7879f46ed11260d283cb0fb00a40b9"
+    },
+    "vgb-t-bb233d5cc82f9a9a": {
+      "task_id": "django__django-11451",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "a7f67fe52d9ea72e3964524e96d2ce25927fab5b8b107cadc1dcee88b9a39e2b",
+      "effective_spec_sha256": "0317a700d4826bbe228a51dc1c7bd458a69880d7d8a05a38b7b2328ef186852b"
+    },
+    "vgb-t-bbdb0209a5f1c62d": {
+      "task_id": "68ee2c9_1",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "75ecacc0f5eb788e200ae8c880e4f192dc581b0a34a9cbcef1f86c2b81f7a38e",
+      "effective_spec_sha256": "35bbd9b577f0b35a93da36adc30fb902c17ae5f5926dcae620384fd22252e1bd"
+    },
+    "vgb-t-bc1518fbbb1ed8be": {
+      "task_id": "parallel_multiple_191",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "6e4169f9175483f59cc92c0b4fb76a845268ba0a108183d4324744d93e2b5608",
+      "effective_spec_sha256": "82be5484d3f9faf04f76962df8b13f40b186e8d42c90407233ddc0b5919bbc82"
+    },
+    "vgb-t-bd9b3bc791f249f2": {
+      "task_id": "parallel_multiple_77",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "339ea28080f3627da08846225b97b6ec101765bd329a20ed8438d57210ff2124",
+      "effective_spec_sha256": "c2773e3f5f74fedb443cab153a0fbcfd21d998a961fbe59c39e5a33b212b4a28"
+    },
+    "vgb-t-be43c9631ca61343": {
+      "task_id": "retail/34",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "4ef3b0843ef87559c72a135a8e180be21d6def517bab6cc02dd5620bfab4a0c0",
+      "effective_spec_sha256": "cfd0e5352f2cea17b73e9704535a925f3d2e90208375bb20752aabf6a3bcaabf"
+    },
+    "vgb-t-bec185a4dee97b16": {
+      "task_id": "parallel_multiple_145",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "4386ee8741c0d16212084680d7c8bd006c36a788df4d9b4753f4f459c33bee4b",
+      "effective_spec_sha256": "7575b7e1555657c83aea8f65282dbba2dbc11b831e2815f10998d4214be3d24d"
+    },
+    "vgb-t-c0750cad00458e8f": {
+      "task_id": "7d7fbf6_3",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "6a40a0465d8e5028d30c7479fec7847ff3a054e7a75f0e0ac80e802b28cfef2e",
+      "effective_spec_sha256": "092a7f2b930bd7f15159ee63861980dc4452b8f533cdc131d4520d79074dbba2"
+    },
+    "vgb-t-c0779bbb75ad048b": {
+      "task_id": "data_en/normal_single_turn_parallel_function_70",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "93a29ec9b7a8e9ab8c3907276c50a56fff5f5426e904e6330f94064f498e9a3e",
+      "effective_spec_sha256": "11bbc82443f79cdf35f1c520097b25c1ae906c264c3e0f45f4b80f3e2c2a714f"
+    },
+    "vgb-t-c0ecedb8d763f4d7": {
+      "task_id": "astropy__astropy-13398",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "0c54d00239b5cef82029ebd23905d68e480aa9eeb689c15cead695315a1c03c1",
+      "effective_spec_sha256": "3624fa3f27340e49a7efcfbf0783b942820b5ad904b8f37a7cc57e4232d3ce63"
+    },
+    "vgb-t-c222ec097bcb757f": {
+      "task_id": "retail/22",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "ad92bbfa4ce4b94225b98a773a4f305ca1b11a42a3d4f1303fa5e0f781fb85c6",
+      "effective_spec_sha256": "2c3f0ccdaf36dcadb8e3058862ac62a578e315991c49b7e778275926ab16bda3"
+    },
+    "vgb-t-c2b3e12589d04bbd": {
+      "task_id": "data_en/normal_single_turn_parallel_function_14",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "ee794dc820d40cf24061d94bc6bce65e561a069213a768343e5280b16cb683a3",
+      "effective_spec_sha256": "aa0c9d82e7329d1fdbd021f4608fe450cbf40221080f832deca95468093e77a2"
+    },
+    "vgb-t-c4b82b5e826f511f": {
+      "task_id": "astropy__astropy-14539",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "fe67c9f3da47e880f626f0bdd6e3d24dc329dca27b94f80ef62c80e9b6607219",
+      "effective_spec_sha256": "a49fc8760d1d32d85495801d776a32bb2c846794a05348a7b90b6d94617e8eaa"
+    },
+    "vgb-t-c5f440eacbcc0d04": {
+      "task_id": "data_en/normal_single_turn_parallel_function_26",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "01a72bcef82a98661076a62a75b836334bffd64ec6984400d4df05c51b0e5d7c",
+      "effective_spec_sha256": "6d8429bf1a93611a27f6d8efeebcc096c0919784d110512d89df976bda7be5f0"
+    },
+    "vgb-t-c64662318001c9b0": {
+      "task_id": "retail/35",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "3245a88687fa22722195e1de086c4d2892e4478cf6e1bb784bd2f7b1a0aa8ed6",
+      "effective_spec_sha256": "1c56c49c6521121e46bd8d95c5a2676823d48ca19c107c6b2cfcd356fa807d3d"
+    },
+    "vgb-t-c655004bbfe2da3e": {
+      "task_id": "7d7fbf6_2",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "2a9f66e94bd6d331a88285ec8aec736d7a037f4dfa8a9ec4a337139c37ce482f",
+      "effective_spec_sha256": "3d74d8a6ccb05b4f1437cd9e3fc8b746d6fe7a0cb0c078a43fbca522de98bfb8"
+    },
+    "vgb-t-c6aeb7f1535809a5": {
+      "task_id": "parallel_134",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "aafae7fd5d74d13ed1690f52fd33e49c836438e4105aa17b6a9f790638214326",
+      "effective_spec_sha256": "cba47184455ca074267d3692f63e583e87571b41c1a16cc71d714b81e1b275e7"
+    },
+    "vgb-t-c6b68cdbf2956ea3": {
+      "task_id": "data_en/normal_preference_21",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "4a2a8206d128e58bf612c4964cbbbb0e0023771e096193a3836e1933452aca56",
+      "effective_spec_sha256": "21bb044cfbf427f7b08d578bd067a8b01e8fbf715da893aa1f3dbd4d9cd2622a"
+    },
+    "vgb-t-c7210177d1c53093": {
+      "task_id": "data_en/normal_single_turn_parallel_function_63",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "9f669679c7507ab63b5bb53bf21b3ec45dfbb3c88147cf8c5643a115e23f212d",
+      "effective_spec_sha256": "8570576a9c683fbc8275061817ee528fd09798a6c5b6af6227894445569ab6a5"
+    },
+    "vgb-t-c831e8f66788059f": {
+      "task_id": "data_en/normal_single_turn_parallel_function_72",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "d38ac837b7c0e9f685c24a4f156efeab49a53acac882c4d540672a7a28a3a108",
+      "effective_spec_sha256": "8f70796e87965b6b5883c45ed2c18b47ca9505e4fb8643144fdb9487fa63ffa1"
+    },
+    "vgb-t-c83795d2fd5afdad": {
+      "task_id": "parallel_43",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "06c2848314f93c372e490ac87d9b2b9689c4d3c07aecbbed02acbf343ddaf2ae",
+      "effective_spec_sha256": "b05b02cb0663f4457926abd7c2eadc618cf36b8bf1942e94b8a454d2bcb55c6f"
+    },
+    "vgb-t-cceba0ccb80335a8": {
+      "task_id": "workspace/injection_task_2",
+      "benchmark": "AgentDojo injection",
+      "task_spec_sha256": "47eb16f138b7cb50607cb7366fd8f5d90232deb9d1eaf148f86284c06adf421f",
+      "effective_spec_sha256": "fc83fdfe879e81a2835f288ba28828a31cfbb8144b58fff0184e0ed23e7b6581"
+    },
+    "vgb-t-d09284946cd0e0d8": {
+      "task_id": "data_en/normal_preference_8",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "c37940e1b29e4ad3c856f7d022eda838c79835278b17f352c29c9d088c990c6b",
+      "effective_spec_sha256": "ec581a038432f0370ba32a687a91c98e53f87debe1df8ce6e3788ce414974bbc"
+    },
+    "vgb-t-d095c1dc1cbe0bee": {
+      "task_id": "django__django-12155",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "983eb9877b0e63599e80b24a76f6d34670d4bf6740bbc1f2afc18a8e15cc4c82",
+      "effective_spec_sha256": "af0f9341954ae4725162efd2ab99d681bbeae557c6bc45d4995f1c51b2ca6fd3"
+    },
+    "vgb-t-d22e7d784a520afd": {
+      "task_id": "data_en/normal_single_turn_parallel_function_32",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "a414606b4a14551ecd9d4d76c204b78c2e98f8475717b060497ad9c495f831bd",
+      "effective_spec_sha256": "d45f48edad645141e9ae32fa309bdb05ed82e50def057365aedceb2c20cfcc55"
+    },
+    "vgb-t-d23f18974d1f111c": {
+      "task_id": "data_en/normal_atom_object_deep_44",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "b249f35b60d0ad0963ec14b0ffae81fc6f4e305d96162ce91c2350ce2a019728",
+      "effective_spec_sha256": "f32904cca3c060451369a88e17725e15dc1d89e6a06c30973f50b31f16753d95"
+    },
+    "vgb-t-d3807b17672a22bc": {
+      "task_id": "afc0fce_3",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "20bd65c7389fe13c324c1a68a46c2fa88a6bacac5dacc3481ec367b24db37dda",
+      "effective_spec_sha256": "e7128811866a26796bab5fec99fedd589c85d691716a893a37e85b76205e70fc"
+    },
+    "vgb-t-d3c43b994aa8b2f3": {
+      "task_id": "django__django-11211",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "dfd8f857bc2d12725b2a22e35b81214e2067e88026e1e333e8e1018590da783f",
+      "effective_spec_sha256": "b4d0ba45afdb2f1100bf1dea3de0eaa70a2d1aa97d2d4428f1384d6fc727a3bd"
+    },
+    "vgb-t-d78e768308367722": {
+      "task_id": "parallel_114",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "7b85434514819b18182248dae84f7ff8d69436ade2622db6ede017bc521826b6",
+      "effective_spec_sha256": "f4a7860726347c76e9f986c049e96c252c192786c69a4f7e2a2ddb84be7ce43e"
+    },
+    "vgb-t-d825cfa5747482cd": {
+      "task_id": "data_zh/normal_preference_18",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "45805ae6a762292e82543124dd5d9b6bc2d64b3ca53e6b5b8d1249fb547a9a21",
+      "effective_spec_sha256": "a4e206ea579a0fa8de73694e3fd25c27ca82b0198ed3fb919a2403b37063bdd6"
+    },
+    "vgb-t-d8bd9183d1119aa2": {
+      "task_id": "django__django-11734",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "aa3db1629bb563fe7c5966f384be6e9fc7c78ea454d87bf94e46d1d033a744f9",
+      "effective_spec_sha256": "28c8c32a89ff3ff193a745be61c5fa3c0a02794d1cb72cfcb458431549046633"
+    },
+    "vgb-t-d8c6f0a6aaf12e9e": {
+      "task_id": "django__django-10554",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "cd49f41c04dd389a5923ffd091c4473ba16c1b2efaac102fb9f461ce7002393b",
+      "effective_spec_sha256": "85b2aaab54cd8a34b12a11b165e49b67b46bcb461dee4f5ab55376b264126139"
+    },
+    "vgb-t-da67f88d634f3de1": {
+      "task_id": "workspace/user_task_7",
+      "benchmark": "AgentDojo user",
+      "task_spec_sha256": "fdbff1a8c852680582c52032919be9cef6f604dafc42e3452ea614476290d884",
+      "effective_spec_sha256": "2d6e2ca7e2c97cf12b7963a82c99ef01ec56d92fc780fdac81139e7820a49c05"
+    },
+    "vgb-t-daa7dbca61dc1219": {
+      "task_id": "data_zh/normal_preference_13",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "401d59b61ed75b55bef00a77fe046cdcbff17e61eba3a1ee38dce3f53ad8660c",
+      "effective_spec_sha256": "306a4cf6edd46f91aaafddcfd443602c5dd2c9ec8f48717adb843c2d2a8899a8"
+    },
+    "vgb-t-e00c863e0a30205a": {
+      "task_id": "banking_knowledge/task_045",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "9dcfefeef67a31d273f20e9b88d68492d155bf6ef3ffa196a444d43fbe35cd9a",
+      "effective_spec_sha256": "1621c06ab916f8b055ad82026b53edd7350efa84f964f535755e9d2d9e8e8c1f"
+    },
+    "vgb-t-e0cab682bba9e5ce": {
+      "task_id": "workspace/injection_task_0",
+      "benchmark": "AgentDojo injection",
+      "task_spec_sha256": "f8c250f8fae9057aa70db4921e41b01d859b8ece330644a29342283328f03acf",
+      "effective_spec_sha256": "59760d39a400f8f0b00f2d09b62b8cb1c99996b1703fe0727291aa46b2336728"
+    },
+    "vgb-t-e2897b5946e1bed7": {
+      "task_id": "6104387_2",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "e04baef8f9cecb6b037219ebf10f95952ffc43ef7c1b1caff3ab52d0dbc58eec",
+      "effective_spec_sha256": "7cf030553251d88030a0f51252a5482214615e00c00fc665d1bce6cf12aaddf6"
+    },
+    "vgb-t-e2c4de116d2568fd": {
+      "task_id": "data_en/normal_single_turn_parallel_function_30",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "a626c2aafaaf3b796bd6d04f2069196fae38338745c0d09b6a03c8a2ec247031",
+      "effective_spec_sha256": "167b61315b8a488b33bf59244073f1d44e2261fe37f63ce0dbdbb62d07188616"
+    },
+    "vgb-t-e3f19ee5fe1e68ff": {
+      "task_id": "retail/48",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "688a6410fe48486bdf111df0f47a5866ef2e4c5d24b10cd3a6888460b30ee479",
+      "effective_spec_sha256": "79562b20d547ac6d03fe6cee30c661f29e50b9073e1b717dcf11a8a579f7a37e"
+    },
+    "vgb-t-e4e3e449f560ebac": {
+      "task_id": "data_en/normal_atom_object_short_37",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "38a755e83bb295b59a7cd9af9090468c1b9aa888bef79dbc0d2cbdd76e3a3ee1",
+      "effective_spec_sha256": "36d35a41a90c696372bf0eacd15c57dd3cb3e403a3628e55af5ff3d991fc0f59"
+    },
+    "vgb-t-e5d97abcc84b1fe2": {
+      "task_id": "data_en/normal_single_turn_parallel_function_82",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "9b68a798611ccd5f84adf33bff8f87a05e8289dc0071a22a51bd5fe54d805209",
+      "effective_spec_sha256": "835efd7e63a427f82f53e6d526803f9b060040faf2976a02522f4c7fea66259c"
+    },
+    "vgb-t-e7c9c28088532cf0": {
+      "task_id": "django__django-11141",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "5bf034e3728fd390b9d474891524843b6ea31d5c2c0507a6e18ab6f21eda9d4e",
+      "effective_spec_sha256": "09426d93b51ad73602d67fff29a6f64c7d965aac06b1bd0ed6c1e46e348d3e3f"
+    },
+    "vgb-t-e80bf398448c51fc": {
+      "task_id": "parallel_105",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "6dd193b17eac630d050b7d0613525187861e4e2ad9068fa105bf2ab65742ddec",
+      "effective_spec_sha256": "b8c9e2d6f82158186e5f0dc7f343ce52c39055dbe3165c8c1c97ca052fb0593c"
+    },
+    "vgb-t-e945b12c4b919544": {
+      "task_id": "data_en/normal_single_turn_parallel_function_89",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "11d6a87c1e6fe3a5befd7a7325270ed4595e18413ebc6432a0251aa73913e3de",
+      "effective_spec_sha256": "33453f1c942c78bede09fa05173eec3d3b1cf977efa84bc8dee9d11bb68e3672"
+    },
+    "vgb-t-ea980c2b3fe30c24": {
+      "task_id": "6104387_1",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "3d78df24a7193d66dc812844743341c21b590d51b4f8aee8d6a40d7e2d6dca9a",
+      "effective_spec_sha256": "370bc28472240d67140b34b8c1bf485d831393da476a2b462dde073a0ca93085"
+    },
+    "vgb-t-eb6fe7bc101df3d1": {
+      "task_id": "data_zh/normal_single_turn_parallel_function_11",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "fe64141e6339e62060108785b66a35822b6c4532388dee0805906e738603606e",
+      "effective_spec_sha256": "fb46354de2aed2419e1894b3d2d6ed4c05d20fe9632b156eafc9b96ff17eded3"
+    },
+    "vgb-t-eb9dc008dbf1fd61": {
+      "task_id": "matplotlib__matplotlib-22719",
+      "benchmark": "SWE-bench Verified",
+      "task_spec_sha256": "bdc11c8eb8bd4faf24ad9f9102c8c8dfb2e49c99c705821e173145f564ad1667",
+      "effective_spec_sha256": "054e28297708484ce5bce55d164287152355a8d7c8a3784e67daa7417299923a"
+    },
+    "vgb-t-ecbe76c371650d9f": {
+      "task_id": "data_en/normal_preference_14",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "96afcbc8d5e52d82e2c0a91b01d36cc3b8d0954faef1652aab4bfc1ed9f4d935",
+      "effective_spec_sha256": "a5329acc90b4d4e1a10faf12a727ef86ac0f9c401b40c257fa0707e688bb655b"
+    },
+    "vgb-t-ecc08ac38cc38d08": {
+      "task_id": "68ee2c9_3",
+      "benchmark": "AppWorld",
+      "task_spec_sha256": "2f4d0949e671e129722c9eb5b69081965838be6be371d4a4026a2a8dd8c31f4e",
+      "effective_spec_sha256": "945305877da7c24376a6fc8c0103c3497a6e5a3abbca4a346a5aaeb48ab79731"
+    },
+    "vgb-t-ee610f08073840bd": {
+      "task_id": "data_en/normal_single_turn_parallel_function_44",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "2df471dc1560dc51dced7231facc68124b9ae47d7cb3ccfea7b7e31878faa605",
+      "effective_spec_sha256": "166b5ff1600bc771d7d1e99253b637984d1281e48cfbacf7d6a493adec354e21"
+    },
+    "vgb-t-f51e1adb65fbd0a9": {
+      "task_id": "parallel_multiple_147",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "4c8482221ac38f7ac2957f22182e2b1c8a9c8233d58bc3313bb98c202589e568",
+      "effective_spec_sha256": "dc26904cdcf24d955ffec73be03758d7a81a82087051914c3559027b8ed8c3bd"
+    },
+    "vgb-t-fafba0720bca9660": {
+      "task_id": "data_en/normal_single_turn_parallel_function_64",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "12aad45602bfafa13c0bdf0bfc21d4b07e2e33d1f6fd220a5ac97c5d3a3eec1b",
+      "effective_spec_sha256": "764bbe20f80586a293d6a9397b5a69a1fd79ef1633b45cfec4aedf2eae5271a1"
+    },
+    "vgb-t-fde8be5ea947f7ec": {
+      "task_id": "data_zh/normal_preference_8",
+      "benchmark": "ACEBench",
+      "task_spec_sha256": "aa2244fe79142e58cc3f8a2406bd3c8101fe5ffd31b4aa6b60bc3e1a1274b6d6",
+      "effective_spec_sha256": "baf1df6608a7dd870c282d1de656656165f4d6377526b39aa3757e0edc15af1f"
+    },
+    "vgb-t-fe19a2d0be01016b": {
+      "task_id": "workspace/user_task_12",
+      "benchmark": "AgentDojo user",
+      "task_spec_sha256": "c08bdae5b7da994b7acb6e7e88a386585419ce0fd6ec5655a50f574decc9916e",
+      "effective_spec_sha256": "c5c8d74c71a56e4f632ec7803ef537b5ad4fd4bb88ebcf59b9e8f33d27c33c41"
+    },
+    "vgb-t-fe72a940bc72ac06": {
+      "task_id": "retail/11",
+      "benchmark": "\u03c4\u00b2-bench",
+      "task_spec_sha256": "03be62c897f679cad2138a60a0eb465d84d715d069c0840e769e35a49c968338",
+      "effective_spec_sha256": "a2c5d022500a8d53b6be877ac382310d3378b671e11d0c1b972d72c952701300"
+    },
+    "vgb-t-fe8ca1e717b0946c": {
+      "task_id": "parallel_199",
+      "benchmark": "BFCL v4",
+      "task_spec_sha256": "32a85554688e95bc980643101b00cf6a1b57d4f009e5927f1fe9a81644c2e198",
+      "effective_spec_sha256": "870610d03f0452feb3be256598fe928d52ac46026a3e711bc7bbecb2000dff92"
+    },
+    "vgb-t-ff97ec9f3ee76c0d": {
+      "task_id": "banking/injection_task_2",
+      "benchmark": "AgentDojo injection",
+      "task_spec_sha256": "fd35e35b3905bcf0b72cdbf70bed3d41f2997c6870f477bf628e946f41f1f5b0",
+      "effective_spec_sha256": "434d4dd07d2209226527c35f0189008d3a2b0df6f9975209db66b62cf5eb3ae3"
+    }
+  }
+}

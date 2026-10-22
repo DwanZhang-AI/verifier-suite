@@ -1,0 +1,11 @@
+{
+  "generation_allowed": true,
+  "generation_environment_contract": "task-serial-reset-shared-budget-20260917-v2+public-observation-pages-20260926-v1",
+  "mode": "fresh-oneclick-experiment",
+  "normal_judgment": "binary PASS/FAIL; execution/infrastructure failures remain explicit and are never coerced to FAIL",
+  "prohibited": "No automatic retry of upstream 403/4003, no labels/candidates in generation, no checker edit, no original result overwrite",
+  "rejudging_allowed": true,
+  "route_probes_allowed": false,
+  "scope": "A fresh user-selected run of frozen VerifierBench paper222; no imports of prior run output",
+  "version": "verifierbench-oneclick-suiteenv-v1"
+}

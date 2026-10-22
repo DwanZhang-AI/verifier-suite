@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Environment map (env_map.json) — pipeline stage D2",
+  "description": "What the exploration stage found: observables usable as verification evidence, and which runtime capabilities they rely on. Exploration serves proving, not solving.",
+  "type": "object",
+  "required": ["observables"],
+  "properties": {
+    "observables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "path_or_ref", "access"],
+        "properties": {
+          "id": {"type": "string"},
+          "kind": {"enum": ["file", "api", "db", "log", "state", "artifact", "process", "network"]},
+          "path_or_ref": {"type": "string"},
+          "access": {"enum": ["read", "exec"]},
+          "notes": {"type": "string"}
+        }
+      }
+    },
+    "capabilities_used": {"type": "array", "items": {"type": "string"}},
+    "exploration": {
+      "type": "object",
+      "properties": {
+        "performed": {"type": "boolean"},
+        "session_ref": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

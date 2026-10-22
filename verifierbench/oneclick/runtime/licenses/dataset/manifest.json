@@ -1,0 +1,414 @@
+[
+  {
+    "name": "ACEBench",
+    "sha256": "d9a1b1e30d633d5732ea18e3cba9538d293ebc53e1a9e4e96ab739e0c5c4f1cb",
+    "source_file_in_project": "_v4v_sources/_new/ACEBench/LICENSE.md"
+  },
+  {
+    "name": "BFCL",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "source_file_in_project": "_v4v_sources/gorilla/LICENSE"
+  },
+  {
+    "name": "tau2",
+    "sha256": "e67c5aa0074dfcaefd3c3a1aedb94cb539234aecd15d5a972574e3200e6252fe",
+    "source_file_in_project": "_v4v_sources/tau2-bench/LICENSE"
+  },
+  {
+    "name": "AppWorld",
+    "sha256": "3786bdb398d95201c067c3b59a3943659a36783579f70ad0fab99f915b499609",
+    "source_file_in_project": "_v4v_sources/aw_root/data/LICENSE"
+  },
+  {
+    "name": "AppWorld-redistribution",
+    "sha256": "07a8965d361da3aea3429fdd3f5ab4a62d8837bcaae6ad7d874bf14889c434ae",
+    "source_file_in_project": "_v4v_sources/aw_root/data/README_BEFORE_SHARING.md"
+  },
+  {
+    "name": "SWE-bench",
+    "sha256": "2bd2e08df7147f67a69b42c10efae09bd4bf119df397371036187d5dd1b02f57",
+    "source_file_in_project": "_v4v_sources/_venv_swe/lib/python3.12/site-packages/swebench-4.1.0.dist-info/licenses/LICENSE"
+  },
+  {
+    "name": "AgentDojo",
+    "source": "https://raw.githubusercontent.com/ethz-spylab/agentdojo/main/LICENSE",
+    "sha256": "4285a071f2d382338e52b4fb0a186d952984a34d43a33d8872e1a1d8cb43401e",
+    "task_ids": []
+  },
+  {
+    "name": "django-django-003bb34b218a",
+    "source": "https://raw.githubusercontent.com/django/django/003bb34b218adb23d1a7e67932a6ba9b3c4dcc81/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-0177263f96a941de"
+    ]
+  },
+  {
+    "name": "astropy-astropy-19cc80471739",
+    "source": "https://raw.githubusercontent.com/astropy/astropy/19cc80471739bcb67b7e8099246b391c355023ee/LICENSE.rst",
+    "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5",
+    "task_ids": [
+      "vgb-t-03b3bf23bd24692b"
+    ]
+  },
+  {
+    "name": "matplotlib-matplotlib-14c96b510ebe",
+    "source": "https://raw.githubusercontent.com/matplotlib/matplotlib/14c96b510ebeba40f573e512299b1976f35b620e/LICENSE/LICENSE",
+    "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc",
+    "task_ids": [
+      "vgb-t-0b57ac1f5984f794"
+    ]
+  },
+  {
+    "name": "django-django-fc2b1cc926e3",
+    "source": "https://raw.githubusercontent.com/django/django/fc2b1cc926e34041953738e58fa6ad3053059b22/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-0ef4cc8135387ea8"
+    ]
+  },
+  {
+    "name": "matplotlib-matplotlib-8f0003ae9029",
+    "source": "https://raw.githubusercontent.com/matplotlib/matplotlib/8f0003ae902952372824c9917975fb372c026a42/LICENSE/LICENSE",
+    "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc",
+    "task_ids": [
+      "vgb-t-0f00e67899116e08"
+    ]
+  },
+  {
+    "name": "django-django-b1d6b35e146a",
+    "source": "https://raw.githubusercontent.com/django/django/b1d6b35e146aea83b171c1b921178bbaae2795ed/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-0fbc335ea7612a85"
+    ]
+  },
+  {
+    "name": "django-django-8dd5877f58f8",
+    "source": "https://raw.githubusercontent.com/django/django/8dd5877f58f84f2b11126afbd0813e24545919ed/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-19dbc4a428ad60cc"
+    ]
+  },
+  {
+    "name": "astropy-astropy-0df94ff70979",
+    "source": "https://raw.githubusercontent.com/astropy/astropy/0df94ff7097961e92fd7812036a24b145bc13ca8/LICENSE.rst",
+    "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5",
+    "task_ids": [
+      "vgb-t-1b672870ddd7e163"
+    ]
+  },
+  {
+    "name": "django-django-8180ffba21bf",
+    "source": "https://raw.githubusercontent.com/django/django/8180ffba21bf10f4be905cb0d4890dc2bcff2788/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-223a9b6c88c5e396"
+    ]
+  },
+  {
+    "name": "matplotlib-matplotlib-d65c9ca20ddf",
+    "source": "https://raw.githubusercontent.com/matplotlib/matplotlib/d65c9ca20ddf81ef91199e6d819f9d3506ef477c/LICENSE/LICENSE",
+    "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc",
+    "task_ids": [
+      "vgb-t-25932ca825bd7ab6"
+    ]
+  },
+  {
+    "name": "matplotlib-matplotlib-6786f437df54",
+    "source": "https://raw.githubusercontent.com/matplotlib/matplotlib/6786f437df54ca7780a047203cbcfaa1db8dc542/LICENSE/LICENSE",
+    "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc",
+    "task_ids": [
+      "vgb-t-2c01cbca531c05ac"
+    ]
+  },
+  {
+    "name": "django-django-58c1acb1d605",
+    "source": "https://raw.githubusercontent.com/django/django/58c1acb1d6054dfec29d0f30b1033bae6ef62aec/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-3ca4462c9852c1a6"
+    ]
+  },
+  {
+    "name": "astropy-astropy-7269fa3e33e8",
+    "source": "https://raw.githubusercontent.com/astropy/astropy/7269fa3e33e8d02485a647da91a5a2a60a06af61/LICENSE.rst",
+    "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5",
+    "task_ids": [
+      "vgb-t-3e83e8f191d886d8"
+    ]
+  },
+  {
+    "name": "django-django-21aa2a5e785e",
+    "source": "https://raw.githubusercontent.com/django/django/21aa2a5e785eef1f47beb1c3760fdd7d8915ae09/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-3ed4044f4e66032f"
+    ]
+  },
+  {
+    "name": "django-django-571ab44e8a89",
+    "source": "https://raw.githubusercontent.com/django/django/571ab44e8a8936014c22e7eebe4948d9611fd7ce/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-413a5b8ca6a353e9"
+    ]
+  },
+  {
+    "name": "matplotlib-matplotlib-5ec2bd279729",
+    "source": "https://raw.githubusercontent.com/matplotlib/matplotlib/5ec2bd279729ff534719b8bf238dbbca907b93c5/LICENSE/LICENSE",
+    "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc",
+    "task_ids": [
+      "vgb-t-484dea107ee7a4a6"
+    ]
+  },
+  {
+    "name": "astropy-astropy-80c3854a5f4f",
+    "source": "https://raw.githubusercontent.com/astropy/astropy/80c3854a5f4f4a6ab86c03d9db7854767fcd83c1/LICENSE.rst",
+    "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5",
+    "task_ids": [
+      "vgb-t-494049615541ce6b"
+    ]
+  },
+  {
+    "name": "matplotlib-matplotlib-f0632c0fc733",
+    "source": "https://raw.githubusercontent.com/matplotlib/matplotlib/f0632c0fc7339f68e992ed63ae4cfac76cd41aad/LICENSE/LICENSE",
+    "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc",
+    "task_ids": [
+      "vgb-t-4c1acafaf514343b"
+    ]
+  },
+  {
+    "name": "django-django-ddb293685235",
+    "source": "https://raw.githubusercontent.com/django/django/ddb293685235fd09e932805771ae97f72e817181/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-56ddffdbb6dd0c52"
+    ]
+  },
+  {
+    "name": "matplotlib-matplotlib-af39f1edffcd",
+    "source": "https://raw.githubusercontent.com/matplotlib/matplotlib/af39f1edffcd828f05cfdd04f2e59506bb4a27bc/LICENSE/LICENSE",
+    "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc",
+    "task_ids": [
+      "vgb-t-5a1722e5e6dda56b"
+    ]
+  },
+  {
+    "name": "matplotlib-matplotlib-3eadeacc06c9",
+    "source": "https://raw.githubusercontent.com/matplotlib/matplotlib/3eadeacc06c9f2ddcdac6ae39819faa9fbee9e39/LICENSE/LICENSE",
+    "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc",
+    "task_ids": [
+      "vgb-t-5f3ebeca44d0d5c8"
+    ]
+  },
+  {
+    "name": "astropy-astropy-5250b2442501",
+    "source": "https://raw.githubusercontent.com/astropy/astropy/5250b2442501e6c671c6b380536f1edb352602d1/LICENSE.rst",
+    "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5",
+    "task_ids": [
+      "vgb-t-60bc490ec645d2af"
+    ]
+  },
+  {
+    "name": "django-django-1f8382d34d54",
+    "source": "https://raw.githubusercontent.com/django/django/1f8382d34d54061eddc41df6994e20ee38c60907/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-6753921c33be2aa3"
+    ]
+  },
+  {
+    "name": "django-django-7d49ad76562e",
+    "source": "https://raw.githubusercontent.com/django/django/7d49ad76562e8c0597a0eb66046ab423b12888d8/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-6c48cd26f3e6dbd3"
+    ]
+  },
+  {
+    "name": "django-django-d26b2424437d",
+    "source": "https://raw.githubusercontent.com/django/django/d26b2424437dabeeca94d7900b37d2df4410da0c/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-6c5e8c8ef185d112"
+    ]
+  },
+  {
+    "name": "matplotlib-matplotlib-f8ffce6d4412",
+    "source": "https://raw.githubusercontent.com/matplotlib/matplotlib/f8ffce6d44127d4ea7d6491262ab30046b03294b/LICENSE/LICENSE",
+    "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc",
+    "task_ids": [
+      "vgb-t-6fd1a12cc1467e3e"
+    ]
+  },
+  {
+    "name": "astropy-astropy-298ccb478e6b",
+    "source": "https://raw.githubusercontent.com/astropy/astropy/298ccb478e6bf092953bca67a3d29dc6c35f6752/LICENSE.rst",
+    "sha256": "c24e11182f188ebb0ff7d92132b7d3394411816dd4eb6ecccf8e91f3dc168d8e",
+    "task_ids": [
+      "vgb-t-70daba531152a745"
+    ]
+  },
+  {
+    "name": "django-django-f0adf3b9b7a1",
+    "source": "https://raw.githubusercontent.com/django/django/f0adf3b9b7a19cdee05368ff0c0c2d087f011180/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-8a2a4dc73d4af0a5"
+    ]
+  },
+  {
+    "name": "matplotlib-matplotlib-b7ce415c15eb",
+    "source": "https://raw.githubusercontent.com/matplotlib/matplotlib/b7ce415c15eb39b026a097a2865da73fbcf15c9c/LICENSE/LICENSE",
+    "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc",
+    "task_ids": [
+      "vgb-t-8ebad8ae3e33ff3a"
+    ]
+  },
+  {
+    "name": "django-django-c2678e49759e",
+    "source": "https://raw.githubusercontent.com/django/django/c2678e49759e5c4c329bff0eeca2886267005d21/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-93193f16a888b658"
+    ]
+  },
+  {
+    "name": "matplotlib-matplotlib-9d22ab09d52d",
+    "source": "https://raw.githubusercontent.com/matplotlib/matplotlib/9d22ab09d52d279b125d8770967569de070913b2/LICENSE/LICENSE",
+    "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc",
+    "task_ids": [
+      "vgb-t-97e817ec5adc6e30"
+    ]
+  },
+  {
+    "name": "django-django-d87bd29c4f8d",
+    "source": "https://raw.githubusercontent.com/django/django/d87bd29c4f8dfcdf3f4a4eb8340e6770a2416fe3/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-98138a244f81de5e"
+    ]
+  },
+  {
+    "name": "django-django-f618e033acd3",
+    "source": "https://raw.githubusercontent.com/django/django/f618e033acd37d59b536d6e6126e6c5be18037f6/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-9a4e8777490da819"
+    ]
+  },
+  {
+    "name": "matplotlib-matplotlib-a9ba9d5d3fe9",
+    "source": "https://raw.githubusercontent.com/matplotlib/matplotlib/a9ba9d5d3fe9d5ac15fbdb06127f97d381148dd0/LICENSE/LICENSE",
+    "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc",
+    "task_ids": [
+      "vgb-t-9c9949aa1e829b50"
+    ]
+  },
+  {
+    "name": "django-django-36300ef336e3",
+    "source": "https://raw.githubusercontent.com/django/django/36300ef336e3f130a0dadc1143163ff3d23dc843/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-a01d2697ad516739"
+    ]
+  },
+  {
+    "name": "django-django-55b68de643b5",
+    "source": "https://raw.githubusercontent.com/django/django/55b68de643b5c2d5f0a8ea7587ab3b2966021ccc/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-b65108c143fcc0c8"
+    ]
+  },
+  {
+    "name": "django-django-69331bb851c3",
+    "source": "https://raw.githubusercontent.com/django/django/69331bb851c34f05bc77e9fc24020fe6908b9cd5/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-b7d3ca733b1cb07e"
+    ]
+  },
+  {
+    "name": "matplotlib-matplotlib-6091437be977",
+    "source": "https://raw.githubusercontent.com/matplotlib/matplotlib/6091437be9776139d3672cde28a19cbe6c09dcd5/LICENSE/LICENSE",
+    "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc",
+    "task_ids": [
+      "vgb-t-b9500727609cf9db"
+    ]
+  },
+  {
+    "name": "django-django-e065b293878b",
+    "source": "https://raw.githubusercontent.com/django/django/e065b293878b1e3ea56655aa9d33e87576cd77ff/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-bb233d5cc82f9a9a"
+    ]
+  },
+  {
+    "name": "astropy-astropy-6500928dc0e5",
+    "source": "https://raw.githubusercontent.com/astropy/astropy/6500928dc0e57be8f06d1162eacc3ba5e2eff692/LICENSE.rst",
+    "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5",
+    "task_ids": [
+      "vgb-t-c0ecedb8d763f4d7"
+    ]
+  },
+  {
+    "name": "astropy-astropy-c0a24c1dc957",
+    "source": "https://raw.githubusercontent.com/astropy/astropy/c0a24c1dc957a3b565294213f435fefb2ec99714/LICENSE.rst",
+    "sha256": "a86d75ead6df0886dcbc04230ffcd971c66a4a6746ca559ddf768865370637f5",
+    "task_ids": [
+      "vgb-t-c4b82b5e826f511f"
+    ]
+  },
+  {
+    "name": "django-django-e8fcdaad5c42",
+    "source": "https://raw.githubusercontent.com/django/django/e8fcdaad5c428878d0a5d6ba820d957013f75595/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-d095c1dc1cbe0bee"
+    ]
+  },
+  {
+    "name": "django-django-ba726067604c",
+    "source": "https://raw.githubusercontent.com/django/django/ba726067604ce5a8ca3919edf653496722b433ab/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-d3c43b994aa8b2f3"
+    ]
+  },
+  {
+    "name": "django-django-999891bd80b3",
+    "source": "https://raw.githubusercontent.com/django/django/999891bd80b3d02dd916731a7a239e1036174885/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-d8bd9183d1119aa2"
+    ]
+  },
+  {
+    "name": "django-django-14d026cccb14",
+    "source": "https://raw.githubusercontent.com/django/django/14d026cccb144c6877294ba4cd4e03ebf0842498/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-d8c6f0a6aaf12e9e"
+    ]
+  },
+  {
+    "name": "django-django-5d9cf79baf07",
+    "source": "https://raw.githubusercontent.com/django/django/5d9cf79baf07fc4aed7ad1b06990532a65378155/LICENSE",
+    "sha256": "b846415d1b514e9c1dff14a22deb906d794bc546ca6129f950a18cd091e2a669",
+    "task_ids": [
+      "vgb-t-e7c9c28088532cf0"
+    ]
+  },
+  {
+    "name": "matplotlib-matplotlib-a2a1b0a11b99",
+    "source": "https://raw.githubusercontent.com/matplotlib/matplotlib/a2a1b0a11b993fe5f8fab64b6161e99243a6393c/LICENSE/LICENSE",
+    "sha256": "5a1a81ea301728c8bba2933da832c0cd62229daf20893a024ab3d53244468dbc",
+    "task_ids": [
+      "vgb-t-eb9dc008dbf1fd61"
+    ]
+  }
+]

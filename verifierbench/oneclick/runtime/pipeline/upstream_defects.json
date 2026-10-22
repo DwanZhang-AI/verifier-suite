@@ -1,0 +1,381 @@
+{
+  "version": "full-upstream-exclusion-20260919-v3",
+  "tasks": [
+    {
+      "task_id": "parallel_65",
+      "task_handle": "vgb-t-0325f5116098d5f6",
+      "benchmark": "BFCL v4",
+      "reason": "upstream_default_omission_conflict",
+      "evidence": "vgb_results/case_studies/benchmark_repair_audit/bfcl_default_omission_followup.json; original BFCL keys/schema; user-confirmed parallel_multiple_137"
+    },
+    {
+      "task_handle": "vgb-t-125be6ed38ed760b",
+      "benchmark": "Terminal-Bench",
+      "task_id": "feal-differential-cryptanalysis",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-1a28803a4c913d40",
+      "benchmark": "Terminal-Bench",
+      "task_id": "catch-me-if-you-can",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-2441faae30388c01",
+      "benchmark": "Terminal-Bench",
+      "task_id": "amuse-install",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-267c8c839a3b063e",
+      "benchmark": "Terminal-Bench",
+      "task_id": "feal-linear-cryptanalysis",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-27966f54043e295e",
+      "benchmark": "Terminal-Bench",
+      "task_id": "code-from-image",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_id": "parallel_135",
+      "task_handle": "vgb-t-2c4ab5c868f7633c",
+      "benchmark": "BFCL v4",
+      "reason": "upstream_default_omission_conflict",
+      "evidence": "vgb_results/case_studies/benchmark_repair_audit/bfcl_default_omission_followup.json; original BFCL keys/schema; user-confirmed parallel_multiple_137"
+    },
+    {
+      "task_handle": "vgb-t-3225a7280bb650dc",
+      "benchmark": "Terminal-Bench",
+      "task_id": "fix-git",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-359a982b36444463",
+      "benchmark": "Terminal-Bench",
+      "task_id": "chess-best-move",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-36ea31a2df9873c1",
+      "benchmark": "Terminal-Bench",
+      "task_id": "count-call-stack",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-3e5cd002b8acfc44",
+      "benchmark": "Terminal-Bench",
+      "task_id": "constraints-scheduling",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-4233071d7ef63e94",
+      "benchmark": "Terminal-Bench",
+      "task_id": "decommissioning-service-with-sensitive-data",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-45d5598d99467b5e",
+      "benchmark": "Terminal-Bench",
+      "task_id": "chem-property-targeting",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-4b5ebcb3c5aadc9f",
+      "benchmark": "Terminal-Bench",
+      "task_id": "dna-insert",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-4ffa6347aefd1fbf",
+      "benchmark": "Terminal-Bench",
+      "task_id": "extract-moves-from-video",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-50f0f40113973dc1",
+      "benchmark": "Terminal-Bench",
+      "task_id": "countdown-game",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-5dd93e71f168ddfa",
+      "benchmark": "Terminal-Bench",
+      "task_id": "dna-assembly",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-6c2d13fc7b617976",
+      "benchmark": "Terminal-Bench",
+      "task_id": "db-wal-recovery",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_id": "parallel_180",
+      "task_handle": "vgb-t-6d5f99d9a47682f1",
+      "benchmark": "BFCL v4",
+      "reason": "upstream_default_omission_conflict",
+      "evidence": "vgb_results/case_studies/benchmark_repair_audit/bfcl_default_omission_followup.json; original BFCL keys/schema; user-confirmed parallel_multiple_137"
+    },
+    {
+      "task_handle": "vgb-t-6e88f961de09a433",
+      "benchmark": "Terminal-Bench",
+      "task_id": "bn-fit-modify",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_id": "cross-entropy-method",
+      "task_handle": "vgb-t-72724d0efe8b34a8",
+      "benchmark": "Terminal-Bench",
+      "reason": "upstream_grader_nondeterministic",
+      "evidence": "outputs/tb_public_validation.json：候选 cross-entropy-method::000_cosmetic0（klass=cosmetic，答案键 truth=PASS，payload 全程未变，payload_canonical_sha256=f4d8994beefd21e1…）9 次尝试中 6 次有效运行，observed_verdicts=[false,true]，flip=true，label_mismatch_runs=1。同一份 payload 在官方判据下既判 FAIL 也判 PASS —— 判定不是纯函数，该题无法用来测 verifier：verifier 判对判错取决于官方判据这一次的掷骰结果。任务本身是带随机性的 RL 训练（cross-entropy method），随机性属上游性质，不是我们的抽取、候选构造或执行环境引入的。readiness 逐题记为 C5a=fail（tb_certification.task_gates），补跑更多次不会消除：翻转出现在仅有的有效运行之间。"
+    },
+    {
+      "task_handle": "vgb-t-73e0943707bc5fd2",
+      "benchmark": "Terminal-Bench",
+      "task_id": "assign-seats",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_id": "parallel_multiple_137",
+      "task_handle": "vgb-t-7fe496b87ed49762",
+      "benchmark": "BFCL v4",
+      "reason": "upstream_default_omission_conflict",
+      "evidence": "vgb_results/case_studies/benchmark_repair_audit/bfcl_default_omission_followup.json; original BFCL keys/schema; user-confirmed parallel_multiple_137"
+    },
+    {
+      "task_id": "parallel_70",
+      "task_handle": "vgb-t-86ec65e3e3f03750",
+      "benchmark": "BFCL v4",
+      "reason": "upstream_default_omission_conflict",
+      "evidence": "vgb_results/case_studies/benchmark_repair_audit/bfcl_default_omission_followup.json; original BFCL keys/schema; user-confirmed parallel_multiple_137"
+    },
+    {
+      "task_handle": "vgb-t-8906a3d00c78349b",
+      "benchmark": "Terminal-Bench",
+      "task_id": "break-filter-js-from-html",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-8b47b5faf030fdb8",
+      "benchmark": "Terminal-Bench",
+      "task_id": "blind-maze-explorer-5x5",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-8dc6278f0ef0fcfd",
+      "benchmark": "Terminal-Bench",
+      "task_id": "enemy-grid-escape",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-b039942eb4f3db09",
+      "benchmark": "Terminal-Bench",
+      "task_id": "deterministic-tarball",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-b553ab1a39678d55",
+      "benchmark": "Terminal-Bench",
+      "task_id": "3d-model-format-legacy",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-c05da24861233448",
+      "benchmark": "Terminal-Bench",
+      "task_id": "cartpole-rl-training",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-c3e5d27b500aa99c",
+      "benchmark": "Terminal-Bench",
+      "task_id": "acl-permissions-inheritance",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-c51da8a508a8502f",
+      "benchmark": "Terminal-Bench",
+      "task_id": "configure-git-webserver",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-c5f688cd755ccb7b",
+      "benchmark": "Terminal-Bench",
+      "task_id": "blind-maze-explorer-algorithm",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-cae0c718e85da7f4",
+      "benchmark": "Terminal-Bench",
+      "task_id": "cobol-modernization",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-d0aae35e94b82063",
+      "benchmark": "Terminal-Bench",
+      "task_id": "cancel-async-tasks",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-ddd5dcdc58b4e266",
+      "benchmark": "Terminal-Bench",
+      "task_id": "extract-safely",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_id": "filter-js-from-html",
+      "task_handle": "vgb-t-dfd0306ebbc2c025",
+      "benchmark": "Terminal-Bench",
+      "reason": "upstream_browser_failure_treated_as_no_alert",
+      "evidence": "vgb_results/tb37_validation_20260917/filter_fail_open_probe.json"
+    },
+    {
+      "task_handle": "vgb-t-e46bacfe0cef313d",
+      "benchmark": "Terminal-Bench",
+      "task_id": "distribution-search",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-e524501bc7443bf4",
+      "benchmark": "Terminal-Bench",
+      "task_id": "analyze-access-logs",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-f939e51855b0ad27",
+      "benchmark": "Terminal-Bench",
+      "task_id": "count-dataset-tokens",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-f9511037ed42f034",
+      "benchmark": "Terminal-Bench",
+      "task_id": "crack-7z-hash",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-fcb3b6d062186c4c",
+      "benchmark": "Terminal-Bench",
+      "task_id": "aimo-airline-departures",
+      "reason": "upstream_pytest_parser_skipped_xfail_mapped_to_pass",
+      "evidence": "vgb_results/pool267_review_20260919/tb35_upstream_recheck.json",
+      "evidence_sha256": "8f40f9e1dba3fa84ab610ccb7d2a9f059611bde17d63b82c3c1486ce55330366"
+    },
+    {
+      "task_handle": "vgb-t-3c86001300657030",
+      "task_id": "astropy__astropy-7336",
+      "benchmark": "SWE-bench Verified",
+      "reason": "upstream_pytest_arrow_status_ignored_then_empty_denominator_full_credit",
+      "evidence": "vgb_results/repairs225_20260919/swe_goldholes_attribution.json",
+      "evidence_sha256": "534992686503097bea40d6569be441b01cfb64b946f93a45296152d7661bbae3",
+      "official_package": "swebench==4.1.0",
+      "grader_sha256": "88fc500ebaf692a53457149cec24dcf82dfa2d48f98021a894a087d275f61df4",
+      "base_commit": "732d89c2940156bdc0e200bb36dc38b5e424bcba",
+      "candidate_handle": "vgb-c-d1e7592db3d06ae6",
+      "candidate_sha256": "f77aa6c7a3ad410ca1bc83b2a967e15c28d1c9931ffdeaca765265ef2ccf18d2",
+      "rounds": 3,
+      "split": "dev-select"
+    },
+    {
+      "task_handle": "vgb-t-b622be913aee458f",
+      "task_id": "astropy__astropy-7166",
+      "benchmark": "SWE-bench Verified",
+      "reason": "upstream_pytest_arrow_status_ignored_then_empty_denominator_full_credit",
+      "evidence": "vgb_results/repairs225_20260919/swe_goldholes_attribution.json",
+      "evidence_sha256": "534992686503097bea40d6569be441b01cfb64b946f93a45296152d7661bbae3",
+      "official_package": "swebench==4.1.0",
+      "grader_sha256": "88fc500ebaf692a53457149cec24dcf82dfa2d48f98021a894a087d275f61df4",
+      "base_commit": "26d147868f8a891a6009a25cd6a8576d2e1bd747",
+      "candidate_handle": "vgb-c-c8e82f5f3f6eff93",
+      "candidate_sha256": "57eb81d4f10de0ad929cba989d4e0ee5956a9274d1032f6dc88be39b84e1fc84",
+      "rounds": 3,
+      "split": "dev-select"
+    },
+    {
+      "task_handle": "vgb-t-0873dd2038fc97de",
+      "task_id": "astropy__astropy-7671",
+      "benchmark": "SWE-bench Verified",
+      "reason": "upstream_pytest_arrow_status_ignored_then_empty_denominator_full_credit",
+      "evidence": "vgb_results/repairs225_20260919/swe_goldholes_attribution.json",
+      "evidence_sha256": "534992686503097bea40d6569be441b01cfb64b946f93a45296152d7661bbae3",
+      "official_package": "swebench==4.1.0",
+      "grader_sha256": "88fc500ebaf692a53457149cec24dcf82dfa2d48f98021a894a087d275f61df4",
+      "base_commit": "a7141cd90019b62688d507ae056298507678c058",
+      "candidate_handle": "vgb-c-451700511ad95a99",
+      "candidate_sha256": "856317c3ca35e0a07579b4e7b02f1e7510445bcb2bd3e286ed10b325abfff817",
+      "rounds": 3,
+      "split": "dev-select"
+    }
+  ],
+  "updated_by": "certfix-20260919 verified TB35",
+  "revision": "swe-goldholes-native-20260919"
+}

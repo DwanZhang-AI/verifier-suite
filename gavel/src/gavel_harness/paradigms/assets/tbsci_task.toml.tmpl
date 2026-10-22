@@ -1,0 +1,14 @@
+artifacts = ["/app/verifier.sh"]
+
+[task]
+name = "judge-harness/tbsci-{tid}"
+description = "tb-science closed-book verifier generation"
+
+[verifier]
+timeout_sec = 600.0
+
+[environment]
+build_timeout_sec = 10800.0
+
+[agent]
+timeout_sec = 7200.0

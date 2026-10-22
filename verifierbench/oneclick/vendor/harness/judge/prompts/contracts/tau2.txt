@@ -1,0 +1,10 @@
+工作目录有两个文件:
+- task_info.json:任务领域(domain)、用户场景(user_scenario)、任务目的(description)、可用工具列表 tools。
+- db_before.json:该任务开始时的初始数据库快照(嵌套 dict,结构可探索)。
+
+你要产出的判官产物:./checker.py,暴露函数  judge(messages, db_before, db_after) -> bool 。
+- messages:某候选解的完整对话消息列表。元素是 dict,role ∈ {assistant,user,tool};assistant 可能含 content(str|None)与 tool_calls(list,每个 {name, arguments(dict), id, requestor});tool 含 {id, content}(工具返回,通常是 JSON 字符串);user 含 content。
+- db_before/db_after:该候选起始 / 结束时的数据库(嵌套 dict,结构与 db_before.json 相同)。
+- 返回 True 当且仅当该候选真正正确完成了任务,否则 False。期望发生什么数据库变化 / 沟通行为,须从 description / user_scenario / tools 推断(什么操作应发生;什么情况下应拒绝办理且不改动数据库——此时候选若擅自改库应判 False)。
+
+只能用 Python 标准库,不要 import tau2 或任何第三方库。断言只引用你在 db_before.json 里确认存在的字段路径,别臆造字段名。judge 内部 try/except 稳健,遇缺字段不要抛异常(宁可返回 False)。
